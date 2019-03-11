@@ -31,10 +31,10 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 
 # Schematy UML:
 - Diagram przypadków użycia:
-![Screenshot] (diagrams/przypadkow_uzycia.png)
+![Screenshot](diagrams/przypadkow_uzycia.png)
 
 - Diagram aktywności:
-![Screenshot] (diagrams/aktywnosci.png)
+![Screenshot](diagrams/aktywnosci.png)
 - Diagram sekwencji:
-![Screenshot] (diagrams/sekwencji.png)
+![Screenshot](diagrams/sekwencji.png)
 - Diagram klas:
