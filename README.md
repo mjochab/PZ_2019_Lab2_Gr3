@@ -5,15 +5,10 @@
 - Mateusz Matyaszek
 - Mateusz Sobkowicz
 # Spis treści
-## Opis aplikacji
-## Schematy UML
- - Diagram przypadków użycia
- - Diagram aktywności
- - Diagram sekwencji
- - Diagram klas
-## 3.Wykorzystane technologie
-
-# Główne założenia aplikacji
+* [Opis aplikacji](#opis-aplikacji)
+* [Schematy UML](#schematy-uml)
+* [Wykorzystane technologie](#wykorzystane-technologie)
+# Opis aplikacji
 Celem aplikacji jest obsługa przychodni medycznej poprzez możliwość tworzenia i odczytywania danych medycznych pacjentów, historii chorób oraz recept w celu poprawienia świadomości chorego oraz ułatwienia kontaktu lekarz-pacjent. Aplikacja umożliwia rejestrację chorego w przychodni bez wychodzenia z domu a także pozwala mu na sprawdzenie listy przypisanych mu leków.
 
 Dane aplikacji gromadzone są w relacyjnej bazie danych, do której pełny dostęp mają tylko administratorzy, a częściowy, w zależności od uprawnień lekarze i pacjenci.
@@ -38,3 +33,5 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 - Diagram sekwencji:
 ![Screenshot](diagrams/sekwencji.PNG)
 - Diagram klas:
+
+# Wykorzystane technologie:
