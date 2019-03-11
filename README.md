@@ -35,3 +35,8 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 - Diagram klas:
 
 # Wykorzystane technologie:
+
+
+# Okna widoku:
+- okno widoku recepcjonistki:
+![Screenshot](images/recepcjonistka.PNG)
