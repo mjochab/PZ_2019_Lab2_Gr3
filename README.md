@@ -36,6 +36,9 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 
 Projekt okien użytkowników:
 
+Projekt okna pacjenta:
 ![okno pacjenta](images/user_window.png)
+- Projekt okna recepcjonistki:
+![okno recepcjonistki](images/recepcjonistka.png)
 
 # Wykorzystane technologie:
