@@ -34,11 +34,13 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 ![Screenshot](diagrams/sekwencji.PNG)
 - Diagram klas:
 
-Projekt okien użytkowników:
+# Projekt okien użytkowników:
 
-Projekt okna pacjenta:
+## Projekt okna pacjenta:
 ![okno pacjenta](images/user_window.png)
-- Projekt okna recepcjonistki:
+## Projekt okna recepcjonistki:
 ![okno recepcjonistki](images/recepcjonistka.png)
+## Projekt okna lekarza: 
+![okno lekarza](images/doctor_window.PNG)
 
 # Wykorzystane technologie:
