@@ -37,15 +37,15 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 # Projekt okien użytkowników:
 
 ## Projekt okna logowania:
-![okno logowania](images/login_window.png)
+![okno logowania](images/login_window.PNG)
 
 ## Projekt okna rejestracji:
-![okno rejestracji](images/registration_window.png)
+![okno rejestracji](images/registration_window.PNG)
 
 ## Projekt okna pacjenta:
 ![okno pacjenta](images/user_window.png)
 ## Projekt okna recepcjonistki:
-![okno recepcjonistki](images/recepcjonistka.png)
+![okno recepcjonistki](images/recepcjonistka.PNG)
 ## Projekt okna lekarza: 
 ![okno lekarza](images/doctor_window.PNG)
 
