@@ -33,7 +33,7 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 - Diagram sekwencji:
 ![Screenshot](diagrams/sekwencji.PNG)
 - Diagram klas:
-
+![Screenshot](diagrams/Diagram Klas.PNG)
 # Wykorzystane technologie:
 
 
