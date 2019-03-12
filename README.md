@@ -37,7 +37,7 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 # Projekt okien użytkowników:
 
 ## Projekt okna logowania:
-![okno logowania](images/loging_window.png)
+![okno logowania](images/login_window.png)
 
 ## Projekt okna rejestracji:
 ![okno rejestracji](images/registration_window.png)
