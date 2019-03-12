@@ -45,7 +45,7 @@ Aplikacja może znaleźć zastosowanie w realnym świecie gdzie usprawni działa
 ## Projekt okna pacjenta:
 ![okno pacjenta](images/user_window.png)
 ## Projekt okna recepcjonistki:
-![okno recepcjonistki](images/recepcjonistka.PNG)
+![okno recepcjonistki](images/recepcjonistka.png)
 ## Projekt okna lekarza: 
 ![okno lekarza](images/doctor_window.PNG)
 
