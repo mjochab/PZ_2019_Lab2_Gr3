@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="32.0" layoutY="14.0" text="Formularz rejestracyjny">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="98.0" text="Imię:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="128.0" text="Nazwisko:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField layoutX="210.0" layoutY="93.0" prefHeight="26.0" prefWidth="202.0" />
+      <PasswordField layoutX="210.0" layoutY="123.0" prefHeight="26.0" prefWidth="202.0" />
+      <Button layoutX="180.0" layoutY="462.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" text="Zarejestruj" />
+      <Label layoutX="40.0" layoutY="158.0" text="Adres e-mail:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="188.0" text="Nr telefonu:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="218.0" text="PESEL:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="248.0" text="Miejscowość:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="278.0" text="Ulica:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="308.0" text="Nr domu:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="338.0" text="Nr lokalu:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="368.0" text="Kod pocztowy:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="398.0" text="Poczta:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <PasswordField layoutX="210.0" layoutY="153.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField layoutX="210.0" layoutY="183.0" prefHeight="26.0" prefWidth="202.0" />
+      <PasswordField layoutX="210.0" layoutY="213.0" prefHeight="26.0" prefWidth="202.0" />
+      <PasswordField layoutX="210.0" layoutY="243.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField layoutX="210.0" layoutY="333.0" prefHeight="26.0" prefWidth="202.0" />
+      <PasswordField layoutX="210.0" layoutY="273.0" prefHeight="26.0" prefWidth="202.0" />
+      <PasswordField layoutX="210.0" layoutY="303.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField layoutX="210.0" layoutY="393.0" prefHeight="26.0" prefWidth="202.0" />
+      <PasswordField layoutX="210.0" layoutY="363.0" prefHeight="26.0" prefWidth="202.0" />
+      <Line endX="350.0" layoutX="101.0" layoutY="82.0" startX="-100.0" />
+   </children>
+</Pane>

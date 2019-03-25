@@ -31,7 +31,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void zaloguj(ActionEvent event) throws IOException{
-        Parent okno_pacjenta = FXMLLoader.load(getClass().getResource("FXMLOknoPacjenta.fxml"));
+        Parent okno_pacjenta = FXMLLoader.load(getClass().getResource("FXMLRejestracja.fxml"));
         Scene okno_pacjenta_scene = new Scene(okno_pacjenta);
         
         
