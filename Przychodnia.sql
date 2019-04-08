@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 08 Kwi 2019, 12:48
+-- Czas generowania: 08 Kwi 2019, 17:45
 -- Wersja serwera: 10.1.38-MariaDB
 -- Wersja PHP: 7.3.3
 
@@ -25,50 +25,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `info_wizyta`
+-- Struktura tabeli dla tabeli `konta`
 --
 
-CREATE TABLE `info_wizyta` (
-  `ID_Info_Wizyta` int(11) NOT NULL,
-  `Data_Wizyty` datetime NOT NULL,
-  `Czas_Wizyty` time NOT NULL,
-  `ID_Pacjent` int(11) NOT NULL,
-  `ID_Lekarz` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Zrzut danych tabeli `info_wizyta`
---
-
-INSERT INTO `info_wizyta` (`ID_Info_Wizyta`, `Data_Wizyty`, `Czas_Wizyty`, `ID_Pacjent`, `ID_Lekarz`) VALUES
-(45123, '2019-04-08 10:00:00', '00:30:00', 12322, 23548);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `konto`
---
-
-CREATE TABLE `konto` (
+CREATE TABLE `konta` (
   `ID_Konta` int(11) NOT NULL,
   `Login` varchar(255) NOT NULL,
   `Hasło` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Zrzut danych tabeli `konto`
+-- Zrzut danych tabeli `konta`
 --
 
-INSERT INTO `konto` (`ID_Konta`, `Login`, `Hasło`) VALUES
+INSERT INTO `konta` (`ID_Konta`, `Login`, `Hasło`) VALUES
 (78942, 'jkowalski32', '1234567');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `lekarz`
+-- Struktura tabeli dla tabeli `lekarze`
 --
 
-CREATE TABLE `lekarz` (
+CREATE TABLE `lekarze` (
   `ID_Lekarz` int(11) NOT NULL,
   `Imię` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
@@ -76,19 +55,19 @@ CREATE TABLE `lekarz` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Zrzut danych tabeli `lekarz`
+-- Zrzut danych tabeli `lekarze`
 --
 
-INSERT INTO `lekarz` (`ID_Lekarz`, `Imię`, `Nazwisko`, `Pesel`) VALUES
+INSERT INTO `lekarze` (`ID_Lekarz`, `Imię`, `Nazwisko`, `Pesel`) VALUES
 (565215, 'Jan', 'Kowalski', '95234879576');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `pacjent`
+-- Struktura tabeli dla tabeli `pacjenci`
 --
 
-CREATE TABLE `pacjent` (
+CREATE TABLE `pacjenci` (
   `ID_Pacjent` int(11) NOT NULL,
   `Imię` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
@@ -98,10 +77,10 @@ CREATE TABLE `pacjent` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Zrzut danych tabeli `pacjent`
+-- Zrzut danych tabeli `pacjenci`
 --
 
-INSERT INTO `pacjent` (`ID_Pacjent`, `Imię`, `Nazwisko`, `Pesel`, `Adres zamieszkania`, `ID_Konta`) VALUES
+INSERT INTO `pacjenci` (`ID_Pacjent`, `Imię`, `Nazwisko`, `Pesel`, `Adres zamieszkania`, `ID_Konta`) VALUES
 (12322, 'Adam', 'Małysz', '95234879561', 'ul. Konopnickiej 2 Rzeszów', 88889);
 
 -- --------------------------------------------------------
@@ -124,10 +103,12 @@ INSERT INTO `recepty` (`ID_Recepty`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `wizyta`
+-- Struktura tabeli dla tabeli `wizyty`
 --
 
-CREATE TABLE `wizyta` (
+CREATE TABLE `wizyty` (
+  `Data_wizyty` datetime NOT NULL,
+  `Czas_wizyty` time NOT NULL,
   `ID_Wizyta` int(11) NOT NULL,
   `ID_Lekarz` int(11) NOT NULL,
   `ID_Pacjent` int(11) NOT NULL,
@@ -135,38 +116,33 @@ CREATE TABLE `wizyta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Zrzut danych tabeli `wizyta`
+-- Zrzut danych tabeli `wizyty`
 --
 
-INSERT INTO `wizyta` (`ID_Wizyta`, `ID_Lekarz`, `ID_Pacjent`, `ID_Recepty`) VALUES
-(547895, 4568789, 541232, 111111);
+INSERT INTO `wizyty` (`Data_wizyty`, `Czas_wizyty`, `ID_Wizyta`, `ID_Lekarz`, `ID_Pacjent`, `ID_Recepty`) VALUES
+('0000-00-00 00:00:00', '00:00:00', 547895, 4568789, 541232, 111111),
+('2019-04-01 12:00:00', '00:20:00', 234562, 132445, 231232, 321432);
 
 --
 -- Indeksy dla zrzutów tabel
 --
 
 --
--- Indeksy dla tabeli `info_wizyta`
+-- Indeksy dla tabeli `konta`
 --
-ALTER TABLE `info_wizyta`
-  ADD PRIMARY KEY (`ID_Info_Wizyta`);
-
---
--- Indeksy dla tabeli `konto`
---
-ALTER TABLE `konto`
+ALTER TABLE `konta`
   ADD PRIMARY KEY (`ID_Konta`);
 
 --
--- Indeksy dla tabeli `lekarz`
+-- Indeksy dla tabeli `lekarze`
 --
-ALTER TABLE `lekarz`
+ALTER TABLE `lekarze`
   ADD PRIMARY KEY (`ID_Lekarz`);
 
 --
--- Indeksy dla tabeli `pacjent`
+-- Indeksy dla tabeli `pacjenci`
 --
-ALTER TABLE `pacjent`
+ALTER TABLE `pacjenci`
   ADD PRIMARY KEY (`ID_Pacjent`),
   ADD UNIQUE KEY `ID_Konta` (`ID_Konta`);
 
