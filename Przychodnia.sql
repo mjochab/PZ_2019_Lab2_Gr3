@@ -1,22 +1,20 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
+-- version 4.2.11
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 08 Kwi 2019, 17:45
--- Wersja serwera: 10.1.38-MariaDB
--- Wersja PHP: 7.3.3
+-- Czas generowania: 09 Kwi 2019, 14:06
+-- Wersja serwera: 5.6.21
+-- Wersja PHP: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Baza danych: `przychodnia`
@@ -28,7 +26,7 @@ SET time_zone = "+00:00";
 -- Struktura tabeli dla tabeli `konta`
 --
 
-CREATE or replace TABLE `konta` (
+CREATE TABLE IF NOT EXISTS `konta` (
   `ID_Konta` int(11) NOT NULL,
   `Login` varchar(255) NOT NULL,
   `Haslo` varchar(255) NOT NULL
@@ -47,7 +45,7 @@ INSERT INTO `konta` (`ID_Konta`, `Login`, `Haslo`) VALUES
 -- Struktura tabeli dla tabeli `lekarze`
 --
 
-CREATE or replace  TABLE `lekarze` (
+CREATE TABLE IF NOT EXISTS `lekarze` (
   `ID_Lekarz` int(11) NOT NULL,
   `Imie` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
@@ -67,7 +65,7 @@ INSERT INTO `lekarze` (`ID_Lekarz`, `Imie`, `Nazwisko`, `Pesel`) VALUES
 -- Struktura tabeli dla tabeli `pacjenci`
 --
 
-CREATE or replace TABLE `pacjenci` (
+CREATE TABLE IF NOT EXISTS `pacjenci` (
   `ID_Pacjent` int(11) NOT NULL,
   `Imie` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
@@ -81,7 +79,7 @@ CREATE or replace TABLE `pacjenci` (
 --
 
 INSERT INTO `pacjenci` (`ID_Pacjent`, `Imie`, `Nazwisko`, `Pesel`, `Adres zamieszkania`, `ID_Konta`) VALUES
-(12322, 'Adam', 'Ma³ysz', '95234879561', 'ul. Konopnickiej 2 Rzeszów', 88889);
+(12322, 'Adam', 'Małysz', '95234879561', 'ul. Konopnickiej 2 Rzeszów', 88889);
 
 -- --------------------------------------------------------
 
@@ -89,7 +87,7 @@ INSERT INTO `pacjenci` (`ID_Pacjent`, `Imie`, `Nazwisko`, `Pesel`, `Adres zamies
 -- Struktura tabeli dla tabeli `recepty`
 --
 
-CREATE or replace TABLE `recepty` (
+CREATE TABLE IF NOT EXISTS `recepty` (
   `ID_Recepty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -106,7 +104,7 @@ INSERT INTO `recepty` (`ID_Recepty`) VALUES
 -- Struktura tabeli dla tabeli `wizyty`
 --
 
-CREATE or replace TABLE `wizyty` (
+CREATE TABLE IF NOT EXISTS `wizyty` (
   `Data_wizyty` datetime NOT NULL,
   `Czas_wizyty` time NOT NULL,
   `ID_Wizyta` int(11) NOT NULL,
@@ -128,31 +126,30 @@ INSERT INTO `wizyty` (`Data_wizyty`, `Czas_wizyty`, `ID_Wizyta`, `ID_Lekarz`, `I
 --
 
 --
--- Indeksy dla tabeli `konta`
+-- Indexes for table `konta`
 --
 ALTER TABLE `konta`
-  ADD PRIMARY KEY (`ID_Konta`);
+ ADD PRIMARY KEY (`ID_Konta`);
 
 --
--- Indeksy dla tabeli `lekarze`
+-- Indexes for table `lekarze`
 --
 ALTER TABLE `lekarze`
-  ADD PRIMARY KEY (`ID_Lekarz`);
+ ADD PRIMARY KEY (`ID_Lekarz`);
 
 --
--- Indeksy dla tabeli `pacjenci`
+-- Indexes for table `pacjenci`
 --
 ALTER TABLE `pacjenci`
-  ADD PRIMARY KEY (`ID_Pacjent`),
-  ADD UNIQUE KEY `ID_Konta` (`ID_Konta`);
+ ADD PRIMARY KEY (`ID_Pacjent`), ADD UNIQUE KEY `ID_Konta` (`ID_Konta`);
 
 --
--- Indeksy dla tabeli `recepty`
+-- Indexes for table `recepty`
 --
 ALTER TABLE `recepty`
-  ADD PRIMARY KEY (`ID_Recepty`);
-COMMIT;
+ ADD PRIMARY KEY (`ID_Recepty`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
