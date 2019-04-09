@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="32.0" layoutY="14.0" text="Formularz rejestracyjny">
          <font>
@@ -30,7 +30,7 @@
          </font></Label>
       <TextField layoutX="210.0" layoutY="93.0" prefHeight="26.0" prefWidth="202.0" />
       <PasswordField layoutX="210.0" layoutY="123.0" prefHeight="26.0" prefWidth="202.0" />
-      <Button layoutX="180.0" layoutY="462.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" text="Zarejestruj" />
+      <Button layoutX="136.0" layoutY="454.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="179.0" text="Zarejestruj" />
       <Label layoutX="40.0" layoutY="158.0" text="Adres e-mail:">
          <font>
             <Font size="14.0" />
