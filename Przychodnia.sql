@@ -28,17 +28,17 @@ SET time_zone = "+00:00";
 -- Struktura tabeli dla tabeli `konta`
 --
 
-CREATE TABLE `konta` (
+CREATE or replace TABLE `konta` (
   `ID_Konta` int(11) NOT NULL,
   `Login` varchar(255) NOT NULL,
-  `Hasło` varchar(255) NOT NULL
+  `Haslo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Zrzut danych tabeli `konta`
 --
 
-INSERT INTO `konta` (`ID_Konta`, `Login`, `Hasło`) VALUES
+INSERT INTO `konta` (`ID_Konta`, `Login`, `Haslo`) VALUES
 (78942, 'jkowalski32', '1234567');
 
 -- --------------------------------------------------------
@@ -47,9 +47,9 @@ INSERT INTO `konta` (`ID_Konta`, `Login`, `Hasło`) VALUES
 -- Struktura tabeli dla tabeli `lekarze`
 --
 
-CREATE TABLE `lekarze` (
+CREATE or replace  TABLE `lekarze` (
   `ID_Lekarz` int(11) NOT NULL,
-  `Imię` varchar(255) NOT NULL,
+  `Imie` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
   `Pesel` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -58,7 +58,7 @@ CREATE TABLE `lekarze` (
 -- Zrzut danych tabeli `lekarze`
 --
 
-INSERT INTO `lekarze` (`ID_Lekarz`, `Imię`, `Nazwisko`, `Pesel`) VALUES
+INSERT INTO `lekarze` (`ID_Lekarz`, `Imie`, `Nazwisko`, `Pesel`) VALUES
 (565215, 'Jan', 'Kowalski', '95234879576');
 
 -- --------------------------------------------------------
@@ -67,9 +67,9 @@ INSERT INTO `lekarze` (`ID_Lekarz`, `Imię`, `Nazwisko`, `Pesel`) VALUES
 -- Struktura tabeli dla tabeli `pacjenci`
 --
 
-CREATE TABLE `pacjenci` (
+CREATE or replace TABLE `pacjenci` (
   `ID_Pacjent` int(11) NOT NULL,
-  `Imię` varchar(255) NOT NULL,
+  `Imie` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
   `Pesel` varchar(11) NOT NULL,
   `Adres zamieszkania` varchar(255) NOT NULL,
@@ -80,8 +80,8 @@ CREATE TABLE `pacjenci` (
 -- Zrzut danych tabeli `pacjenci`
 --
 
-INSERT INTO `pacjenci` (`ID_Pacjent`, `Imię`, `Nazwisko`, `Pesel`, `Adres zamieszkania`, `ID_Konta`) VALUES
-(12322, 'Adam', 'Małysz', '95234879561', 'ul. Konopnickiej 2 Rzeszów', 88889);
+INSERT INTO `pacjenci` (`ID_Pacjent`, `Imie`, `Nazwisko`, `Pesel`, `Adres zamieszkania`, `ID_Konta`) VALUES
+(12322, 'Adam', 'Ma³ysz', '95234879561', 'ul. Konopnickiej 2 Rzeszów', 88889);
 
 -- --------------------------------------------------------
 
@@ -89,7 +89,7 @@ INSERT INTO `pacjenci` (`ID_Pacjent`, `Imię`, `Nazwisko`, `Pesel`, `Adres zamie
 -- Struktura tabeli dla tabeli `recepty`
 --
 
-CREATE TABLE `recepty` (
+CREATE or replace TABLE `recepty` (
   `ID_Recepty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -106,7 +106,7 @@ INSERT INTO `recepty` (`ID_Recepty`) VALUES
 -- Struktura tabeli dla tabeli `wizyty`
 --
 
-CREATE TABLE `wizyty` (
+CREATE or replace TABLE `wizyty` (
   `Data_wizyty` datetime NOT NULL,
   `Czas_wizyty` time NOT NULL,
   `ID_Wizyta` int(11) NOT NULL,
