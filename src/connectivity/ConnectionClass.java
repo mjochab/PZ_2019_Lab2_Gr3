@@ -37,7 +37,7 @@ public class ConnectionClass {
             return connection;
             
         } catch (ClassNotFoundException ex) {
-            System.out.println("nie uudalo sie nawiazac oplaczenia z baza");
+            System.out.println("nie udalo sie nawiazac oplaczenia z baza");
         }
         
         return null;

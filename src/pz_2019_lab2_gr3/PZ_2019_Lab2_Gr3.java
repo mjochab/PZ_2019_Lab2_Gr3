@@ -19,7 +19,7 @@ public class PZ_2019_Lab2_Gr3 extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxmls/FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
        

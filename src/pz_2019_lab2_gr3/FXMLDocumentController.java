@@ -5,6 +5,7 @@
  */
 package pz_2019_lab2_gr3;
 
+
 import connectivity.ConnectionClass;
 
 import java.io.IOException;
@@ -62,7 +63,7 @@ public class FXMLDocumentController implements Initializable {
         Connection connection = connectionClass.getConnection();
         
         
-        String query = "select login from konta";
+        String query = "select email from pacjenci";
         
         Statement stmt;
         stmt = connection.createStatement();
