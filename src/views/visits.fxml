@@ -7,19 +7,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pz_2019_lab2_gr3.FXMLOknoPacjentaController">
    <children>
       <Label layoutX="105.0" layoutY="14.0" text="Zaplanowane wizyty">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="40.0" layoutY="55.0" prefHeight="410.0" prefWidth="346.0">
+      <TableView layoutX="40.0" layoutY="55.0" prefHeight="385.0" prefWidth="346.0">
         <columns>
           <TableColumn prefWidth="174.0" text="Data" />
           <TableColumn minWidth="0.0" prefWidth="171.0" text="Lekarz" />
         </columns>
       </TableView>
-      <Button layoutX="293.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Dodaj wizytę" />
+      <Button layoutX="290.0" layoutY="461.0" mnemonicParsing="false" onAction="#newVisit" prefHeight="25.0" prefWidth="96.0" text="Dodaj wizytę" />
    </children>
 </AnchorPane>

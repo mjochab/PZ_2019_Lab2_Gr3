@@ -14,32 +14,13 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="pz_2019_lab2_gr3.FXMLOkno_recepcjonistkiController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="pz_2019_lab2_gr3.ReceptionistController">
    <children>
       <AnchorPane layoutY="6.0" prefHeight="49.0" prefWidth="200.0" />
       <Accordion layoutX="14.0" layoutY="55.0" prefWidth="202.0" />
       <AnchorPane layoutX="216.0" layoutY="31.0" prefHeight="374.0" prefWidth="200.0" />
       <VBox prefHeight="405.0" prefWidth="600.0">
          <children>
-            <MenuBar>
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
             <SplitPane prefHeight="385.0" prefWidth="600.0">
                <items>
                   <AnchorPane prefHeight="378.0" prefWidth="586.0">

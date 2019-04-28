@@ -10,6 +10,7 @@ import connectivity.ConnectionClass;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Array;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -30,14 +31,13 @@ import javafx.stage.Stage;
  *
  * @author damia
  */
-public class FXMLDocumentController implements Initializable {
+public class LoginController implements Initializable {
     
     @FXML
-    private void zaloguj(ActionEvent event, String window) throws IOException{
+     private void zaloguj(ActionEvent event, String window) throws IOException{
         Parent okno_pacjenta = FXMLLoader.load(getClass().getResource(window));
         Scene okno_pacjenta_scene = new Scene(okno_pacjenta);
-        
-        
+
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app_stage.setScene(okno_pacjenta_scene);
         app_stage.show();
@@ -47,13 +47,8 @@ public class FXMLDocumentController implements Initializable {
     private TextField email_field;
     private PasswordField password_field;
     
-    public String getEmail(){
+    public String getLogin(){
         return email_field.getText();
-    }
-    
-    public String getPassword(){
-        
-        return password_field.toString();
     }
 
     
@@ -61,26 +56,30 @@ public class FXMLDocumentController implements Initializable {
     private void connect(ActionEvent actionEvent) throws IOException, SQLException{
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection = connectionClass.getConnection();
+
+        String log = getLogin();
+//        String pass = getPassword();
         
-        
-        String query = "select email from pacjenci";
+        String query = "select * from konta where login = '"+ log +"';";
         
         Statement stmt;
         stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(query);
-        String log = getEmail();
-        System.out.println("");
-
         
-            if(rs.next() && log.equals(rs.getString(1))){
-                zaloguj(actionEvent, "FXMLOknoPacjenta.fxml");
-
-            }else{
+        
+        if(rs.next()){
+            zaloguj(actionEvent, "/views/Patient.fxml");
+//            
+        }else{
                 System.out.println("logowanie nie powiodlo sie");
-            }
-
-    }
+                //linie testowe
+                System.out.println(log);
+                System.out.println(rs.getString(1));
+        }
+        
+    }   
     
+ 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

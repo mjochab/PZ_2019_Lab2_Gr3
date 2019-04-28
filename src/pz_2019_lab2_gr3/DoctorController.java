@@ -17,7 +17,7 @@ import javafx.scene.text.Font;
  *
  * @author damia
  */
-public class FXMLOkno_lekarzaController implements Initializable {
+public class DoctorController implements Initializable {
     @FXML
     private Color x2;
     @FXML

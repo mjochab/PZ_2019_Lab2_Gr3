@@ -17,49 +17,10 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pz_2019_lab2_gr3.FXMLOknoPacjentaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pz_2019_lab2_gr3.DoctorController">
    <children>
       <VBox prefHeight="600.0" prefWidth="900.0">
         <children>
-          <MenuBar prefHeight="35.0" prefWidth="900.0" VBox.vgrow="NEVER">
-            <menus>
-              <Menu mnemonicParsing="false" text="File">
-                <items>
-                  <MenuItem mnemonicParsing="false" text="New" />
-                  <MenuItem mnemonicParsing="false" text="Open…" />
-                  <Menu mnemonicParsing="false" text="Open Recent" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
-                  <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Save As…" />
-                  <MenuItem mnemonicParsing="false" text="Revert" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Preferences…" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Quit" />
-                </items>
-              </Menu>
-              <Menu mnemonicParsing="false" text="Edit">
-                <items>
-                  <MenuItem mnemonicParsing="false" text="Undo" />
-                  <MenuItem mnemonicParsing="false" text="Redo" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Cut" />
-                  <MenuItem mnemonicParsing="false" text="Copy" />
-                  <MenuItem mnemonicParsing="false" text="Paste" />
-                  <MenuItem mnemonicParsing="false" text="Delete" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Select All" />
-                  <MenuItem mnemonicParsing="false" text="Unselect All" />
-                </items>
-              </Menu>
-              <Menu mnemonicParsing="false" text="Help">
-                <items>
-                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
-                </items>
-              </Menu>
-            </menus>
-          </MenuBar>
           <SplitPane dividerPositions="0.2505567928730512, 0.7505567928730512" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <items>
               <AnchorPane>
@@ -75,18 +36,18 @@
                         <Accordion layoutX="10.0" layoutY="64.0" />
                         <VBox layoutX="12.0" layoutY="64.0" prefHeight="163.0" prefWidth="202.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" text="DANE PACJENTA" />
-                              <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" text="HISTORIA LECZENIA" />
-                              <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" text="WIZYTY" />
-                              <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" text="RECEPTY" />
-                              <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" text="AKTUALNOŚCI" />
+                              <Button mnemonicParsing="false" onAction="#loadUserData" prefHeight="32.0" prefWidth="205.0" text="DANE KONTA" />
+                              <Button mnemonicParsing="false" onAction="#loadHistory" prefHeight="32.0" prefWidth="205.0" text="PACJENCI" />
+                              <Button mnemonicParsing="false" onAction="#loadVisits" prefHeight="32.0" prefWidth="205.0" text="WIZYTY" />
+                              <Button mnemonicParsing="false" onAction="#loadPrescriptions" prefHeight="32.0" prefWidth="205.0" text="RECEPTY" />
+                              <Button mnemonicParsing="false" onAction="#loadNews" prefHeight="32.0" prefWidth="205.0" text="AKTUALNOŚCI" />
                            </children>
                         </VBox>
                 </children>
               </AnchorPane>
               <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
                 <content>
-                  <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="423.0">
+                  <AnchorPane id="Content" fx:id="contentPane" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="423.0">
                     <children>
                               <Pane layoutX="15.0" layoutY="60.0" prefHeight="200.0" prefWidth="409.0">
                                  <children>

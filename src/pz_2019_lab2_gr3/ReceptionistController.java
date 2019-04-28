@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author asd
  */
-public class FXMLOkno_recepcjonistkiController implements Initializable {
+public class ReceptionistController implements Initializable {
 
     /**
      * Initializes the controller class.

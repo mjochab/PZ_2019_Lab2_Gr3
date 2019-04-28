@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="546.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="144.0" layoutY="14.0" text="Nowa wizyta">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="293.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Dodaj wizytę" />
+      <Button layoutX="293.0" layoutY="451.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Dodaj wizytę" />
       <ChoiceBox layoutX="218.0" layoutY="76.0" prefWidth="150.0" />
       <Label layoutX="41.0" layoutY="80.0" text="Data:" />
       <Label layoutX="36.0" layoutY="142.0" text="Lekarz:" />
