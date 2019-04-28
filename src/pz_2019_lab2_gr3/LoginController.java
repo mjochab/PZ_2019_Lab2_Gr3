@@ -25,6 +25,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -34,13 +35,13 @@ import javafx.stage.Stage;
 public class LoginController implements Initializable {
     
     @FXML
-     private void zaloguj(ActionEvent event, String window) throws IOException{
-        Parent okno_pacjenta = FXMLLoader.load(getClass().getResource(window));
-        Scene okno_pacjenta_scene = new Scene(okno_pacjenta);
+     public void changeWindowByButton(ActionEvent event, String window) throws IOException{
+        Parent mainWindow = FXMLLoader.load(getClass().getResource(window));
+        Scene mainScene = new Scene(mainWindow);
 
-        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        app_stage.setScene(okno_pacjenta_scene);
-        app_stage.show();
+        Stage mainStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        mainStage.setScene(mainScene);
+        mainStage.show();
     }
         
     @FXML
@@ -68,18 +69,31 @@ public class LoginController implements Initializable {
         
         
         if(rs.next()){
-            zaloguj(actionEvent, "/views/Patient.fxml");
+            changeWindowByButton(actionEvent, "/views/Patient.fxml");
 //            
         }else{
                 System.out.println("logowanie nie powiodlo sie");
                 //linie testowe
-                System.out.println(log);
-                System.out.println(rs.getString(1));
+
         }
         
     }   
     
- 
+    @FXML
+    private void goRegister(MouseEvent event) throws IOException{
+        Parent mainWindow = FXMLLoader.load(getClass().getResource("/views/Registration.fxml"));
+        Scene mainScene = new Scene(mainWindow);
+
+        Stage mainStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        mainStage.setScene(mainScene);
+        mainStage.show();
+    }
+    
+    @FXML
+    private void test(){
+        System.out.println("test polaczenia");
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

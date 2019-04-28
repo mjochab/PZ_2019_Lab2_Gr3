@@ -22,15 +22,7 @@ import javafx.scene.text.Font;
  * @author damia
  */
 public class PatientController implements Initializable {
-    @FXML
-    private Color x2;
-    @FXML
-    private Font x1;
-    @FXML
-    private Color x4;
-    @FXML
-    private Font x3;
-    
+
     @FXML
     private AnchorPane contentPane;
     @FXML
