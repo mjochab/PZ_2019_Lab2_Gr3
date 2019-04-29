@@ -23,6 +23,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -46,35 +47,42 @@ public class LoginController implements Initializable {
         
     @FXML
     private TextField email_field;
+    @FXML
     private PasswordField password_field;
-    
-    public String getLogin(){
-        return email_field.getText();
-    }
+    @FXML
+    private Label loginError;
 
     
     @FXML
     private void connect(ActionEvent actionEvent) throws IOException, SQLException{
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection = connectionClass.getConnection();
-
-        String log = getLogin();
-//        String pass = getPassword();
-        
-        String query = "select * from konta where login = '"+ log +"';";
+      
+        String query = "select * from konta where login = '"+ email_field.getText() +"' and haslo = '"+password_field.getText()+"';";
         
         Statement stmt;
         stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery(query);
-        
+        ResultSet rs = stmt.executeQuery(query);        
+        String accountType;
         
         if(rs.next()){
-            changeWindowByButton(actionEvent, "/views/Patient.fxml");
-//            
+            accountType = rs.getNString(4);
+            switch(accountType){
+                case "pacjent":{
+                    changeWindowByButton(actionEvent, "/views/Patient.fxml");
+                    break;
+                }
+                case "lekarz":{
+                    changeWindowByButton(actionEvent, "/views/Doctor.fxml");
+                    break;
+                }
+                default:{
+                    changeWindowByButton(actionEvent, "/views/Receptionist.fxml");
+                    break;
+                }
+            }            
         }else{
-                System.out.println("logowanie nie powiodlo sie");
-                //linie testowe
-
+                loginError.setText("Nieprawidłowy login lub hasło!");
         }
         
     }   

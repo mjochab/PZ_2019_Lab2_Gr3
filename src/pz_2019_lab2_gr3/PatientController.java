@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -27,6 +28,18 @@ public class PatientController implements Initializable {
     private AnchorPane contentPane;
     @FXML
     private Color x21;
+    @FXML
+    private Label title1;
+    @FXML
+    private Label article1;
+    @FXML
+    private Label title2;
+    @FXML
+    private Label article2;
+    @FXML
+    private Label title3;
+    @FXML
+    private Label article3;
     
     @FXML
     public void loadUserData(ActionEvent event) throws IOException{
@@ -40,7 +53,7 @@ public class PatientController implements Initializable {
         contentPane.getChildren().setAll(pane);
     }
     
-        @FXML
+    @FXML
     public void loadVisits(ActionEvent event) throws IOException{      
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
         contentPane.getChildren().setAll(pane);       
@@ -52,10 +65,12 @@ public class PatientController implements Initializable {
         contentPane.getChildren().setAll(pane);
     }
     
-        @FXML
+    @FXML
     public void loadNews(ActionEvent event) throws IOException{   
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
-        contentPane.getChildren().setAll(pane);         
+        contentPane.getChildren().setAll(pane);
+        title1.setText("artykul1");
+        article1.setText("tresc artykulu");
     }
     
     @FXML
@@ -67,6 +82,8 @@ public class PatientController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
