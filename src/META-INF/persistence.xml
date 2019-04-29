@@ -10,6 +10,8 @@
     <class>models.Leki</class>
     <class>models.Choroby</class>
     <class>models.Pacjenci</class>
+    <class>models.Recepty</class>
+    <class>connectivity.Konta</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/przychodnia?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

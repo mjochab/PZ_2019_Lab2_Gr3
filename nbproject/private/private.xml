@@ -4,9 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/PatientController.java</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Patient.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/models/Account.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/news.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/UserDataController.java</file>
             <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/RegistrationController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/Main.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/prescriptions.fxml</file>
             <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/LoginController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/models/User.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Registration.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/DoctorController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/userData.fxml</file>
         </group>
     </open-files>
 </project-private>

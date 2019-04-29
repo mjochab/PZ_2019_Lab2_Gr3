@@ -10,7 +10,6 @@ import connectivity.ConnectionClass;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Array;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -28,6 +27,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import models.Account;
+import models.User;
 
 /**
  *
@@ -52,9 +53,14 @@ public class LoginController implements Initializable {
     @FXML
     private Label loginError;
 
+    public static int accountId;
+    public static String accountLogin;
+    public static String accountType;
+    private static Account account;
+    private static User user;
     
     @FXML
-    private void connect(ActionEvent actionEvent) throws IOException, SQLException{
+    private int connect(ActionEvent actionEvent) throws IOException, SQLException{
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection = connectionClass.getConnection();
       
@@ -63,16 +69,18 @@ public class LoginController implements Initializable {
         Statement stmt;
         stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(query);        
-        String accountType;
         
         if(rs.next()){
-            accountType = rs.getNString(4);
+            
+            accountId = rs.getInt(1);
+            accountLogin = rs.getString("login");
+            accountType = rs.getString("rodzaj_konta");
             switch(accountType){
-                case "pacjent":{
+                case "pacjenci":{
                     changeWindowByButton(actionEvent, "/views/Patient.fxml");
                     break;
                 }
-                case "lekarz":{
+                case "lekarze":{
                     changeWindowByButton(actionEvent, "/views/Doctor.fxml");
                     break;
                 }
@@ -84,7 +92,7 @@ public class LoginController implements Initializable {
         }else{
                 loginError.setText("Nieprawidłowy login lub hasło!");
         }
-        
+        return accountId;
     }   
     
     @FXML
