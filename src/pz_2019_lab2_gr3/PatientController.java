@@ -8,19 +8,14 @@ package pz_2019_lab2_gr3;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import static pz_2019_lab2_gr3.LoginController.accountId;
-import static pz_2019_lab2_gr3.LoginController.accountLogin;
 
 /**
  * FXML Controller class
@@ -33,7 +28,6 @@ public class PatientController implements Initializable {
     private AnchorPane contentPane;
     @FXML
     private Color x21;
-//news section{
     @FXML
     private Label title1;
     @FXML
@@ -48,13 +42,9 @@ public class PatientController implements Initializable {
     private Label article3;
     
     @FXML
-    private Label userLabel;
-    
-    
-    @FXML
     public void loadUserData(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
-        contentPane.getChildren().setAll(pane);        
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientData.fxml"));
+        contentPane.getChildren().setAll(pane);
     }
     
     @FXML
@@ -76,10 +66,11 @@ public class PatientController implements Initializable {
     }
     
     @FXML
-    public void loadNews() throws IOException{   
+    public void loadNews(ActionEvent event) throws IOException{   
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
         contentPane.getChildren().setAll(pane);
-        
+        title1.setText("artykul1");
+        article1.setText("tresc artykulu");
     }
     
     @FXML
@@ -87,16 +78,15 @@ public class PatientController implements Initializable {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/newVisit.fxml"));
         contentPane.getChildren().setAll(pane);
     }
-    
+
     /**
      * Initializes the controller class.
-     * @param url
-     * @param rb
      */
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        userLabel.setText(accountLogin);
-        
+        // TODO
     }    
     
 }
