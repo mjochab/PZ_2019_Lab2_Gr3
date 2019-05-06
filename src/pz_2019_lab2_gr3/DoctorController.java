@@ -5,10 +5,15 @@
  */
 package pz_2019_lab2_gr3;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
@@ -19,20 +24,46 @@ import javafx.scene.text.Font;
  */
 public class DoctorController implements Initializable {
     @FXML
-    private Color x2;
+    public AnchorPane contentPane;
     @FXML
-    private Font x1;
+    private Label title1;
     @FXML
-    private Color x4;
-    @FXML
-    private Font x3;
+    private Label article1;
 
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    public void loadUserData(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
+        contentPane.getChildren().setAll(pane);
+    }
+    
+    public void loadPatients(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientsList.fxml"));
+        contentPane.getChildren().setAll(pane);
+    }
+    
+    public void loadVisits(ActionEvent event) throws IOException{      
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
+        contentPane.getChildren().setAll(pane);       
+    }
+    
+    public void loadPrescriptions(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/prescriptions.fxml"));
+        contentPane.getChildren().setAll(pane);
+    }
+    
+    public void loadNews(ActionEvent event) throws IOException{   
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
+        contentPane.getChildren().setAll(pane);
+
+    }
     
 }
