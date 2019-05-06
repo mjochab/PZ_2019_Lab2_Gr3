@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pz_2019_lab2_gr3;
+package Controllers;
 
 
 import connectivity.ConnectionClass;

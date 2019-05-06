@@ -3,20 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/VisitsController.java</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/PatientController.java</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/treat.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/UserDataController.java</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/addVisit.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/NewsController.java</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Login.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/treatmentHistory.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/userData.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Patient.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/RegistrationController.java</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/saveChanges.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/visits.fxml</file>
-            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/pz_2019_lab2_gr3/SaveChangesController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Receptionist.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Doctor.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/Controllers/DoctorController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/Controllers/LoginController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/Controllers/ReceptionistController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/Controllers/PrescritionsController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/Controllers/PatientController.java</file>
         </group>
     </open-files>
 </project-private>

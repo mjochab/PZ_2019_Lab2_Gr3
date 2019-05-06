@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pz_2019_lab2_gr3;
+package Controllers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,31 +22,22 @@ import javafx.scene.text.Font;
  *
  * @author damia
  */
-public class DoctorController implements Initializable {
+public class PatientController implements Initializable {
+    
     @FXML
     public AnchorPane contentPane;
     @FXML
     private Label title1;
     @FXML
     private Label article1;
-
-    /**
-     * Initializes the controller class.
-     * @param url
-     * @param rb
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
     
     public void loadUserData(ActionEvent event) throws IOException{
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
         contentPane.getChildren().setAll(pane);
     }
     
-    public void loadPatients(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientsList.fxml"));
+    public void loadHistory(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/treatmentHistory.fxml"));
         contentPane.getChildren().setAll(pane);
     }
     
@@ -63,7 +54,24 @@ public class DoctorController implements Initializable {
     public void loadNews(ActionEvent event) throws IOException{   
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
         contentPane.getChildren().setAll(pane);
-
+        title1.setText("artykul1");
+        article1.setText("tresc artykulu");
     }
+    
+    @FXML
+    public void newVisit(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/newVisit.fxml"));
+        contentPane.getChildren().setAll(pane);
+    }
+
+    /**
+     * Initializes the controller class.
+     */
+    
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
     
 }
