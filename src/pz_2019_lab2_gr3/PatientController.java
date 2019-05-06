@@ -23,49 +23,34 @@ import javafx.scene.text.Font;
  * @author damia
  */
 public class PatientController implements Initializable {
-
+    
     @FXML
-    private AnchorPane contentPane;
-    @FXML
-    private Color x21;
+    public AnchorPane contentPane;
     @FXML
     private Label title1;
     @FXML
     private Label article1;
-    @FXML
-    private Label title2;
-    @FXML
-    private Label article2;
-    @FXML
-    private Label title3;
-    @FXML
-    private Label article3;
     
-    @FXML
     public void loadUserData(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientData.fxml"));
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
         contentPane.getChildren().setAll(pane);
     }
     
-    @FXML
     public void loadHistory(ActionEvent event) throws IOException{
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/treatmentHistory.fxml"));
         contentPane.getChildren().setAll(pane);
     }
     
-    @FXML
     public void loadVisits(ActionEvent event) throws IOException{      
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
         contentPane.getChildren().setAll(pane);       
     }
     
-    @FXML
     public void loadPrescriptions(ActionEvent event) throws IOException{
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/prescriptions.fxml"));
         contentPane.getChildren().setAll(pane);
     }
     
-    @FXML
     public void loadNews(ActionEvent event) throws IOException{   
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
         contentPane.getChildren().setAll(pane);
