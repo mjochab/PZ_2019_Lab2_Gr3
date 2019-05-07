@@ -39,19 +39,24 @@ public class ReceptionistController implements Initializable {
         contentPane.getChildren().setAll(pane);
     }
     
+    public void loadDoctors(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/doctorsList.fxml"));
+        contentPane.getChildren().setAll(pane);
+    }
+    
     public void loadPatients(ActionEvent event) throws IOException{
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientsList.fxml"));
+        contentPane.getChildren().setAll(pane);
+    }
+    
+    public void loadReceptionists(ActionEvent event) throws IOException{
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/receptionistsList.fxml"));
         contentPane.getChildren().setAll(pane);
     }
     
     public void loadVisits(ActionEvent event) throws IOException{      
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
         contentPane.getChildren().setAll(pane);       
-    }
-    
-    public void loadPrescriptions(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/prescriptions.fxml"));
-        contentPane.getChildren().setAll(pane);
     }
     
     public void loadNews(ActionEvent event) throws IOException{   

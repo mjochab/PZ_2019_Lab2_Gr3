@@ -34,10 +34,10 @@
                         <VBox layoutX="12.0" layoutY="64.0" prefHeight="163.0" prefWidth="202.0">
                            <children>
                               <Button mnemonicParsing="false" onAction="#loadUserData" prefHeight="32.0" prefWidth="205.0" text="DANE KONTA" />
-                              <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" text="LEKARZE" />
-                              <Button mnemonicParsing="false" onAction="#loadPatients"   prefHeight="32.0" prefWidth="205.0" text="PACJENCI" />
+                              <Button mnemonicParsing="false" onAction="#loadDoctors" prefHeight="32.0" prefWidth="205.0" text="LEKARZE" />
+                              <Button mnemonicParsing="false" onAction="#loadPatients" prefHeight="32.0" prefWidth="205.0" text="PACJENCI" />
+                              <Button mnemonicParsing="false" onAction="#loadReceptionists" prefHeight="32.0" prefWidth="205.0" text="RECEPCJONIŚCI" />
                               <Button mnemonicParsing="false" onAction="#loadVisits" prefHeight="32.0" prefWidth="205.0" text="WIZYTY" />
-                              <Button mnemonicParsing="false" onAction="#loadPrescriptions" prefHeight="32.0" prefWidth="205.0" text="RECEPTY" />
                               <Button mnemonicParsing="false" onAction="#loadNews" prefHeight="32.0" prefWidth="205.0" text="AKTUALNOŚCI" />
                            </children>
                         </VBox>
