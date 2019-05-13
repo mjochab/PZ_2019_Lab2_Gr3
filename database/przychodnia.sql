@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 13 Maj 2019, 13:10
+-- Czas generowania: 13 Maj 2019, 13:16
 -- Wersja serwera: 10.1.38-MariaDB
 -- Wersja PHP: 7.3.4
 
@@ -75,7 +75,8 @@ CREATE TABLE `konta` (
 --
 
 INSERT INTO `konta` (`id`, `imie`, `nazwisko`, `login`, `haslo`, `email`, `nr_tel`, `PESEL`, `miejscowosc`, `ulica`, `nr_domu`, `nr_lokalu`, `kod_pocztowy`, `poczta`, `typ_konta`) VALUES
-(1, 'Konrad', 'Rejman', 'Konrad', 'haslo', 'rreejjmmaann@gmail.com', '45654564', '4584545445', 'Rzeszow', 'sdf', '10', 'sdf', '23323', 'sdf', 'pacjenci');
+(2, 'Jan', 'Kowalski', 'login', 'haslo', NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'pacjenci'),
+(3, 'Marek', 'Nowak', 'login2', 'haslo', NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'lekarze');
 
 -- --------------------------------------------------------
 
@@ -171,7 +172,7 @@ ALTER TABLE `choroby`
 -- AUTO_INCREMENT dla tabeli `konta`
 --
 ALTER TABLE `konta`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT dla tabeli `wizyty`
