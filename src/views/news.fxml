@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="746.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewsController">
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="746.0" prefWidth="424.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.NewsController">
    <children>
       <Pane layoutX="15.0" layoutY="60.0" prefHeight="200.0" prefWidth="409.0">
          <children>

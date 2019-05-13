@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="Data: 12-02-12" />
       <Label layoutX="14.0" layoutY="31.0" text="Lekarz: Marek Nowak" />
