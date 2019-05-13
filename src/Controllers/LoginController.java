@@ -76,20 +76,10 @@ public class LoginController implements Initializable {
         if(rs.next()){
             int i=1;
             accountId = rs.getInt(i++);
-            String imie = rs.getString(i++);
-            String nazwisko = rs.getString(i++);
             String login = rs.getString(i++);
             String haslo = rs.getString(i++);
-            String email = rs.getString(i++);
-            String tel = rs.getString(i++);
-            String pesel = rs.getString(i++);
-            String miasto = rs.getString(i++);
-            String ulica = rs.getString(i++);
-            String nrDomu = rs.getString(i++);
-            String nrLocalu = rs.getString(i++);
-            String kod = rs.getString(i++);
-            String poczta = rs.getString(i++);
             accountType = rs.getString(i++);
+            
             switch(accountType){
                 case "pacjenci":{
                     changeWindowByButton(actionEvent, "/views/Patient.fxml");
