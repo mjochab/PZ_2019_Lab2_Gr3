@@ -1,7 +1,6 @@
 package com.przychodnia.przychodnia.Controllers;
 
 import com.przychodnia.przychodnia.Entity.Patient;
-import com.przychodnia.przychodnia.PersonTableView.PersonTableView;
 import com.przychodnia.przychodnia.Repository.PatientRepository;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
@@ -18,7 +17,6 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -29,16 +27,16 @@ public class PatientsListController implements Initializable {
     TextField filterTextField;
 
     @FXML
-    TableView<PersonTableView> patientTable;
+    TableView<Patient> patientTable;
 
     @FXML
-    TableColumn<PersonTableView,String> columnImie;
+    TableColumn<Patient,String> columnImie;
 
     @FXML
-    TableColumn<PersonTableView,String> columnNazwisko;
+    TableColumn<Patient,String> columnNazwisko;
 
     @FXML
-    TableColumn<PersonTableView,String> columnPesel;
+    TableColumn<Patient,String> columnPesel;
 
     @Autowired
     PatientRepository patientRepository;
@@ -69,11 +67,8 @@ public class PatientsListController implements Initializable {
         this.patientTable.getColumns().clear();
 
         List<Patient> patients = patientRepository.findAll();
-//        this.patientTable.
-        final ObservableList<PersonTableView> data = FXCollections.observableArrayList();
-        data.addAll(patientsToPersonTableView(patients));
-
-        System.out.println("userzy "+data.size()+" userzy: "+data);
+        final ObservableList<Patient> data = FXCollections.observableArrayList();
+        data.addAll(patients);
 
         columnImie.setCellValueFactory(
                 new PropertyValueFactory<>("firstName")
@@ -86,22 +81,10 @@ public class PatientsListController implements Initializable {
         );
 
         this.patientTable.setItems(data);
-//        this.patientTable.getColumns().setAll()
 
         this.patientTable.getColumns().addAll(columnImie, columnNazwisko, columnPesel);
-
     }
 
-    private List<PersonTableView> patientsToPersonTableView(List<Patient> patients) {
-
-        List<PersonTableView> personTableViews = new ArrayList<PersonTableView>();
-
-        for(Patient x : patients){
-            PersonTableView personTableView = new PersonTableView(x.getFirstName(),x.getLastName(),x.getPesel());
-            personTableViews.add(personTableView);
-        }
-        return personTableViews;
-    }
 
     @FXML
     public void addPatient(){

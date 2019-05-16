@@ -69,6 +69,17 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/patientList.fxml";
         }
+    },
+    WIZYTY {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/visits.fxml";
+        }
     }
     ;
 

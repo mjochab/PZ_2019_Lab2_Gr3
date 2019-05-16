@@ -2,6 +2,7 @@ package com.przychodnia.przychodnia.Entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "p_kartoteka")
@@ -16,11 +17,21 @@ public class Kartoteka {
     @OneToOne
     private Patient patient;
 
+    @OneToMany
+    private List<Wizyta> wizytaList;
+
     public Kartoteka() {
         this.datetime = LocalDateTime.now();
     }
 
 
+    public List<Wizyta> getWizytaList() {
+        return wizytaList;
+    }
+
+    public void setWizytaList(List<Wizyta> wizytaList) {
+        this.wizytaList = wizytaList;
+    }
 
     public Long getId() {
         return id;
@@ -44,5 +55,10 @@ public class Kartoteka {
 
     public void setPatient(Patient patient) {
         this.patient = patient;
+    }
+
+    @Override
+    public String toString() {
+        return patient.getFirstName()+" "+patient.getLastName();
     }
 }

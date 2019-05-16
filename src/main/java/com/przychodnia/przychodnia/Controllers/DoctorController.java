@@ -17,7 +17,6 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
@@ -30,7 +29,6 @@ import java.util.ResourceBundle;
  * @author damia
  */
 @Controller
-@Scope("prototype")
 public class DoctorController implements Initializable {
 
     @FXML
@@ -68,8 +66,9 @@ public class DoctorController implements Initializable {
     }
     
     public void loadVisits(ActionEvent event) throws IOException{      
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
-        contentPane.getChildren().setAll(pane);       
+//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
+//        contentPane.getChildren().setAll(pane);
+        stageManager.switchScene(FxmlView.WIZYTY);
     }
     
     public void loadPrescriptions(ActionEvent event) throws IOException{
@@ -80,10 +79,6 @@ public class DoctorController implements Initializable {
     public void loadNews(ActionEvent event) throws IOException{   
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
         contentPane.getChildren().setAll(pane);
-    }
-
-    public void updateDoctorData(){
-
     }
 
     @FXML
