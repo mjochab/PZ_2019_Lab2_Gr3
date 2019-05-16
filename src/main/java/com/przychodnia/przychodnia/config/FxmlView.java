@@ -80,6 +80,17 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/visits.fxml";
         }
+    },
+    RECEPTY {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/presciptions.fxml";
+        }
     }
     ;
 

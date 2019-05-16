@@ -28,6 +28,9 @@ public class DatabaseLoader implements CommandLineRunner {
     @Autowired
     WizytaRepository wizytaRepository;
 
+    @Autowired
+    private PresciptionsRepository presciptionRepository;
+
 
     @Override
     public void run(String... args) throws Exception {
@@ -49,31 +52,43 @@ public class DatabaseLoader implements CommandLineRunner {
         Wizyta wizyta1 = new Wizyta(LocalDateTime.now(),doctor);
         Wizyta wizyta2 = new Wizyta(LocalDateTime.now().plusDays(1),doctor);
 
-        this.saveAll(patient, kartoteka, wizyta1, wizyta2);
+        Presciption presciption = new Presciption(LocalDateTime.now(),doctor);
+        Presciption presciption1 = new Presciption(LocalDateTime.now().plusDays(1),doctor);
 
         ArrayList<Wizyta> wizytaArrayList= new ArrayList<Wizyta>() {{
             add(wizyta1);
             add(wizyta2);
         }};
 
+        ArrayList<Presciption> presciprionArrayList= new ArrayList<Presciption>() {{
+            add(presciption);
+            add(presciption1);
+        }};
+
+        this.saveAll(patient, kartoteka, wizytaArrayList ,presciprionArrayList);
+
         kartoteka.setWizytaList(wizytaArrayList);
+        kartoteka.setPresciptions(presciprionArrayList);
 
         wizyta1.setKartoteka(kartoteka);
         wizyta2.setKartoteka(kartoteka);
 
-        this.saveAll(patient, kartoteka, wizyta1, wizyta2);
+        presciption.setKartoteka(kartoteka);
+        presciption1.setKartoteka(kartoteka);
+
+        this.saveAll(patient, kartoteka, wizytaArrayList, presciprionArrayList);
 
         patient.setKartoteka(kartoteka);
         kartoteka.setPatient(patient);
 
-        this.saveAll(patient, kartoteka, wizyta1, wizyta2);
+        this.saveAll(patient, kartoteka, wizytaArrayList, presciprionArrayList);
     }
 
-    private void saveAll(Patient patient, Kartoteka kartoteka, Wizyta wizyta1, Wizyta wizyta2){
+    private void saveAll(Patient patient, Kartoteka kartoteka, List<Wizyta> wizyty, List<Presciption> presciptions){
         patientRepository.save(patient);
         kartotekaRepository.save(kartoteka);
-        wizytaRepository.save(wizyta1);
-        wizytaRepository.save(wizyta2);
+        wizytaRepository.saveAll(wizyty);
+        presciptionRepository.saveAll(presciptions);
     }
 
     private void createReceptionist() {

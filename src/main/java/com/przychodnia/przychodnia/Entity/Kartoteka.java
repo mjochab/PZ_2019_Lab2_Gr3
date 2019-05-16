@@ -20,10 +20,20 @@ public class Kartoteka {
     @OneToMany
     private List<Wizyta> wizytaList;
 
+    @OneToMany
+    private List<Presciption> presciptions;
+
     public Kartoteka() {
         this.datetime = LocalDateTime.now();
     }
 
+    public List<Presciption> getPresciptions() {
+        return presciptions;
+    }
+
+    public void setPresciptions(List<Presciption> presciptions) {
+        this.presciptions = presciptions;
+    }
 
     public List<Wizyta> getWizytaList() {
         return wizytaList;

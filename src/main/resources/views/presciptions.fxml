@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.PresciptionsController">
+    <children>
+        <Label layoutX="138.0" layoutY="14.0" text="Twoje recepty">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableRecepty" layoutX="40.0" layoutY="55.0" prefHeight="385.0" prefWidth="346.0">
+            <columns>
+                <TableColumn fx:id="columnData" prefWidth="174.0" text="Data" />
+                <TableColumn fx:id="columnPacjent" minWidth="0.0" prefWidth="171.0" text="Pacjent" />
+            </columns>
+        </TableView>
+        <Button layoutX="288.0" layoutY="453.0" mnemonicParsing="false" onAction="#addPrescription" prefHeight="25.0" prefWidth="98.0" text="Dodaj Receptę" visible="false" />
+      <Button layoutX="40.0" layoutY="453.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="109.0" text="wstecz" />
+    </children>
+</AnchorPane>

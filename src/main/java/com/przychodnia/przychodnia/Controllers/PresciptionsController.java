@@ -1,7 +1,7 @@
 package com.przychodnia.przychodnia.Controllers;
 
-import com.przychodnia.przychodnia.Entity.Wizyta;
-import com.przychodnia.przychodnia.Repository.WizytaRepository;
+import com.przychodnia.przychodnia.Entity.Presciption;
+import com.przychodnia.przychodnia.Repository.PresciptionsRepository;
 import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
@@ -22,35 +22,34 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 @Controller
-public class VisitsController implements Initializable {
+public class PresciptionsController implements Initializable {
 
     @Lazy
     @Autowired
     StageManager stageManager;
 
     @FXML
-    TableView<Wizyta> tableWizyty;
+    TableView<Presciption> tableRecepty;
 
     @FXML
-    TableColumn<Wizyta, LocalDateTime> columnData;
+    TableColumn<Presciption, LocalDateTime> columnData;
 
     @FXML
-    TableColumn<Wizyta,String> columnPacjent;
+    TableColumn<Presciption,String> columnPacjent;
 
     @Autowired
-    WizytaRepository wizytyRepository;
+    PresciptionsRepository presciptionsRepository;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        this.loadWizyty();
+        this.loadRecepty();
     }
 
-    private void loadWizyty() {
+    private void loadRecepty() {
+        this.tableRecepty.getColumns().clear();
 
-        this.tableWizyty.getColumns().clear();
-
-        List<Wizyta> patients = wizytyRepository.findByDoctor(ActUser.getDoctor());
-        final ObservableList<Wizyta> data = FXCollections.observableArrayList();
+        List<Presciption> patients = presciptionsRepository.findByDoctor(ActUser.getDoctor());
+        final ObservableList<Presciption> data = FXCollections.observableArrayList();
         data.addAll(patients);
 
         columnData.setCellValueFactory(
@@ -61,18 +60,18 @@ public class VisitsController implements Initializable {
         );
 
 
-        this.tableWizyty.setItems(data);
+        this.tableRecepty.setItems(data);
 
-        this.tableWizyty.getColumns().addAll(columnData, columnPacjent);
-    }
-
-    @FXML
-    public void newVisit(){
-
+        this.tableRecepty.getColumns().addAll(columnData, columnPacjent);
     }
 
     @FXML
     public void wstecz(){
         stageManager.switchScene(FxmlView.DOCTOR);
+    }
+
+    @FXML
+    public void addPrescription(){
+
     }
 }
