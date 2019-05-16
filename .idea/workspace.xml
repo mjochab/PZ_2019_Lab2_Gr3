@@ -2,462 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Bundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_12_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_2_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_7_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_27_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_2_27_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_0_BUILD_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_0_M4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_0_M2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_0_M2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_0_M2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_0_M2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1020039.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1083574.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1131616.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1140720.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1178700.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1216462.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1243383.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1243853.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1386932.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1400467.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1421807.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1517796.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1521731.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1559499.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1590510.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1623469.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1643553.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1748463.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1758257.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1783344.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1785656.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1788979.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1812696.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1831656.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1866958.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1873047.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1880525.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1894085.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1899579.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1901319.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1924728.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1952315.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1971171.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1977694.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2005826.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2024962.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2029445.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2048763.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2074233.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2092915.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2200861.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2208892.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2236620.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2246642.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2255151.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2267313.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2278572.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2341950.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2359305.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2389724.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2400669.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2436976.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2439007.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2451033.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2476412.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2478681.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2489733.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2503240.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2504913.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2519206.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2559258.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2590511.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2618837.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2632388.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2632803.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2637129.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2663382.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2785997.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2803565.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2811852.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2819914.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2833399.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2881427.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2981846.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2996000.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3116553.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3125883.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3148566.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3152268.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3207810.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3230164.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3254016.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3277725.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3322470.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3334841.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3409627.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3420822.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3445660.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3498265.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3512997.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3527655.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3550358.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3556226.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3560541.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3621811.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3662053.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3691161.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3735142.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3754441.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3768180.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3803005.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3828052.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3839840.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3892689.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3896133.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3932820.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3934082.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3984660.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4031293.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4035942.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4073408.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4113712.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4123380.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4137095.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4170099.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4174011.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4214606.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4216891.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4274338.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4292265.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4314394.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4397860.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4446633.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4463068.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4463495.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4476103.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4563068.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4593192.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4601399.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4616767.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4681084.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4692076.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4748626.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4762846.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4768744.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4783578.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4822935.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4863979.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4915853.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4957539.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4959055.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4964713.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4967854.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4984047.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4994478.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4997738.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5001670.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5023508.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5025356.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5052864.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5055258.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5092704.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5112927.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5137809.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5165592.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5194836.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5198479.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5208306.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5211508.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5220415.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5300740.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5302063.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5302877.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5308681.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5373211.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5384014.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5394529.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5403491.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5543250.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5573626.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5590303.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5613387.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5702083.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5722810.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5756577.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5765274.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5776766.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5847473.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5924894.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5929784.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5941981.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5999153.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6027519.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6038190.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6041988.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6064829.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6085811.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6199870.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6221370.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6249010.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6255555.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6272906.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6278790.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6291508.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6327321.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6334048.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6338449.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6380599.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6449341.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6462446.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6471847.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6480125.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6485102.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6492627.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6543722.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6548974.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6574071.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6603256.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6643037.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6669068.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6723125.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6728448.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6731859.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6739612.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6766487.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6844495.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6862734.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6926967.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6942295.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6986726.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6994731.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6995676.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7002720.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7034966.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7046616.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7091828.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7097629.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7104703.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7104983.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7139128.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7245159.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7280455.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7300651.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7336575.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7347456.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7403150.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7413477.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7430737.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7452729.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7462748.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7470912.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7528184.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7542630.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7566105.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7602457.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7619062.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7619454.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7649784.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7653932.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7685015.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7708212.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7821113.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7847287.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7876619.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7884164.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7906397.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8013497.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8020653.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8118700.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8148362.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8246185.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8247966.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8248439.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8274145.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8280608.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8312312.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8327291.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8368307.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8397258.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8416698.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8446418.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8458986.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8459818.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8461347.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8476138.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8495448.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8525152.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8597685.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8618418.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8629203.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8638881.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8666095.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8674293.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8727723.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8736129.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8760949.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8797101.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8821966.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8825860.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8883418.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8902706.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8912580.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8913325.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8917498.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9018387.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9045338.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9085422.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9096535.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9173224.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9175377.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9218292.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9227864.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9239559.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9320076.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9324208.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9344519.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9412977.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9417128.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9419999.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9422338.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9438762.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9438776.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9473759.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9541795.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9579917.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9582553.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9595148.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9601570.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9623723.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9637203.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9676578.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9718107.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9719146.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9724334.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9740665.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9745711.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9761065.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9763689.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9793446.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9800188.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9840609.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9863234.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9868734.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9872323.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9889750.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9904959.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9908228.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9937175.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9958649.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9958934.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9984030.driveupload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/przychodnia.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/przychodnia.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/configs/Run_in_Browser.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/jfx-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/retriever/catalog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/przychodnia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/przychodnia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/krzysiuZespolowe.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Registration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/news.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/news.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/userData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/userData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/visits.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/visits.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -470,70 +25,7 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1320#1321#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#132#133#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/SpringFXMLLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -574,9 +66,17 @@
         <option value="$PROJECT_DIR$/database/przychodnia.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/Login.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/Registration.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/news.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/userData.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/visits.fxml" />
       </list>
     </option>
   </component>
@@ -665,7 +165,24 @@
               <item name="krzysiuZespolowe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="krzysiuZespolowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="krzysiuZespolowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="krzysiuZespolowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="krzysiuZespolowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -674,7 +191,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558017246117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558017771329" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../przychodnia" />
   </component>
   <component name="RecentsManager">
@@ -750,7 +267,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -770,7 +286,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -789,22 +305,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Doctor.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Patient.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/connectivity/ConnectionClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -858,16 +358,6 @@
           <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="e#0#2086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -999,37 +489,119 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="170">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
             <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Login.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Registration.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Doctor.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/news.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="216" selection-start-line="9" selection-start-column="216" selection-end-line="9" selection-end-column="216" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Patient.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="15" column="186" selection-start-line="15" selection-start-column="186" selection-end-line="15" selection-end-column="186" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="186" selection-start-line="15" selection-start-column="186" selection-end-line="15" selection-end-column="186" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/treat.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/treatmentHistory.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/userData.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="216" selection-start-line="9" selection-start-column="216" selection-end-line="9" selection-end-column="216" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/visits.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
 </project>
