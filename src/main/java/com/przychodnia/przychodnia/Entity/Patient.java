@@ -26,6 +26,9 @@ public class Patient {
 
     private String address;
 
+    @OneToOne
+    private Kartoteka kartoteka;
+
     public Long getId() {
         return id;
     }
@@ -96,5 +99,13 @@ public class Patient {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Kartoteka getKartoteka() {
+        return kartoteka;
+    }
+
+    public void setKartoteka(Kartoteka kartoteka) {
+        this.kartoteka = kartoteka;
     }
 }
