@@ -29,6 +29,26 @@ public class Patient {
     @OneToOne
     private Kartoteka kartoteka;
 
+    public Patient() {
+    }
+
+    public Patient(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    public Patient(String login, String password, String email, String firstName, String lastName, String pesel, String tel_number, String address, Kartoteka kartoteka) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.pesel = pesel;
+        this.tel_number = tel_number;
+        this.address = address;
+        this.kartoteka = kartoteka;
+    }
+
     public Long getId() {
         return id;
     }

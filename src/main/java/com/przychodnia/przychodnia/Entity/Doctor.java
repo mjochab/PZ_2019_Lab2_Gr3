@@ -20,6 +20,22 @@ public class Doctor {
 
     private String lastName;
 
+    public Doctor() {
+    }
+
+    public Doctor(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    public Doctor(String login, String password, String email, String firstName, String lastName) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Long getId() {
         return id;
     }

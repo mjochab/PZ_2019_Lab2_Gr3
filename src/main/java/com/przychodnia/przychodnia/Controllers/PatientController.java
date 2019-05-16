@@ -5,12 +5,16 @@
  */
 package com.przychodnia.przychodnia.Controllers;
 
+import com.przychodnia.przychodnia.config.FxmlView;
+import com.przychodnia.przychodnia.config.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
@@ -31,6 +35,10 @@ public class PatientController implements Initializable {
     private Label title1;
     @FXML
     private Label article1;
+
+    @Lazy
+    @Autowired
+    private StageManager stageManager;
     
     public void loadUserData(ActionEvent event) throws IOException{
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
@@ -57,6 +65,11 @@ public class PatientController implements Initializable {
         contentPane.getChildren().setAll(pane);
         title1.setText("artykul1");
         article1.setText("tresc artykulu");
+    }
+
+    @FXML
+    public void wyloguj(){
+        stageManager.switchScene(FxmlView.LOGIN);
     }
     
     @FXML

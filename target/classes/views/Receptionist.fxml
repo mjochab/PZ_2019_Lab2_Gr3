@@ -39,6 +39,8 @@
                               <Button mnemonicParsing="false" onAction="#loadReceptionists" prefHeight="32.0" prefWidth="205.0" text="RECEPCJONIŚCI" />
                               <Button mnemonicParsing="false" onAction="#loadVisits" prefHeight="32.0" prefWidth="205.0" text="WIZYTY" />
                               <Button mnemonicParsing="false" onAction="#loadNews" prefHeight="32.0" prefWidth="205.0" text="AKTUALNOŚCI" />
+
+                               <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#wyloguj" prefHeight="9.0" prefWidth="196.0" text="Wyloguj" />
                            </children>
                         </VBox>
                 </children>

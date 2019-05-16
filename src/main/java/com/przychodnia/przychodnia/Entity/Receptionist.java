@@ -20,6 +20,22 @@ public class Receptionist {
 
     private String lastName;
 
+    public Receptionist() {
+    }
+
+    public Receptionist(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    public Receptionist(String login, String password, String email, String firstName, String lastName) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Long getId() {
         return id;
     }

@@ -16,6 +16,12 @@ public class Kartoteka {
     @OneToOne
     private Patient patient;
 
+    public Kartoteka() {
+        this.datetime = LocalDateTime.now();
+    }
+
+
+
     public Long getId() {
         return id;
     }
