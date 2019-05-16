@@ -59,6 +59,11 @@ public class LoginController implements Initializable {
     
     public static String accountType;
     public static int accountId;
+
+    @FXML
+    private void connect(){
+
+    }
     
 //    @FXML
 //    private void connect(ActionEvent actionEvent) throws IOException, SQLException{
@@ -85,7 +90,7 @@ public class LoginController implements Initializable {
 //                    break;
 //                }
 //                default:{
-//                    changeWindowByButton(actionEvent, "/views/Receptionist.fxml");
+//                    changeWindowByButton(actionEvent, "/views/ReceptionistRepository.fxml");
 //                    break;
 //                }
 //            }
