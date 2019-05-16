@@ -3,8 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/patientsList.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/treat.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/Controllers/VisitsController.java</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/addVisit.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/news.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/doctorsList.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Login.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/treatmentHistory.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/prescriptions.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Registration.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/userData.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/nbproject/build-impl.xml</file>
             <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Receptionist.fxml</file>
             <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Doctor.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/addNews.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/Patient.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/saveChanges.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/visits.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/receptionistsList.fxml</file>
+            <file>file:/F:/aNDROID%20PROJECTS/PZ_2019_Lab2_Gr3/src/views/prescription.fxml</file>
         </group>
     </open-files>
 </project-private>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="PZ_2019_Lab2_Gr3" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="PZ_2019_Lab2_Gr3" options="-bootclasspath &quot;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\resources.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\rt.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\sunrsasign.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\jsse.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\jce.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\charsets.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\lib\jfr.jar;F:\intelliJ\IntelliJ IDEA 2019.1.1\jre64\classes;C:/Program Files/Java/jdk-11.0.2/lib/jfxrt.jar&quot;" />
+    </option>
+  </component>
+</project>
