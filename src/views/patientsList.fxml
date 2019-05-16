@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.PatientsListController">
+<AnchorPane id="Content" fx:id="contentPane" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PatientsListController">
    <children>
       <Label layoutX="169.0" layoutY="14.0" text="Pacjenci">
          <font>
@@ -26,6 +26,6 @@
         </columns>
       </TableView>
       <Button layoutX="349.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Szukaj" />
-      <Button layoutX="312.0" layoutY="454.0" mnemonicParsing="false" text="Dodaj pacjenta" />
+      <Button fx:id="addPatient" layoutX="312.0" layoutY="454.0" mnemonicParsing="false" onAction="#addPatient" text="Dodaj pacjenta" visible="false" />
    </children>
 </AnchorPane>

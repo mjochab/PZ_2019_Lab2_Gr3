@@ -56,6 +56,7 @@ public class RegistrationController implements Initializable {
     private PasswordField passwordField;
     @FXML
     private PasswordField repeatPasswordField;
+    private String accountType = "pacjent";
     
      
     @FXML
@@ -93,7 +94,7 @@ public class RegistrationController implements Initializable {
             ConnectionClass connectionClass = new ConnectionClass();
             ResultSet rs = null;
             try (Connection connection = connectionClass.getConnection()) {
-            String insertIntoAccountsQuerry = "insert into konta values (null, '"+loginField.getText() +"','"+passwordField.getText()+"','pacjent');";
+            String insertIntoAccountsQuerry = "insert into konta values (null, '"+loginField.getText() +"','"+passwordField.getText()+"','"+accountType+"');";
             //String insertIntoPatientsQuerry = "insert into pacjenci values (null, '"+nameField.getText() + "', '"+surnameField.getText() + "', '"+emailField.getText()+"',null,null,null,null,null.null,null,null);";
                 System.out.println(insertIntoAccountsQuerry);
                 //System.out.println(insertIntoPatientsQuerry);
@@ -110,6 +111,9 @@ public class RegistrationController implements Initializable {
             
         }
         
+    }
+    public void setAccountType(String type){
+        accountType = type;
     }
     /**
      * Initializes the controller class.

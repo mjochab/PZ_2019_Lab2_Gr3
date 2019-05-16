@@ -58,8 +58,8 @@ public class LoginController implements Initializable {
     @FXML
     private Label loginError;
     
-    public static String accountType;
-    public static int accountId;
+    public static String accountType; //zmienne statyczne widoczne w calym projekcie, na ich podstawie mozesz probowac przekazywac dane miedzy controllerami
+    public static int accountId;      // no chyba, ze znajdziesz lepsze rozwiazanie
     
     @FXML
     private void connect(ActionEvent actionEvent) throws IOException, SQLException{

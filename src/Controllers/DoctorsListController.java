@@ -28,7 +28,7 @@ public class DoctorsListController implements Initializable {
     @FXML
     private Button addDoctor;
     @FXML
-    public AnchorPane contentPane;
+    private AnchorPane contentPane;
     @FXML
     private ChoiceBox filter;
     /**
@@ -38,7 +38,7 @@ public class DoctorsListController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        if (accountType.equals("recepcjonisci")){
+        if (accountType.equals("recepcjonista")){
             addDoctor.visibleProperty().setValue(Boolean.TRUE);    
         }
         filter.setItems(FXCollections.observableArrayList("Imie","Nazwisko","PESEL"));
@@ -46,8 +46,13 @@ public class DoctorsListController implements Initializable {
     
     @FXML
     private void addDoctor(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/Registration.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Registration.fxml"));
+        AnchorPane pane = loader.load();
+        RegistrationController registrationController = loader.getController();
+        registrationController.setAccountType("lekarz");
         contentPane.getChildren().setAll(pane);
     }
+    
+    
     
 }

@@ -96,7 +96,7 @@ public class UserDataController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+        // tutaj piszesz kod, ktory sie po wczytaniu widoku generuje
         
     }
     
