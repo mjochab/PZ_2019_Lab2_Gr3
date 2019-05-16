@@ -1,5 +1,6 @@
 package com.przychodnia.przychodnia.config;
 
+import com.przychodnia.przychodnia.logging.ExceptionWriter;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -23,8 +24,8 @@ public class AppJavaConfig {
      */
     @Bean
     @Scope("prototype")
-    public com.mycompany.taskmanagerhotel.logging.ExceptionWriter exceptionWriter() {
-        return new com.mycompany.taskmanagerhotel.logging.ExceptionWriter(new StringWriter());
+    public ExceptionWriter exceptionWriter() {
+        return new ExceptionWriter(new StringWriter());
     }
 
     @Bean

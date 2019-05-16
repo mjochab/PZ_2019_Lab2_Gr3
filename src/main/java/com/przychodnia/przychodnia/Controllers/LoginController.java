@@ -6,7 +6,14 @@
 package com.przychodnia.przychodnia.Controllers;
 
 
-
+import com.przychodnia.przychodnia.Entity.Doctor;
+import com.przychodnia.przychodnia.Entity.Patient;
+import com.przychodnia.przychodnia.Entity.Receptionist;
+import com.przychodnia.przychodnia.Repository.DoctorRepository;
+import com.przychodnia.przychodnia.Repository.PatientRepository;
+import com.przychodnia.przychodnia.Repository.ReceptionistRepository;
+import com.przychodnia.przychodnia.config.FxmlView;
+import com.przychodnia.przychodnia.config.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,10 +27,13 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -40,6 +50,26 @@ public class LoginController implements Initializable {
     private Button save;
     @FXML
     private Label error;
+
+    @FXML
+    private TextField login_field;
+    @FXML
+    private PasswordField password_field;
+    @FXML
+    private Label loginError;
+
+    @Lazy
+    @Autowired
+    StageManager stageManager;
+
+    @Autowired
+    DoctorRepository doctorRepository;
+
+    @Autowired
+    PatientRepository patientRepository;
+
+    @Autowired
+    ReceptionistRepository receptionistRepository;
     
      public void changeWindowByButton(ActionEvent event, String window) throws IOException{
         Parent mainWindow = FXMLLoader.load(getClass().getResource(window));
@@ -50,18 +80,39 @@ public class LoginController implements Initializable {
         mainStage.show();
     }
         
-    @FXML
-    private TextField email_field;
-    @FXML
-    private PasswordField password_field;
-    @FXML
-    private Label loginError;
+
     
     public static String accountType;
     public static int accountId;
 
     @FXML
     private void connect(){
+
+        String login = login_field.getText();
+        String password = password_field.getText();
+
+        List<Doctor> doctors= doctorRepository.findByLoginAndPassword(login, password);
+
+        if(doctors.size()==1){
+            stageManager.switchScene(FxmlView.DOCTOR);
+        }
+
+        List<Patient> patients = patientRepository.findByLoginAndPassword(login,password);
+
+        if(patients.size()==1){
+            stageManager.switchScene(FxmlView.PATIENT);
+        }
+
+        List<Receptionist> receptionists = receptionistRepository.findByLoginAndPassword(login,password);
+
+        if(receptionists.size()==1){
+            stageManager.switchScene(FxmlView.RECEPTIONIST);
+        }
+
+        else{
+            loginError.setText("Nieprawidłowy login lub hasło!");
+        }
+
 
     }
     

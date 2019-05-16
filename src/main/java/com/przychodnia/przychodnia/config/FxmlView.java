@@ -14,7 +14,42 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/Login.fxml";
         }
+    },
+    DOCTOR {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("doctor.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/Doctor.fxml";
+        }
+    },
+    PATIENT {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/Patient.fxml";
+        }
+    },
+    RECEPTIONIST {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("receptionist.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/Receptionist.fxml";
+        }
     };
+
+
 
 
     public abstract String getTitle();
