@@ -62,8 +62,9 @@ public class DoctorController implements Initializable {
     }
     
     public void loadPatients(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientsList.fxml"));
-        contentPane.getChildren().setAll(pane);
+//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientList.fxml"));
+//        contentPane.getChildren().setAll(pane);
+        stageManager.switchScene(FxmlView.PATIENT_LIST);
     }
     
     public void loadVisits(ActionEvent event) throws IOException{      

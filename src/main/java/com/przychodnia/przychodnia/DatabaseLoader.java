@@ -32,11 +32,16 @@ public class DatabaseLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
         createDoctors();
         createReceptionist();
-        createPatientAndKartoteka();
+        createPatientAndKartoteka("test1");
+        createPatientAndKartoteka("test2");
+        createPatientAndKartoteka("test3");
     }
 
-    private void createPatientAndKartoteka() {
-        Patient patient = new Patient("patient","patient");
+    private void createPatientAndKartoteka(String username) {
+        Patient patient = new Patient(username,username);
+        patient.setFirstName(username);
+        patient.setLastName(username);
+        patient.setPesel(username);
         Kartoteka kartoteka = new Kartoteka();
 
         patientRepository.save(patient);
@@ -47,8 +52,6 @@ public class DatabaseLoader implements CommandLineRunner {
 
         patientRepository.save(patient);
         kartotekaRepository.save(kartoteka);
-
-
     }
 
     private void createReceptionist() {
