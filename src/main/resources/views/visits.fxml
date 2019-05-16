@@ -20,7 +20,6 @@
           <TableColumn fx:id="columnPacjent" minWidth="0.0" prefWidth="171.0" text="Pacjent" />
         </columns>
       </TableView>
-      <Button layoutX="290.0" layoutY="461.0" mnemonicParsing="false" onAction="#newVisit" prefHeight="25.0" prefWidth="96.0" text="Dodaj wizytę" />
       <Button layoutX="40.0" layoutY="461.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="89.0" text="wstecz" />
    </children>
 </AnchorPane>

@@ -67,11 +67,6 @@ public class VisitsController implements Initializable {
     }
 
     @FXML
-    public void newVisit(){
-
-    }
-
-    @FXML
     public void wstecz(){
         stageManager.switchScene(FxmlView.DOCTOR);
     }

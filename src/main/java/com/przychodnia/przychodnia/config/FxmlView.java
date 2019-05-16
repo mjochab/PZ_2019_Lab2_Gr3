@@ -92,6 +92,18 @@ public enum FxmlView {
             return "/views/presciptions.fxml";
         }
     }
+    ,
+    DODAJ_RECEPTE {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/addPresciption.fxml";
+        }
+    }
     ;
 
 

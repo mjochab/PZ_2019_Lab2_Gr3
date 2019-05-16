@@ -138,4 +138,9 @@ public class Patient {
     public void setKartoteka(Kartoteka kartoteka) {
         this.kartoteka = kartoteka;
     }
+
+    @Override
+    public String toString() {
+        return firstName+" "+lastName;
+    }
 }

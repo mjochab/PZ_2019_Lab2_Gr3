@@ -19,6 +19,8 @@ public class Presciption {
 
     private LocalDateTime localDateTime;
 
+    private String description;
+
     public Presciption() {
     }
 
@@ -49,6 +51,14 @@ public class Presciption {
 
     public void setDoctor(Doctor doctor) {
         this.doctor = doctor;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public LocalDateTime getLocalDateTime() {

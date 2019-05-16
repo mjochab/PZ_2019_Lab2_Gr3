@@ -72,6 +72,6 @@ public class PresciptionsController implements Initializable {
 
     @FXML
     public void addPrescription(){
-
+        stageManager.switchScene(FxmlView.DODAJ_RECEPTE);
     }
 }
