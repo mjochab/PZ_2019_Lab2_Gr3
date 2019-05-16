@@ -8,9 +8,13 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableAutoConfiguration
+@ComponentScan("com.przychodnia.przychodnia.config.AppJavaConfig")
+@ComponentScan("com.przychodnia.przychodnia.config.StageManager")
+@ComponentScan("com.przychodnia.przychodnia.config.SpringFXMLLoader")
 public class PrzychodniaApplication extends Application {
 
 	protected ConfigurableApplicationContext springContext;

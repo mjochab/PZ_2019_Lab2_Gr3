@@ -10,7 +10,7 @@ public enum FxmlView {
 
         @Override
         public String getFxmlFile() {
-            return "/fxml/Login.fxml";
+            return "/views/Login.fxml";
         }
     };
 
