@@ -5,6 +5,8 @@
  */
 package com.przychodnia.przychodnia.Controllers;
 
+import com.przychodnia.przychodnia.Repository.DoctorRepository;
+import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
 import javafx.event.ActionEvent;
@@ -15,6 +17,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
@@ -27,7 +30,9 @@ import java.util.ResourceBundle;
  * @author damia
  */
 @Controller
+@Scope("prototype")
 public class DoctorController implements Initializable {
+
     @FXML
     public AnchorPane contentPane;
     @FXML
@@ -38,6 +43,9 @@ public class DoctorController implements Initializable {
     @Lazy
     @Autowired
     private StageManager stageManager;
+
+    @Autowired
+    DoctorRepository doctorRepository;
 
     /**
      * Initializes the controller class.
@@ -50,8 +58,7 @@ public class DoctorController implements Initializable {
     }    
     
     public void loadUserData(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
-        contentPane.getChildren().setAll(pane);
+         stageManager.switchScene(FxmlView.USER_DATA);
     }
     
     public void loadPatients(ActionEvent event) throws IOException{
@@ -72,11 +79,15 @@ public class DoctorController implements Initializable {
     public void loadNews(ActionEvent event) throws IOException{   
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
         contentPane.getChildren().setAll(pane);
+    }
+
+    public void updateDoctorData(){
 
     }
 
     @FXML
     public void wyloguj(){
+        ActUser.setDoctor(null);
         stageManager.switchScene(FxmlView.LOGIN);
     }
     

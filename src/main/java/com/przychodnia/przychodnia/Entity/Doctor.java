@@ -20,6 +20,14 @@ public class Doctor {
 
     private String lastName;
 
+    private String phone;
+
+    private String pesel;
+
+    private String address;
+
+    private String postcode;
+
     public Doctor() {
     }
 
@@ -34,6 +42,38 @@ public class Doctor {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public String getPostcode() {
+        return postcode;
+    }
+
+    public void setPostcode(String postcode) {
+        this.postcode = postcode;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(String pesel) {
+        this.pesel = pesel;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public Long getId() {

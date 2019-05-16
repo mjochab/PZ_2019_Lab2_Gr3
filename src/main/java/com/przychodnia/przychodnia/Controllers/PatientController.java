@@ -5,6 +5,7 @@
  */
 package com.przychodnia.przychodnia.Controllers;
 
+import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
 import javafx.event.ActionEvent;
@@ -41,8 +42,7 @@ public class PatientController implements Initializable {
     private StageManager stageManager;
     
     public void loadUserData(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/userData.fxml"));
-        contentPane.getChildren().setAll(pane);
+        stageManager.switchScene(FxmlView.USER_DATA);
     }
     
     public void loadHistory(ActionEvent event) throws IOException{
@@ -69,6 +69,8 @@ public class PatientController implements Initializable {
 
     @FXML
     public void wyloguj(){
+
+        ActUser.setPatient(null);
         stageManager.switchScene(FxmlView.LOGIN);
     }
     

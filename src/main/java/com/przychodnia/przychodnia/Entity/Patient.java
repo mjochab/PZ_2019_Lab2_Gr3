@@ -22,9 +22,11 @@ public class Patient {
 
     private String pesel;
 
-    private String tel_number;
+    private String phone;
 
     private String address;
+
+    private String postcode;
 
     @OneToOne
     private Kartoteka kartoteka;
@@ -44,9 +46,17 @@ public class Patient {
         this.firstName = firstName;
         this.lastName = lastName;
         this.pesel = pesel;
-        this.tel_number = tel_number;
+        this.phone = tel_number;
         this.address = address;
         this.kartoteka = kartoteka;
+    }
+
+    public String getPostcode() {
+        return postcode;
+    }
+
+    public void setPostcode(String postcode) {
+        this.postcode = postcode;
     }
 
     public Long getId() {
@@ -105,12 +115,12 @@ public class Patient {
         this.pesel = pesel;
     }
 
-    public String getTel_number() {
-        return tel_number;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTel_number(String tel_number) {
-        this.tel_number = tel_number;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getAddress() {

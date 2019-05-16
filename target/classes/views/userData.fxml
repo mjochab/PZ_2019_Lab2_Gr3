@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.przychodnia.przychodnia.Controllers.UserDataController">
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.UserDataController">
    <children>
       <Label layoutX="149.0" layoutY="14.0" text="Twoje Dane">
          <font>
@@ -44,48 +44,31 @@
          </font>
       </Label>
       <TextField fx:id="peselField" layoutX="162.0" layoutY="193.0" prefHeight="26.0" prefWidth="202.0" />
-      <Label layoutX="55.0" layoutY="226.0" text="Miejscowość:">
+      <Label layoutX="55.0" layoutY="226.0" text="Adres:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="cityField" layoutX="162.0" layoutY="223.0" prefHeight="26.0" prefWidth="202.0" />
-      <Label layoutX="55.0" layoutY="256.0" text="Ulica:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="streetField" layoutX="162.0" layoutY="253.0" prefHeight="26.0" prefWidth="202.0" />
-      <Label layoutX="55.0" layoutY="286.0" text="Nr domu:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="buildingField" layoutX="162.0" layoutY="283.0" prefHeight="26.0" prefWidth="202.0" />
-      <Label layoutX="55.0" layoutY="316.0" text="Nr lokalu:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="flatField" layoutX="162.0" layoutY="313.0" prefHeight="26.0" prefWidth="202.0" />
-      <Label layoutX="55.0" layoutY="346.0" text="Kod pocztowy:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="codeField" layoutX="162.0" layoutY="343.0" prefHeight="26.0" prefWidth="202.0" />
-      <Label layoutX="55.0" layoutY="376.0" text="Poczta:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="postField" layoutX="162.0" layoutY="373.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="addressField" layoutX="162.0" layoutY="223.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="loginField" layoutX="162.0" layoutY="373.0" prefHeight="26.0" prefWidth="202.0" />
       <Label layoutX="55.0" layoutY="406.0" text="Hasło:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <PasswordField fx:id="passwordField" layoutX="162.0" layoutY="403.0" maxWidth="202.0" prefWidth="202.0" />
-      <Button  fx:id="saveChanges" layoutX="137.0" layoutY="451.0" mnemonicParsing="false" onAction ="#saveChanges" prefHeight="35.0" prefWidth="179.0" text="Zapisz zmiany" />
+      <Button fx:id="saveChanges" layoutX="222.0" layoutY="451.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="35.0" prefWidth="179.0" text="Zapisz zmiany" />
+      <Label layoutX="55.0" layoutY="376.0" text="Login:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="260.0" text="kod pocztowy:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="postcodeField" layoutX="162.0" layoutY="257.0" prefHeight="26.0" prefWidth="202.0" />
+      <Button layoutX="28.0" layoutY="451.0" mnemonicParsing="false" onAction="#anuluj" prefHeight="35.0" prefWidth="179.0" text="Anuluj" />
    </children>
 </AnchorPane>

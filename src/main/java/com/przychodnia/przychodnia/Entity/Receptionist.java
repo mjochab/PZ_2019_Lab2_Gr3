@@ -20,6 +20,14 @@ public class Receptionist {
 
     private String lastName;
 
+    private String pesel;
+
+    private String phone;
+
+    private String address;
+
+    private String postcode;
+
     public Receptionist() {
     }
 
@@ -34,6 +42,38 @@ public class Receptionist {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public String getPostcode() {
+        return postcode;
+    }
+
+    public void setPostcode(String postcode) {
+        this.postcode = postcode;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(String pesel) {
+        this.pesel = pesel;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Long getId() {
