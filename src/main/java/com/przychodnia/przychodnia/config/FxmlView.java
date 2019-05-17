@@ -51,7 +51,7 @@ public enum FxmlView {
     USER_DATA {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("userdata.title");
         }
 
         @Override
@@ -73,7 +73,7 @@ public enum FxmlView {
     PATIENT_LIST_WITH_ADD_PATIENT {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("receptionist.title");
         }
 
         @Override
@@ -84,7 +84,7 @@ public enum FxmlView {
     WIZYTY {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("docotr.title");
         }
 
         @Override
@@ -95,7 +95,7 @@ public enum FxmlView {
     RECEPTY {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("doctor.title");
         }
 
         @Override
@@ -106,7 +106,7 @@ public enum FxmlView {
     DODAJ_RECEPTE {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("doctor.title");
         }
 
         @Override
@@ -117,7 +117,7 @@ public enum FxmlView {
     LISTA_DOKTOROW {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("receptionist.title");
         }
 
         @Override
@@ -128,7 +128,7 @@ public enum FxmlView {
     LISTA_RECEPSJONISTOW{
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("receptionist.title");
         }
 
         @Override
@@ -136,10 +136,21 @@ public enum FxmlView {
             return "/views/ReceptionistList.fxml";
         }
     },
+    LISTA_WIZYT_PANEL_RECEPSJONISTY{
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("receptionist.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/visitsReceptionistPanel.fxml";
+        }
+    },
     DODAJ_LEKARZA {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("receptionist.title");
         }
 
         @Override
@@ -150,7 +161,7 @@ public enum FxmlView {
     DODAJ_PACJENTA {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("receptionist.title");
         }
 
         @Override
@@ -161,12 +172,23 @@ public enum FxmlView {
     DODAJ_RECEPSJONISTE {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("patient.title");
+            return getStringFromResourceBundle("receptionist.title");
         }
 
         @Override
         public String getFxmlFile() {
             return "/views/AddReceptionist.fxml";
+        }
+    },
+    DODAJ_WIZYTE {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("receptionist.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/AddVisit.fxml";
         }
     }
     ;
