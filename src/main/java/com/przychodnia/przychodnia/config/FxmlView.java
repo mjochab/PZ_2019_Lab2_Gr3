@@ -125,6 +125,17 @@ public enum FxmlView {
             return "/views/DoctorList.fxml";
         }
     },
+    LISTA_RECEPSJONISTOW{
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/ReceptionistList.fxml";
+        }
+    },
     DODAJ_LEKARZA {
         @Override
         public String getTitle() {
@@ -145,6 +156,17 @@ public enum FxmlView {
         @Override
         public String getFxmlFile() {
             return "/views/AddPatient.fxml";
+        }
+    },
+    DODAJ_RECEPSJONISTE {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/AddReceptionist.fxml";
         }
     }
     ;

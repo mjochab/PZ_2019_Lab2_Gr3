@@ -93,6 +93,9 @@ public class DatabaseLoader implements CommandLineRunner {
 
     private void createReceptionist() {
         Receptionist receptionist = new Receptionist("receptionist","receptionist");
+        receptionist.setFirstName("recepsjonista");
+        receptionist.setLastName("lastNameRecepsjonista");
+        receptionist.setPesel("14567");
         receptionistRepository.save(receptionist);
     }
 

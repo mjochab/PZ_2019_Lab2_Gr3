@@ -59,7 +59,7 @@ public class PatientsListWithAddPatientController implements Initializable {
 
     @FXML
     public void wstecz(){
-        stageManager.switchScene(FxmlView.DOCTOR);
+        stageManager.switchScene(FxmlView.RECEPTIONIST);
     }
 
     private void loadPatientsToTable() {
