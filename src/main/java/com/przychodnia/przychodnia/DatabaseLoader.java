@@ -51,6 +51,7 @@ public class DatabaseLoader implements CommandLineRunner {
 
         Wizyta wizyta1 = new Wizyta(LocalDateTime.now(),doctor);
         Wizyta wizyta2 = new Wizyta(LocalDateTime.now().plusDays(1),doctor);
+        Wizyta wizyta3 = new Wizyta(LocalDateTime.now().minusDays(1),doctor);
 
         Presciption presciption = new Presciption(LocalDateTime.now(),doctor);
         Presciption presciption1 = new Presciption(LocalDateTime.now().plusDays(1),doctor);
@@ -58,6 +59,7 @@ public class DatabaseLoader implements CommandLineRunner {
         ArrayList<Wizyta> wizytaArrayList= new ArrayList<Wizyta>() {{
             add(wizyta1);
             add(wizyta2);
+            add(wizyta3);
         }};
 
         ArrayList<Presciption> presciprionArrayList= new ArrayList<Presciption>() {{

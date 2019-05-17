@@ -191,6 +191,29 @@ public enum FxmlView {
             return "/views/AddVisit.fxml";
         }
     }
+    ,
+    TREATMENT_HISTORY {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/treatmentHistory.fxml";
+        }
+    },
+    WIZYTY_PANEL_PACJENTA {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/visitsPatientPanel.fxml";
+        }
+    }
     ;
 
 
