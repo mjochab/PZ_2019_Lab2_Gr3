@@ -70,6 +70,17 @@ public enum FxmlView {
             return "/views/patientList.fxml";
         }
     },
+    PATIENT_LIST_WITH_ADD_PATIENT {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/patientListWithAddPatient.fxml";
+        }
+    },
     WIZYTY {
         @Override
         public String getTitle() {
@@ -123,6 +134,17 @@ public enum FxmlView {
         @Override
         public String getFxmlFile() {
             return "/views/AddDoctor.fxml";
+        }
+    },
+    DODAJ_PACJENTA {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/AddPatient.fxml";
         }
     }
     ;

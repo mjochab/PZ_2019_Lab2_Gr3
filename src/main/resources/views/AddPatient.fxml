@@ -8,16 +8,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="327.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.AddDoctorController">
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="327.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.AddPatientController">
     <children>
-        <Label layoutX="138.0" layoutY="14.0" text="Dodaj Lekarza">
+        <Label layoutX="138.0" layoutY="14.0" text="Dodaj Pacjenta">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
         <Pane layoutX="16.0" layoutY="71.0" prefHeight="244.0" prefWidth="392.0">
             <children>
-                <Button layoutX="276.0" layoutY="218.0" mnemonicParsing="false" onAction="#dodajLekarza" prefHeight="25.0" prefWidth="116.0" text="Dodaj lekarza" />
+                <Button layoutX="276.0" layoutY="218.0" mnemonicParsing="false" onAction="#dodajPacjenta" prefHeight="25.0" prefWidth="116.0" text="Dodaj pacjenta" />
                 <Button layoutX="-6.0" layoutY="218.0" mnemonicParsing="false" onAction="#anuluj" prefHeight="25.0" prefWidth="116.0" text="Anuluj" />
               <Label layoutX="94.0" layoutY="14.0" text="Login:" />
             <Label layoutX="94.0" layoutY="45.0" text="Hasło;" />

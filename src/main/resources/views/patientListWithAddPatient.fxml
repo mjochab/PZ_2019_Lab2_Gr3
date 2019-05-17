@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" fx:id="contentPane" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.PatientsListWithAddPatientController">
+    <children>
+        <Label layoutX="169.0" layoutY="14.0" text="Pacjenci">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="filter" layoutX="231.0" layoutY="60.0" prefHeight="25.0" prefWidth="103.0" />
+        <TextField fx:id="filterField" layoutX="14.0" layoutY="60.0" prefHeight="25.0" prefWidth="202.0" />
+        <TableView fx:id="patientTable" layoutX="14.0" layoutY="99.0" prefHeight="347.0" prefWidth="394.0">
+            <columns>
+                <TableColumn fx:id="columnImie" prefWidth="113.0" text="IMIE" />
+                <TableColumn fx:id="columnNazwisko" prefWidth="166.0" text="NAZWISKO" />
+                <TableColumn fx:id="columnPesel" prefWidth="114.0" text="PESEL" />
+            </columns>
+        </TableView>
+        <Button layoutX="349.0" layoutY="60.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="59.0" text="Szukaj" />
+        <Button fx:id="addPatient" layoutX="312.0" layoutY="454.0" mnemonicParsing="false" onAction="#addPatient" text="Dodaj pacjenta" visible="false" />
+      <Button layoutX="14.0" layoutY="454.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="112.0" text="Wstecz" />
+      <Button layoutX="293.0" layoutY="454.0" mnemonicParsing="false" onAction="#addPatient" prefHeight="25.0" prefWidth="112.0" text="Dodaj Pacjenta" />
+    </children>
+</AnchorPane>

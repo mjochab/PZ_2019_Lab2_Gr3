@@ -63,8 +63,9 @@ public class ReceptionistController implements Initializable {
     }
     
     public void loadPatients(ActionEvent event) throws IOException{
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientsList.fxml"));
-        contentPane.getChildren().setAll(pane);
+//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientsList.fxml"));
+//        contentPane.getChildren().setAll(pane);
+        stageManager.switchScene(FxmlView.PATIENT_LIST_WITH_ADD_PATIENT);
     }
     
     public void loadReceptionists(ActionEvent event) throws IOException{
