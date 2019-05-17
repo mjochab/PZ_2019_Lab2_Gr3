@@ -91,8 +91,7 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/presciptions.fxml";
         }
-    }
-    ,
+    },
     DODAJ_RECEPTE {
         @Override
         public String getTitle() {
@@ -102,6 +101,28 @@ public enum FxmlView {
         @Override
         public String getFxmlFile() {
             return "/views/addPresciption.fxml";
+        }
+    },
+    LISTA_DOKTOROW {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/DoctorList.fxml";
+        }
+    },
+    DODAJ_LEKARZA {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/AddDoctor.fxml";
         }
     }
     ;

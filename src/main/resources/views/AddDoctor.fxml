@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="327.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.AddDoctorController">
+    <children>
+        <Label layoutX="138.0" layoutY="14.0" text="Dodaj Lekarza">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="16.0" layoutY="71.0" prefHeight="244.0" prefWidth="392.0">
+            <children>
+                <Button layoutX="276.0" layoutY="218.0" mnemonicParsing="false" onAction="#dodajLekarza" prefHeight="25.0" prefWidth="116.0" text="Dodaj lekarza" />
+                <Button layoutX="-6.0" layoutY="218.0" mnemonicParsing="false" onAction="#anuluj" prefHeight="25.0" prefWidth="116.0" text="Anuluj" />
+              <Label layoutX="94.0" layoutY="14.0" text="Login:" />
+            <Label layoutX="94.0" layoutY="45.0" text="Hasło;" />
+            <TextField fx:id="loginTextField" layoutX="176.0" layoutY="9.0" />
+            <PasswordField fx:id="passwordTextField" layoutX="176.0" layoutY="40.0" />
+            <Label layoutX="94.0" layoutY="93.0" text="Imię:" />
+            <Label layoutX="94.0" layoutY="123.0" text="Nazwisko:" />
+            <TextField fx:id="firstNameTextField" layoutX="176.0" layoutY="89.0" />
+            <TextField fx:id="lastNameTextField" layoutX="176.0" layoutY="119.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

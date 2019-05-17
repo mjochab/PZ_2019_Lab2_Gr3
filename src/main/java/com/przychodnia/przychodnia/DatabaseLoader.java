@@ -103,6 +103,14 @@ public class DatabaseLoader implements CommandLineRunner {
         Doctor doctor = new Doctor("doktor","doktor");
         Doctor doctor2 = new Doctor("doktor2","doktor2");
 
+        doctor.setFirstName("Krzysztof");
+        doctor.setLastName("Pieta");
+        doctor.setPesel("1234");
+
+        doctor2.setFirstName("Nie ma");
+        doctor2.setLastName("klienta");
+        doctor2.setPesel("6789");
+
         doctorRepository.save(doctor);
         doctorRepository.save(doctor2);
 
