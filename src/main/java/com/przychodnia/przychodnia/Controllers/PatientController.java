@@ -6,7 +6,9 @@
 package com.przychodnia.przychodnia.Controllers;
 
 import com.przychodnia.przychodnia.Entity.News;
+import com.przychodnia.przychodnia.Entity.Wizyta;
 import com.przychodnia.przychodnia.Repository.NewsRepository;
+import com.przychodnia.przychodnia.Repository.WizytaRepository;
 import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
@@ -22,8 +24,10 @@ import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 /**
  * FXML Controller class
@@ -48,12 +52,33 @@ public class PatientController implements Initializable {
     @FXML
     private Label description2News;
 
+    @FXML
+    private Label kalendarz1Title;
+
+    @FXML
+    private Label kalendarz2Title;
+
+    @FXML
+    private Label kalendarz3Title;
+
+    @FXML
+    private Label kalendarz1content;
+
+    @FXML
+    private Label kalendarz2content;
+
+    @FXML
+    private Label kalendarz3content;
+
     @Lazy
     @Autowired
     private StageManager stageManager;
 
     @Autowired
     private NewsRepository newsRepository;
+
+    @Autowired
+    private WizytaRepository wizytaRepository;
 
     /**
      * Initializes the controller class.
@@ -63,6 +88,45 @@ public class PatientController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         this.loadNews();
+        this.loadKalendarz();
+    }
+
+    private void loadKalendarz() {
+        List<Wizyta> wizyty = wizytaRepository.findByKartoteka(ActUser.getPatient().getKartoteka());
+        List<Wizyta> wizytaAfter = wizyty.stream()
+                .filter(wizyta1 -> wizyta1.getLocalDateTime()
+                        .isAfter(LocalDateTime.now()))
+                .collect(Collectors.toList());
+
+        if(wizytaAfter.size()>0){
+            this.kalendarz1Title.setText(this.localDateTimetoString(wizytaAfter.get(0).getLocalDateTime()));
+            this.kalendarz1content.setText("lekarz: \n"+wizytaAfter.get(0).getDoctor());
+        }
+        if(wizytaAfter.size()>1){
+            this.kalendarz2Title.setText(this.localDateTimetoString(wizytaAfter.get(1).getLocalDateTime()));
+            this.kalendarz2content.setText("lekarz: \n"+wizytaAfter.get(1).getDoctor());
+        }
+        if(wizytaAfter.size()>2){
+            this.kalendarz3Title.setText(this.localDateTimetoString(wizytaAfter.get(2).getLocalDateTime()));
+            this.kalendarz3content.setText("lekarz: \n"+wizytaAfter.get(2).getDoctor());
+        }
+    }
+
+    private String localDateTimetoString(LocalDateTime localDateTime){
+        if(localDateTime.getMinute()>10) {
+            return localDateTime.getDayOfMonth() + "-"
+                    + localDateTime.getMonthValue() + "-"
+                    + localDateTime.getYear() +
+                    "\n" + localDateTime.getHour()
+                    + ":" + localDateTime.getMinute();
+        }
+        else {
+            return localDateTime.getDayOfMonth() + "-"
+                    + localDateTime.getMonthValue() + "-"
+                    + localDateTime.getYear() +
+                    "\n" + localDateTime.getHour()
+                    + ":0" + localDateTime.getMinute();
+        }
     }
 
     public void loadUserData(ActionEvent event) throws IOException{
