@@ -84,7 +84,7 @@ public enum FxmlView {
     WIZYTY {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("docotr.title");
+            return getStringFromResourceBundle("doctor.title");
         }
 
         @Override
