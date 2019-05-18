@@ -35,10 +35,6 @@ public class DoctorController implements Initializable {
 
     @FXML
     public AnchorPane contentPane;
-    @FXML
-    private Label title1;
-    @FXML
-    private Label article1;
 
     @FXML
     private Label label1News;
@@ -51,8 +47,6 @@ public class DoctorController implements Initializable {
 
     @FXML
     private Label description2News;
-
-
 
     @Lazy
     @Autowired
@@ -97,13 +91,8 @@ public class DoctorController implements Initializable {
     }
     
     public void loadNews(){
-//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
-//        contentPane.getChildren().setAll(pane);
-
         int newsLength = 2;
         List<News> newsList = newsRepository.randomNews(newsLength);
-
-        System.out.println(newsList.size());
 
         if(newsList.size()==newsLength){
             this.label1News.setText(newsList.get(0).getTitle());

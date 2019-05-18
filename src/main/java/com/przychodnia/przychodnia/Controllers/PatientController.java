@@ -5,6 +5,8 @@
  */
 package com.przychodnia.przychodnia.Controllers;
 
+import com.przychodnia.przychodnia.Entity.News;
+import com.przychodnia.przychodnia.Repository.NewsRepository;
 import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
@@ -20,6 +22,7 @@ import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -32,15 +35,36 @@ public class PatientController implements Initializable {
     
     @FXML
     public AnchorPane contentPane;
+
     @FXML
-    private Label title1;
+    private Label label1News;
+
     @FXML
-    private Label article1;
+    private Label description1News;
+
+    @FXML
+    private Label label2News;
+
+    @FXML
+    private Label description2News;
 
     @Lazy
     @Autowired
     private StageManager stageManager;
-    
+
+    @Autowired
+    private NewsRepository newsRepository;
+
+    /**
+     * Initializes the controller class.
+     */
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        this.loadNews();
+    }
+
     public void loadUserData(ActionEvent event) throws IOException{
         stageManager.switchScene(FxmlView.USER_DATA);
     }
@@ -62,12 +86,18 @@ public class PatientController implements Initializable {
 //        contentPane.getChildren().setAll(pane);
         stageManager.switchScene(FxmlView.RECEPTY_PANEL_PACJENTA);
     }
-    
-    public void loadNews(ActionEvent event) throws IOException{   
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
-        contentPane.getChildren().setAll(pane);
-        title1.setText("artykul1");
-        article1.setText("tresc artykulu");
+
+    public void loadNews(){
+        int newsLength = 2;
+        List<News> newsList = newsRepository.randomNews(newsLength);
+
+        if(newsList.size()==newsLength){
+            this.label1News.setText(newsList.get(0).getTitle());
+            this.description1News.setText(newsList.get(0).getContent());
+
+            this.label2News.setText(newsList.get(1).getTitle());
+            this.description2News.setText(newsList.get(1).getContent());
+        }
     }
 
     @FXML
@@ -83,14 +113,6 @@ public class PatientController implements Initializable {
         contentPane.getChildren().setAll(pane);
     }
 
-    /**
-     * Initializes the controller class.
-     */
-    
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+
     
 }

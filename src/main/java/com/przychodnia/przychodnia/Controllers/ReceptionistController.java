@@ -5,13 +5,15 @@
  */
 package com.przychodnia.przychodnia.Controllers;
 
+import com.przychodnia.przychodnia.Entity.News;
+import com.przychodnia.przychodnia.Repository.NewsRepository;
 import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -19,6 +21,7 @@ import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -32,10 +35,26 @@ public class ReceptionistController implements Initializable {
     @FXML
     public AnchorPane contentPane;
 
+    @FXML
+    private Label label1News;
+
+    @FXML
+    private Label description1News;
+
+    @FXML
+    private Label label2News;
+
+    @FXML
+    private Label description2News;
+
+
     @Lazy
     @Autowired
     private StageManager stageManager;
-    
+
+    @Autowired
+    private NewsRepository newsRepository;
+
     /**
      * Initializes the controller class.
      * @param url
@@ -43,8 +62,9 @@ public class ReceptionistController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        this.loadNews();
     }
+
 
     @FXML
     public void wyloguj(){
@@ -79,11 +99,17 @@ public class ReceptionistController implements Initializable {
 //        contentPane.getChildren().setAll(pane);
         stageManager.switchScene(FxmlView.LISTA_WIZYT_PANEL_RECEPSJONISTY);
     }
-    
-    public void loadNews(ActionEvent event) throws IOException{   
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/news.fxml"));
-        contentPane.getChildren().setAll(pane);
 
+    public void loadNews(){
+        int newsLength = 2;
+        List<News> newsList = newsRepository.randomNews(newsLength);
+
+        if(newsList.size()==newsLength){
+            this.label1News.setText(newsList.get(0).getTitle());
+            this.description1News.setText(newsList.get(0).getContent());
+
+            this.label2News.setText(newsList.get(1).getTitle());
+            this.description2News.setText(newsList.get(1).getContent());
+        }
     }
-    
 }

@@ -17,7 +17,7 @@
         </Label>
         <Pane layoutX="16.0" layoutY="108.0" prefHeight="207.0" prefWidth="392.0">
             <children>
-                <Button layoutX="277.0" layoutY="181.0" mnemonicParsing="false" onAction="#dodajRecepte" prefHeight="25.0" prefWidth="116.0" text="Wyślij zgłoszenie" />
+                <Button layoutX="277.0" layoutY="181.0" mnemonicParsing="false" onAction="#dodajRecepte" prefHeight="25.0" prefWidth="116.0" text="Dodaj recepte" />
             <Button layoutY="181.0" mnemonicParsing="false" onAction="#anuluj" prefHeight="25.0" prefWidth="116.0" text="Anuluj" />
             <TextArea fx:id="receptaTextArea" layoutY="4.0" prefHeight="169.0" prefWidth="392.0" />
             </children>
