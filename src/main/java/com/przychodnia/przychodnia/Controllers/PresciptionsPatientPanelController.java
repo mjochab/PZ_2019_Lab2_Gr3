@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 @Controller
-public class PresciptionsController implements Initializable {
+public class PresciptionsPatientPanelController implements Initializable {
 
     @Lazy
     @Autowired
@@ -35,34 +35,15 @@ public class PresciptionsController implements Initializable {
     TableColumn<Presciption, LocalDateTime> columnData;
 
     @FXML
-    TableColumn<Presciption,String> columnPacjent;
+    TableColumn<Presciption,String> columnLekarz;
+
 
     @Autowired
     PresciptionsRepository presciptionsRepository;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        this.loadRecepty();
-    }
-
-    private void loadRecepty() {
-        this.tableRecepty.getColumns().clear();
-
-        List<Presciption> patients = presciptionsRepository.findByDoctor(ActUser.getDoctor());
-        final ObservableList<Presciption> data = FXCollections.observableArrayList();
-        data.addAll(patients);
-
-        columnData.setCellValueFactory(
-                new PropertyValueFactory<>("localDateTime")
-        );
-        columnPacjent.setCellValueFactory(
-                new PropertyValueFactory<>("kartoteka")
-        );
-
-
-        this.tableRecepty.setItems(data);
-
-        this.tableRecepty.getColumns().addAll(columnData, columnPacjent);
+        this.loadPresciptionToTable();
     }
 
     @FXML
@@ -72,14 +53,28 @@ public class PresciptionsController implements Initializable {
         System.out.println("aktualnie wybrana recepta: "+presciptionToPrint.getLocalDateTime());
     }
 
+    private void loadPresciptionToTable() {
 
-    @FXML
-    public void wstecz(){
-        stageManager.switchScene(FxmlView.DOCTOR);
+        this.tableRecepty.getColumns().clear();
+
+        List<Presciption> patients = presciptionsRepository.findByKartoteka(ActUser.getPatient().getKartoteka());
+        final ObservableList<Presciption> data = FXCollections.observableArrayList();
+        data.addAll(patients);
+
+        columnData.setCellValueFactory(
+                new PropertyValueFactory<>("localDateTime")
+        );
+        columnLekarz.setCellValueFactory(
+                new PropertyValueFactory<>("doctor")
+        );
+
+        this.tableRecepty.setItems(data);
+
+        this.tableRecepty.getColumns().addAll(columnData, columnLekarz);
     }
 
     @FXML
-    public void addPrescription(){
-        stageManager.switchScene(FxmlView.DODAJ_RECEPTE);
+    public void wstecz(){
+        stageManager.switchScene(FxmlView.PATIENT);
     }
 }

@@ -213,6 +213,17 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/visitsPatientPanel.fxml";
         }
+    },
+    RECEPTY_PANEL_PACJENTA {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("patient.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/presciptionPatientPanel.fxml";
+        }
     }
     ;
 
