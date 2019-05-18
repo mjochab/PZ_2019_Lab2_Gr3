@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface ReceptionistRepository extends JpaRepository<Receptionist, Long> {
 
-    @Query(value = "SELECT * from p_receptionist p where p.login = :login AND p.password = :password", nativeQuery = true)
+    @Query(value = "SELECT * from recepcjonista p where p.login = :login AND p.password = :password", nativeQuery = true)
     List<Receptionist> findByLoginAndPassword(String login, String password);
 }

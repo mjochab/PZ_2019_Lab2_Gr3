@@ -92,7 +92,7 @@ public class LoginController implements Initializable {
         String login = login_field.getText();
         String password = password_field.getText();
 
-        List<Doctor> doctors= doctorRepository.findByLoginAndPassword(login, password);
+        List<Doctor> doctors = doctorRepository.findByLoginAndPassword(login, password);
 
         if(doctors.size()==1){
             ActUser.setDoctor(doctors.get(0));

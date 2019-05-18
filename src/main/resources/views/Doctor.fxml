@@ -50,22 +50,22 @@
                     <children>
                               <Pane layoutX="15.0" layoutY="60.0" prefHeight="200.0" prefWidth="409.0">
                                  <children>
-                                    <Label layoutX="84.0" layoutY="14.0" text="BEZPŁATNE BADANIE SŁUCHU">
+                                    <Label fx:id="label1News" layoutX="84.0" layoutY="14.0">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                              <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="148.0" prefWidth="376.0" style="&#10;" text="orem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym" textAlignment="CENTER" textFill="$x2" wrapText="true" />
+                              <Label fx:id="description1News" alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="148.0" prefWidth="376.0" style="&#10;" textAlignment="CENTER" textFill="$x2" wrapText="true" />
                                  </children>
                               </Pane>
                               <Pane layoutX="11.0" layoutY="273.0" prefHeight="200.0" prefWidth="409.0">
                                  <children>
-                                    <Label layoutX="43.0" layoutY="14.0" text="DARMOWE WYJAZDY DO SANATORIUM">
+                                    <Label fx:id="label2News" layoutX="43.0" layoutY="14.0" text="DARMOWE WYJAZDY DO SANATORIUM">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="148.0" prefWidth="376.0" style="&#10;" text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;" textAlignment="CENTER" wrapText="true">
+                                    <Label fx:id="description2News" alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="148.0" prefWidth="376.0" style="&#10;" text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;" textAlignment="CENTER" wrapText="true">
                                        <textFill>
                                           <Color blue="0.624" green="0.624" red="0.624" fx:id="x21" />
                                        </textFill>

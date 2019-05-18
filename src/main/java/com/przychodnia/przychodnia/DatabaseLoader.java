@@ -31,14 +31,31 @@ public class DatabaseLoader implements CommandLineRunner {
     @Autowired
     private PresciptionsRepository presciptionRepository;
 
+    @Autowired
+    private NewsRepository newsRepository;
+
 
     @Override
     public void run(String... args) throws Exception {
+        createNews();
         List<Doctor> doctors = createDoctors();
         createReceptionist();
         createPatientAndKartoteka("test1", doctors.get(0));
         createPatientAndKartoteka("test2", doctors.get(0));
         createPatientAndKartoteka("test3", doctors.get(1));
+    }
+
+    private void createNews() {
+        News news1 = new News("tytul"," velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia de");
+        News news2 = new News("DARMOWE WYJAZDY DO SENATORIUM"," in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa ");
+        News news3 = new News("DARMOWE BADANIE","a pariatur. Excepteur sint occaecat cupidatat non pr");
+        ArrayList<News> news= new ArrayList<News>() {{
+            add(news1);
+            add(news2);
+            add(news3);
+        }};
+
+        newsRepository.saveAll(news);
     }
 
     private void createPatientAndKartoteka(String username, Doctor doctor) {

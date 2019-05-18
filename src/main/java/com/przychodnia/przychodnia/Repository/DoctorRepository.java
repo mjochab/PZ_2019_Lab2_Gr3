@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 
-    @Query(value = "SELECT * from p_doctor p where p.login = :login AND p.password = :password", nativeQuery = true)
+    @Query(value = "SELECT * from doktor p where p.login = :login AND p.password = :password", nativeQuery = true)
     List<Doctor> findByLoginAndPassword(String login, String password);
 }
