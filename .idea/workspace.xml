@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/patientList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/patientList.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,13 +20,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+            <state relative-caret-position="202">
+              <caret line="56" column="107" selection-start-line="56" selection-start-column="107" selection-end-line="56" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1924#1925#0" expanded="true" />
+                <element signature="e#1981#1982#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -34,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
+            <state relative-caret-position="1224">
               <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
             </state>
           </provider>
@@ -68,7 +79,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PersonTableView/PersonTableView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/presciptions.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/addPresciption.fxml" />
@@ -109,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/DoctorRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/ReceptionistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/NewsRepository.java" />
@@ -118,6 +127,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java" />
       </list>
     </option>
   </component>
@@ -152,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,11 +249,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558185262851" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558215889233" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../przychodnia" />
   </component>
   <component name="RecentsManager">
@@ -322,7 +333,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25642672" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2596401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -509,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="84" column="87" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="84" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -685,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/ReceptionistRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -799,17 +793,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
+        <state relative-caret-position="1224">
           <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+        <state relative-caret-position="-349">
+          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="56" column="107" selection-start-line="56" selection-start-column="107" selection-end-line="56" selection-end-column="107" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
           </folding>
         </state>
       </provider>
