@@ -91,6 +91,7 @@ public class DatabaseLoader implements CommandLineRunner {
 
         wizyta1.setKartoteka(kartoteka);
         wizyta2.setKartoteka(kartoteka);
+        wizyta3.setKartoteka(kartoteka);
 
         presciption.setKartoteka(kartoteka);
         presciption1.setKartoteka(kartoteka);
