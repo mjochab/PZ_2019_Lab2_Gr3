@@ -14,7 +14,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.ReceptionistController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.ReceptionistController">
    <children>
       <VBox prefHeight="600.0" prefWidth="900.0">
         <children>
@@ -41,7 +41,7 @@
                               <Button mnemonicParsing="false" onAction="#loadVisits" prefHeight="32.0" prefWidth="205.0" text="WIZYTY" />
                               <Button mnemonicParsing="false" onAction="#loadNews" prefHeight="32.0" prefWidth="205.0" text="AKTUALNOŚCI" />
 
-                               <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#wyloguj" prefHeight="9.0" prefWidth="196.0" text="Wyloguj" />
+                               <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#wyloguj" prefHeight="32.0" prefWidth="205.0" text="WYLOGUJ" />
                            </children>
                         </VBox>
                 </children>

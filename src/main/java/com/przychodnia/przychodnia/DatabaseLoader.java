@@ -40,9 +40,9 @@ public class DatabaseLoader implements CommandLineRunner {
         createNews();
         List<Doctor> doctors = createDoctors();
         createReceptionist();
-        createPatientAndKartoteka("test1", doctors.get(0));
-        createPatientAndKartoteka("test2", doctors.get(0));
-        createPatientAndKartoteka("test3", doctors.get(1));
+        createPatientAndKartoteka("jkowalski32", doctors.get(0));
+        createPatientAndKartoteka("anowak", doctors.get(0));
+        createPatientAndKartoteka("kkrol", doctors.get(1));
     }
 
     private void createNews() {
@@ -73,8 +73,8 @@ public class DatabaseLoader implements CommandLineRunner {
         Presciption presciption = new Presciption(LocalDateTime.now(),doctor);
         Presciption presciption1 = new Presciption(LocalDateTime.now().plusDays(1),doctor);
 
-        presciption.setDescription("rak odbytu");
-        presciption1.setDescription("glupota");
+        presciption.setDescription("zapalenie płuc");
+        presciption1.setDescription("grypa");
 
         ArrayList<Wizyta> wizytaArrayList= new ArrayList<Wizyta>() {{
             add(wizyta1);
@@ -116,9 +116,9 @@ public class DatabaseLoader implements CommandLineRunner {
 
     private void createReceptionist() {
         Receptionist receptionist = new Receptionist("receptionist","receptionist");
-        receptionist.setFirstName("recepsjonista");
-        receptionist.setLastName("lastNameRecepsjonista");
-        receptionist.setPesel("14567");
+        receptionist.setFirstName("Krystyna");
+        receptionist.setLastName("Czubówna");
+        receptionist.setPesel("97123012345");
         receptionistRepository.save(receptionist);
     }
 
@@ -130,12 +130,12 @@ public class DatabaseLoader implements CommandLineRunner {
         Doctor doctor2 = new Doctor("doktor2","doktor2");
 
         doctor.setFirstName("Krzysztof");
-        doctor.setLastName("Pieta");
-        doctor.setPesel("1234");
+        doctor.setLastName("Zimek");
+        doctor.setPesel("88021807693");
 
-        doctor2.setFirstName("Nie ma");
-        doctor2.setLastName("klienta");
-        doctor2.setPesel("6789");
+        doctor2.setFirstName("Andrzej");
+        doctor2.setLastName("MAlinowski");
+        doctor2.setPesel("83021807693");
 
         doctorRepository.save(doctor);
         doctorRepository.save(doctor2);
