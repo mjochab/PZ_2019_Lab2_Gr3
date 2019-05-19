@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -25,6 +26,9 @@ public class DoctorsListController implements Initializable {
     @Lazy
     @Autowired
     StageManager stageManager;
+
+    @FXML
+    TextField filterTextField;
 
     @FXML
     TableView<Doctor> lekarzeTableView;
@@ -43,14 +47,24 @@ public class DoctorsListController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        this.loadDoctorTableView();
+        this.loadDoctorToTable();
     }
 
-    private void loadDoctorTableView() {
+    @FXML
+    public void filter(){
+        String filter = this.filterTextField.getText();
+        List<Doctor> patients = this.doctorRepository.findByFirstNameLastNamePesel(filter,filter,filter);
+        this.refreshTable(patients);
+    }
 
+    private void loadDoctorToTable() {
+        List<Doctor> doctors = doctorRepository.findAll();
+        this.refreshTable(doctors);
+    }
+
+    private void refreshTable(List<Doctor> doctors){
         this.lekarzeTableView.getColumns().clear();
 
-        List<Doctor> doctors = doctorRepository.findAll();
         final ObservableList<Doctor> data = FXCollections.observableArrayList();
         data.addAll(doctors);
 
@@ -68,6 +82,7 @@ public class DoctorsListController implements Initializable {
 
         this.lekarzeTableView.getColumns().addAll(columnImie, columnNazwisko, columnPesel);
     }
+
 
     @FXML
     public void wstecz(){

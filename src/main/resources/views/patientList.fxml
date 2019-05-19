@@ -24,7 +24,6 @@
             </columns>
         </TableView>
         <Button layoutX="262.0" layoutY="60.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="141.0" text="Szukaj" />
-        <Button fx:id="addPatient" layoutX="312.0" layoutY="454.0" mnemonicParsing="false" onAction="#addPatient" text="Dodaj pacjenta" visible="false" />
       <Button layoutX="14.0" layoutY="454.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="112.0" text="Wstecz" />
     </children>
 </AnchorPane>

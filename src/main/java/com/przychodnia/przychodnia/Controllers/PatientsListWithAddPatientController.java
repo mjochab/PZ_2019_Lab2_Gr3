@@ -54,19 +54,18 @@ public class PatientsListWithAddPatientController implements Initializable {
     @FXML
     public void filter(){
         String filter = this.filterTextField.getText();
-
-    }
-
-    @FXML
-    public void wstecz(){
-        stageManager.switchScene(FxmlView.RECEPTIONIST);
+        List<Patient> patients = this.patientRepository.findByFirstNameLastNamePesel(filter,filter,filter);
+        this.refreshTable(patients);
     }
 
     private void loadPatientsToTable() {
+        List<Patient> patients = patientRepository.findAll();
+        this.refreshTable(patients);
+    }
 
+    private void refreshTable(List<Patient> patients){
         this.patientTable.getColumns().clear();
 
-        List<Patient> patients = patientRepository.findAll();
         final ObservableList<Patient> data = FXCollections.observableArrayList();
         data.addAll(patients);
 
@@ -84,6 +83,13 @@ public class PatientsListWithAddPatientController implements Initializable {
 
         this.patientTable.getColumns().addAll(columnImie, columnNazwisko, columnPesel);
     }
+
+    @FXML
+    public void wstecz(){
+        stageManager.switchScene(FxmlView.RECEPTIONIST);
+    }
+
+
 
 
     @FXML

@@ -15,7 +15,7 @@
                 <Font size="24.0" />
             </font>
         </Label>
-        <TextField layoutX="14.0" layoutY="60.0" prefHeight="25.0" prefWidth="202.0" />
+        <TextField fx:id="filterTextField" layoutX="14.0" layoutY="60.0" prefHeight="25.0" prefWidth="242.0" />
         <TableView fx:id="receptionistTableView" layoutX="14.0" layoutY="99.0" prefHeight="347.0" prefWidth="394.0">
             <columns>
                 <TableColumn fx:id="columnImie" prefWidth="113.0" text="IMIE" />
@@ -23,7 +23,7 @@
                 <TableColumn fx:id="columnPesel" prefWidth="114.0" text="PESEL" />
             </columns>
         </TableView>
-        <Button layoutX="349.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Szukaj" />
+        <Button layoutX="266.0" layoutY="60.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="142.0" text="Szukaj" />
         <Button layoutX="286.0" layoutY="454.0" mnemonicParsing="false" onAction="#addReceptionist" prefHeight="25.0" prefWidth="122.0" text="Dodaj recepsjoniste" />
         <Button layoutX="14.0" layoutY="454.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="122.0" text="wstecz" />
     </children>

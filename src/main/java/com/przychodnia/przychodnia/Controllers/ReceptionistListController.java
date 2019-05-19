@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -25,6 +26,9 @@ public class ReceptionistListController implements Initializable {
     @Lazy
     @Autowired
     StageManager stageManager;
+
+    @FXML
+    TextField filterTextField;
 
     @FXML
     TableView<Receptionist> receptionistTableView;
@@ -46,11 +50,21 @@ public class ReceptionistListController implements Initializable {
         this.loadReceptionistTableView();
     }
 
-    private void loadReceptionistTableView() {
+    @FXML
+    public void filter(){
+        String filter = this.filterTextField.getText();
+        List<Receptionist> patients = this.receptionistRepository.findByFirstNameLastNamePesel(filter,filter,filter);
+        this.refreshTable(patients);
+    }
 
+    private void loadReceptionistTableView() {
+        List<Receptionist> receptionists = receptionistRepository.findAll();
+        this.refreshTable(receptionists);
+    }
+
+    private void refreshTable(List<Receptionist> receptionists){
         this.receptionistTableView.getColumns().clear();
 
-        List<Receptionist> receptionists = receptionistRepository.findAll();
         final ObservableList<Receptionist> data = FXCollections.observableArrayList();
         data.addAll(receptionists);
 

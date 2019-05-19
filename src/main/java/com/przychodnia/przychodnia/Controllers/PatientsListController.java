@@ -70,9 +70,6 @@ public class PatientsListController implements Initializable {
     }
 
     private void refreshTable(List<Patient> patients){
-
-
-
         this.patientTable.getColumns().clear();
 
         final ObservableList<Patient> data = FXCollections.observableArrayList();
@@ -92,12 +89,6 @@ public class PatientsListController implements Initializable {
 
         this.patientTable.getColumns().addAll(columnImie, columnNazwisko, columnPesel);
     }
-
-    @FXML
-    public void addPatient(){
-
-    }
-
 
 }
 
