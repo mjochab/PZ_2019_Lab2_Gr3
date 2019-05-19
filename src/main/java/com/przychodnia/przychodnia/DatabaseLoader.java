@@ -73,6 +73,9 @@ public class DatabaseLoader implements CommandLineRunner {
         Presciption presciption = new Presciption(LocalDateTime.now(),doctor);
         Presciption presciption1 = new Presciption(LocalDateTime.now().plusDays(1),doctor);
 
+        presciption.setDescription("rak odbytu");
+        presciption1.setDescription("glupota");
+
         ArrayList<Wizyta> wizytaArrayList= new ArrayList<Wizyta>() {{
             add(wizyta1);
             add(wizyta2);

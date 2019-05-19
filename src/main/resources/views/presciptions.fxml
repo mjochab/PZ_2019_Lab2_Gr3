@@ -14,7 +14,7 @@
                 <Font size="24.0" />
             </font>
         </Label>
-        <TableView fx:id="tableRecepty" layoutX="40.0" layoutY="55.0" prefHeight="385.0" prefWidth="346.0">
+        <TableView fx:id="tableRecepty" layoutX="40.0" layoutY="55.0" prefHeight="361.0" prefWidth="346.0">
             <columns>
                 <TableColumn fx:id="columnData" prefWidth="174.0" text="Data" />
                 <TableColumn fx:id="columnPacjent" minWidth="0.0" prefWidth="171.0" text="Pacjent" />
@@ -23,5 +23,6 @@
         <Button layoutX="288.0" layoutY="453.0" mnemonicParsing="false" onAction="#addPrescription" prefHeight="25.0" prefWidth="98.0" text="Dodaj Receptę" />
       <Button layoutX="40.0" layoutY="453.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="109.0" text="wstecz" />
       <Button layoutX="167.0" layoutY="453.0" mnemonicParsing="false" onAction="#drukuj" prefHeight="25.0" prefWidth="109.0" text="Drukuj" />
+      <Label fx:id="labelInfo" layoutX="40.0" layoutY="424.0" prefHeight="17.0" prefWidth="346.0" textFill="RED" />
     </children>
 </AnchorPane>

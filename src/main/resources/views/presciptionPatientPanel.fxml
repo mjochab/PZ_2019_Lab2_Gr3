@@ -14,13 +14,14 @@
                 <Font size="24.0" />
             </font>
         </Label>
-        <TableView fx:id="tableRecepty" layoutX="40.0" layoutY="55.0" prefHeight="385.0" prefWidth="346.0">
+        <TableView fx:id="tableRecepty" layoutX="40.0" layoutY="55.0" prefHeight="375.0" prefWidth="346.0">
             <columns>
                 <TableColumn fx:id="columnData" prefWidth="174.0" text="Data" />
                 <TableColumn fx:id="columnLekarz" minWidth="0.0" prefWidth="171.0" text="Lekarz" />
             </columns>
         </TableView>
-        <Button layoutX="40.0" layoutY="453.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="109.0" text="wstecz" />
-      <Button layoutX="284.0" layoutY="453.0" mnemonicParsing="false" onAction="#drukuj" prefHeight="25.0" prefWidth="102.0" text="Drukuj" />
+        <Button layoutX="40.0" layoutY="466.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="109.0" text="wstecz" />
+      <Button layoutX="286.0" layoutY="466.0" mnemonicParsing="false" onAction="#drukuj" prefHeight="25.0" prefWidth="102.0" text="Drukuj" />
+      <Label fx:id="labelInfo" layoutX="40.0" layoutY="437.0" prefHeight="17.0" prefWidth="346.0" textFill="RED" />
     </children>
 </AnchorPane>

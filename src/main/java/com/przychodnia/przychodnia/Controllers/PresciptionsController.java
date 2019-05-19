@@ -1,5 +1,6 @@
 package com.przychodnia.przychodnia.Controllers;
 
+import com.przychodnia.przychodnia.CreatePdf.CreatePdf;
 import com.przychodnia.przychodnia.Entity.Presciption;
 import com.przychodnia.przychodnia.Repository.PresciptionsRepository;
 import com.przychodnia.przychodnia.config.ActUser;
@@ -9,6 +10,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -27,6 +29,9 @@ public class PresciptionsController implements Initializable {
     @Lazy
     @Autowired
     StageManager stageManager;
+
+    @FXML
+    Label labelInfo;
 
     @FXML
     TableView<Presciption> tableRecepty;
@@ -69,7 +74,14 @@ public class PresciptionsController implements Initializable {
     public void drukuj(){
         int i = tableRecepty.getSelectionModel().getFocusedIndex();
         Presciption presciptionToPrint = tableRecepty.getItems().get(i);
-        System.out.println("aktualnie wybrana recepta: "+presciptionToPrint.getLocalDateTime());
+        String info = CreatePdf.createPdf(presciptionToPrint);
+
+        if(info == "blad"){
+            this.labelInfo.setText("nie udało się utworzyć recepty");
+        }
+        else{
+            this.labelInfo.setText("Recepta zapisana w lokalizacji: "+info);
+        }
     }
 
 
