@@ -15,4 +15,6 @@ public interface ReceptionistRepository extends JpaRepository<Receptionist, Long
 
     @Query(value = "SELECT * from recepcjonista p where p.first_name = :firstName OR p.last_name = :lastName OR p.pesel = :pesel", nativeQuery = true)
     List<Receptionist> findByFirstNameLastNamePesel(String firstName, String lastName, String pesel);
+
+    List<Receptionist> findByLogin(String login);
 }

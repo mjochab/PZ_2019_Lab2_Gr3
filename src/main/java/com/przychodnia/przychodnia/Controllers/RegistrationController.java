@@ -22,6 +22,7 @@ import org.springframework.stereotype.Controller;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 @Controller
@@ -79,22 +80,26 @@ public class RegistrationController implements Initializable {
     public void rejestruj(){
         String selectedRole = this.comboBoxRola.getSelectionModel().getSelectedItem();
 
-        System.out.println("selectedRole: "+selectedRole);
+        System.out.println("czy zajety: "+this.checkIsLoginIsNotUsed(this.loginField.getText()));
 
-        if(selectedRole == "pacjent"){
-            this.registerNewPacjent();
-            stageManager.switchScene(FxmlView.LOGIN);
+        if(this.checkIsLoginIsNotUsed(this.loginField.getText())) {
+            if (selectedRole == "pacjent") {
+                this.registerNewPacjent();
+                stageManager.switchScene(FxmlView.LOGIN);
+            }
+            if (selectedRole == "lekarz") {
+                this.registerNewLekarz();
+                stageManager.switchScene(FxmlView.LOGIN);
+            }
+            if (selectedRole == "recepsjonista") {
+                this.registerNewRecepsjonista();
+                stageManager.switchScene(FxmlView.LOGIN);
+            } else if (selectedRole == null) {
+                this.labelInfo.setText("wybierz role");
+            }
         }
-        if(selectedRole == "lekarz"){
-            this.registerNewLekarz();
-            stageManager.switchScene(FxmlView.LOGIN);
-        }
-        if(selectedRole == "recepsjonista"){
-            this.registerNewRecepsjonista();
-            stageManager.switchScene(FxmlView.LOGIN);
-        }
-        else if(selectedRole == null){
-            this.labelInfo.setText("wybierz role");
+        else{
+            this.labelInfo.setText("Login zajęty");
         }
 
     }
@@ -133,6 +138,21 @@ public class RegistrationController implements Initializable {
         doctor.setEmail(this.emailField.getText());
 
         doctorRepository.save(doctor);
+    }
+
+    private boolean checkIsLoginIsNotUsed(String login){
+        List<Patient> patientList = patientRepository.findByLogin(login);
+        List<Receptionist> receptionists = receptionistRepository.findByLogin(login);
+        List<Doctor> doctors = doctorRepository.findByLogin(login);
+
+        System.out.println(patientList.size() + " " +receptionists.size() + " " +doctors.size());
+
+        if(patientList.size() == 0 && receptionists.size() == 0 && doctors.size() ==0){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     private void loadRolesToComboBox() {
