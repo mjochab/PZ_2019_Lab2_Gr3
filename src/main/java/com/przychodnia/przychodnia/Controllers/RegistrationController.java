@@ -80,8 +80,6 @@ public class RegistrationController implements Initializable {
     public void rejestruj(){
         String selectedRole = this.comboBoxRola.getSelectionModel().getSelectedItem();
 
-        System.out.println("czy zajety: "+this.checkIsLoginIsNotUsed(this.loginField.getText()));
-
         if(this.checkIsLoginIsNotUsed(this.loginField.getText())) {
             if (selectedRole == "pacjent") {
                 this.registerNewPacjent();
@@ -144,8 +142,6 @@ public class RegistrationController implements Initializable {
         List<Patient> patientList = patientRepository.findByLogin(login);
         List<Receptionist> receptionists = receptionistRepository.findByLogin(login);
         List<Doctor> doctors = doctorRepository.findByLogin(login);
-
-        System.out.println(patientList.size() + " " +receptionists.size() + " " +doctors.size());
 
         if(patientList.size() == 0 && receptionists.size() == 0 && doctors.size() ==0){
             return true;

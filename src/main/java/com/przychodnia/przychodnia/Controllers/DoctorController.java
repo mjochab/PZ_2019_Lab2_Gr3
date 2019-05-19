@@ -137,20 +137,14 @@ public class DoctorController implements Initializable {
     }
     
     public void loadPatients(ActionEvent event) throws IOException{
-//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/patientList.fxml"));
-//        contentPane.getChildren().setAll(pane);
         stageManager.switchScene(FxmlView.PATIENT_LIST);
     }
     
-    public void loadVisits(ActionEvent event) throws IOException{      
-//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/visits.fxml"));
-//        contentPane.getChildren().setAll(pane);
+    public void loadVisits(ActionEvent event) throws IOException{
         stageManager.switchScene(FxmlView.WIZYTY);
     }
     
     public void loadPrescriptions(ActionEvent event) throws IOException{
-//        AnchorPane pane = FXMLLoader.load(getClass().getResource("/views/prescriptions.fxml"));
-//        contentPane.getChildren().setAll(pane);
         stageManager.switchScene(FxmlView.RECEPTY);
     }
     
