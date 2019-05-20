@@ -1,1089 +1,900 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/logging/ExceptionWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Login.fxml" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" afterDir="false" />
-
-    </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-
-      <file pinned="false" current-in-tab="false">
+    <component name="ChangeListManager">
+        <list default="true" id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="">
+            <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" afterDir="false" />
+        </list>
+        <ignored path="$PROJECT_DIR$/target/" />
+        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+        <option name="SHOW_DIALOG" value="false" />
+        <option name="HIGHLIGHT_CONFLICTS" value="true" />
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+        <option name="LAST_RESOLUTION" value="IGNORE" />
+    </component>
+    <component name="CodeInsightWorkspaceSettings">
+        <option name="optimizeImportsOnTheFly" value="true" />
+    </component>
+    <component name="DefaultGradleProjectSettings">
+        <option name="testRunner" value="GRADLE" />
+        <option name="delegatedBuild" value="true" />
+    </component>
+    <component name="FileEditorManager">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="714">
+                            <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+                            <folding>
+                                <element signature="imports" expanded="true" />
+                            </folding>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="255">
+                            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Patient.java">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="85">
+                            <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Kartoteka.java">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="289">
+                            <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+                            <folding>
+                                <element signature="imports" expanded="true" />
+                            </folding>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="-599">
+                            <caret line="70" column="73" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
+                            <folding>
+                                <element signature="imports" expanded="true" />
+                            </folding>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/pom.xml">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="44">
+                            <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+        </leaf>
+    </component>
+    <component name="FileTemplateManagerImpl">
+        <option name="RECENT_TEMPLATES">
+            <list>
+                <option value="Interface" />
+                <option value="Class" />
+                <option value="FxmlFile" />
+            </list>
+        </option>
+    </component>
+    <component name="FindInProjectRecents">
+        <findStrings>
+            <find>slf4j</find>
+        </findStrings>
+    </component>
+    <component name="Git.Settings">
+        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+        <option name="RECENT_BRANCH_BY_REPOSITORY">
+            <map>
+                <entry key="$PROJECT_DIR$" value="master" />
+            </map>
+        </option>
+    </component>
+    <component name="IdeDocumentHistory">
+        <option name="CHANGED_PATHS">
+            <list>
+                <option value="$PROJECT_DIR$/src/main/resources/views/AddDoctor.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddDoctorController.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/patientListWithAddPatient.fxml" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/AddPatient.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPatientController.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/ReceptionistList.fxml" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/AddReceptionist.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddReceptionistController.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/visitsReceptionistPanel.fxml" />
+                <option value="$PROJECT_DIR$/src/main/resources/Bundle.properties" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsReceptionistPanelController.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/AddVisit.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddVisitController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/WizytaRepository.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/visitsPatientPanel.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsPatientPanelController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/TreatmentHistoryController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Doctor.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Patient.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Presciption.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Receptionist.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Wizyta.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/presciptionPatientPanel.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Kartoteka.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/News.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/NewsRepository.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListWithAddPatientController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorsListController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PresciptionsRepository.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistListController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPresciptionController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/ReceptionistRepository.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/DoctorRepository.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/RegistrationController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistController.java" />
+                <option value="$PROJECT_DIR$/pom.xml" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/Presciption.fxml" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/CreatePdf/CreatePdf.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java" />
+                <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" />
+                <option value="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" />
+            </list>
+        </option>
+    </component>
+    <component name="MavenImportPreferences">
+        <option name="importingSettings">
+            <MavenImportingSettings>
+                <option name="importAutomatically" value="true" />
+            </MavenImportingSettings>
+        </option>
+    </component>
+    <component name="MavenProjectNavigator">
+        <treeState>
+            <expand>
+                <path>
+                    <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+                    <item name="przychodnia" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+                </path>
+                <path>
+                    <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+                    <item name="przychodnia" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+                    <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+                </path>
+                <path>
+                    <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+                    <item name="przychodnia" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+                    <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+                </path>
+            </expand>
+            <select />
+        </treeState>
+    </component>
+    <component name="ProjectFrameBounds" extendedState="6">
+        <option name="x" value="-1928" />
+        <option name="y" value="-8" />
+        <option name="width" value="1936" />
+        <option name="height" value="1056" />
+    </component>
+    <component name="ProjectView">
+        <navigator proportions="" version="1">
+            <foldersAlwaysOnTop value="true" />
+        </navigator>
+        <panes>
+            <pane id="Scope" />
+            <pane id="ProjectPane">
+                <subPane>
+                    <expand>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="java" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="java" type="462c0819:PsiDirectoryNode" />
+                            <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="java" type="462c0819:PsiDirectoryNode" />
+                            <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
+                            <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="java" type="462c0819:PsiDirectoryNode" />
+                            <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
+                            <item name="Entity" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="java" type="462c0819:PsiDirectoryNode" />
+                            <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
+                            <item name="logging" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="resources" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
+                            <item name="src" type="462c0819:PsiDirectoryNode" />
+                            <item name="main" type="462c0819:PsiDirectoryNode" />
+                            <item name="resources" type="462c0819:PsiDirectoryNode" />
+                            <item name="views" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                    </expand>
+                    <select />
+                </subPane>
+            </pane>
+            <pane id="PackagesPane" />
+        </panes>
+    </component>
+    <component name="PropertiesComponent">
+        <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+        <property name="WebServerToolWindowFactoryState" value="false" />
+        <property name="aspect.path.notification.shown" value="true" />
+        <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558272923329" />
+        <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    </component>
+    <component name="RecentsManager">
+        <key name="MoveFile.RECENT_KEYS">
+            <recent name="D:\SOFT\krzysiuZespolowe" />
+            <recent name="D:\SOFT\krzysiuZespolowe\src\main\resources" />
+            <recent name="D:\SOFT\krzysiuZespolowe\src\main\java\com\przychodnia\przychodnia" />
+        </key>
+        <key name="CopyFile.RECENT_KEYS">
+            <recent name="D:\SOFT\krzysiuZespolowe\src\main\resources\views" />
+            <recent name="D:\SOFT\krzysiuZespolowe\src\main\resources" />
+            <recent name="D:\SOFT\krzysiuZespolowe\src" />
+            <recent name="D:\SOFT\krzysiuZespolowe\src\main\java\com\przychodnia\przychodnia" />
+        </key>
+        <key name="CopyClassDialog.RECENTS_KEY">
+            <recent name="com.przychodnia.przychodnia.Controllers" />
+            <recent name="com.przychodnia.przychodnia" />
+            <recent name="com.przychodnia.przychodnia.logging" />
+        </key>
+        <key name="CreateClassDialog.RecentsKey">
+            <recent name="com.przychodnia.przychodnia.config" />
+        </key>
+    </component>
+    <component name="RunDashboard">
+        <option name="ruleStates">
+            <list>
+                <RuleState>
+                    <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+                </RuleState>
+                <RuleState>
+                    <option name="name" value="StatusDashboardGroupingRule" />
+                </RuleState>
+            </list>
+        </option>
+    </component>
+    <component name="RunManager">
+        <configuration name="PrzychodniaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+            <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+            <option name="MAIN_CLASS_NAME" value="com.przychodnia.przychodnia.PrzychodniaApplication" />
+            <module name="krzysiuZespolowe" />
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="com.przychodnia.przychodnia.*" />
+                    <option name="ENABLED" value="true" />
+                </pattern>
+            </extension>
+            <method v="2">
+                <option name="Make" enabled="true" />
+            </method>
+        </configuration>
+        <configuration default="true" type="Application" factoryName="Application">
+            <option name="ALTERNATIVE_JRE_PATH" value="IntelliJ IDEA Community Edition IC-182.5107.16" />
+            <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+            <method v="2">
+                <option name="Make" enabled="true" />
+            </method>
+        </configuration>
+        <recent_temporary>
+            <list>
+                <item itemvalue="Application.PrzychodniaApplication" />
+            </list>
+        </recent_temporary>
+    </component>
+    <component name="SvnConfiguration">
+        <configuration />
+    </component>
+    <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+            <changelist id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="" />
+            <created>1558009116316</created>
+            <option name="number" value="Default" />
+            <option name="presentableId" value="Default" />
+            <updated>1558009116316</updated>
+            <workItem from="1558292590340" duration="2814000" />
+        </task>
+        <servers />
+    </component>
+    <component name="TimeTrackingManager">
+        <option name="totallyTimeSpent" value="2814000" />
+    </component>
+    <component name="ToolWindowManager">
+        <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+        <editor active="true" />
+        <layout>
+            <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24093817" />
+            <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+            <window_info id="Designer" order="2" />
+            <window_info id="Image Layers" order="3" />
+            <window_info id="DB Browser" order="4" />
+            <window_info id="Capture Tool" order="5" />
+            <window_info id="UI Designer" order="6" />
+            <window_info id="Favorites" order="7" side_tool="true" />
+            <window_info anchor="bottom" id="Spring" />
+            <window_info anchor="bottom" id="Database Changes" />
+            <window_info anchor="bottom" id="Message" order="0" />
+            <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
+            <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+            <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
+            <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+            <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+            <window_info anchor="bottom" id="TODO" order="6" />
+            <window_info anchor="bottom" id="DB Execution Console" order="7" />
+            <window_info anchor="bottom" id="Terminal" order="8" weight="0.32839838" />
+            <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+            <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+            <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32974428" />
+            <window_info anchor="bottom" id="Version Control" order="12" />
+            <window_info anchor="bottom" id="Messages" order="13" weight="0.32974428" />
+            <window_info anchor="right" id="Database" />
+            <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+            <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+            <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+            <window_info anchor="right" id="Maven" order="3" weight="0.32969153" />
+            <window_info anchor="right" id="Palette" order="4" />
+            <window_info anchor="right" id="Capture Analysis" order="5" />
+            <window_info anchor="right" id="Palette&#9;" order="6" />
+            <window_info anchor="right" id="Theme Preview" order="7" />
+        </layout>
+    </component>
+    <component name="TypeScriptGeneratedFilesManager">
+        <option name="version" value="1" />
+    </component>
+    <component name="antWorkspaceConfiguration">
+        <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+        <option name="FILTER_TARGETS" value="false" />
+    </component>
+    <component name="editorHistoryManager">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPatientController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="728">
+                    <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/AddVisit.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                    <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/treatmentHistory.fxml">
+            <provider selected="true" editor-type-id="text-editor" />
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/userData.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                    <caret line="9" column="226" selection-start-line="9" selection-start-column="186" selection-end-line="9" selection-end-column="226" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                    <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="21" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/WizytaRepository.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                    <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddDoctorController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="22" selection-end-column="30" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/visitsPatientPanel.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                    <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/TreatmentHistoryController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                    <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Bundle.properties">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/presciptions.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="9" selection-start-line="9" selection-end-line="25" selection-end-column="13" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/presciptionPatientPanel.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                    <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                    <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Doctor.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-196">
+                    <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Presciption.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                    <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Receptionist.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                    <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Wizyta.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                    <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/News.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                    <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="e#587#588#0" expanded="true" />
+                        <element signature="e#629#630#0" expanded="true" />
+                        <element signature="e#663#664#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsPatientPanelController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="235">
+                    <caret line="56" column="66" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="56" selection-end-column="66" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                    <caret line="51" selection-start-line="51" selection-end-line="51" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListWithAddPatientController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="246">
+                    <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="76">
+                    <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="69" selection-end-column="5" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/NewsRepository.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                    <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorsListController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="178">
+                    <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="36" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="e#1279#1280#0" expanded="true" />
+                        <element signature="e#1321#1322#0" expanded="true" />
+                        <element signature="e#2195#2196#0" expanded="true" />
+                        <element signature="e#2259#2260#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PresciptionsRepository.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                    <caret line="18" selection-start-line="18" selection-end-line="18" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistListController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="246">
+                    <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="e#2216#2217#0" expanded="true" />
+                        <element signature="e#2286#2287#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPresciptionController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="83">
+                    <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/DoctorList.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-201" />
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                    <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="263">
+                    <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
+                    <folding>
+                        <element signature="e#166#167#0" expanded="true" />
+                        <element signature="e#239#240#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/Registration.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                    <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddVisitController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="167">
+                    <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/RegistrationController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                        <element signature="e#1116#1117#0" expanded="true" />
+                        <element signature="e#1159#1160#0" expanded="true" />
+                        <element signature="e#1195#1196#0" expanded="true" />
+                        <element signature="e#1223#1224#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/DoctorRepository.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                    <caret line="18" column="16" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/ReceptionistRepository.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                    <caret line="18" column="22" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="22" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-961">
+                    <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+                    <folding>
+                        <element signature="e#2986#2987#0" expanded="true" />
+                        <element signature="e#3048#3049#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-60">
+                    <caret line="146" column="72" selection-start-line="146" selection-start-column="72" selection-end-line="146" selection-end-column="72" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="178">
+                    <caret line="165" selection-start-line="165" selection-end-line="165" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/Presciption.fxml">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                    <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+                </state>
+            </provider>
+            <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/CreatePdf/CreatePdf.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="680">
+                    <caret line="50" selection-start-line="50" selection-end-line="50" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1360">
+                    <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsController.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                    <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="20" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="714">
+                    <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/resources/views/Login.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-=======
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Patient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Kartoteka.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                    <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml">
+            <provider editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="107" column="86" selection-start-line="107" selection-start-column="86" selection-end-line="107" selection-end-column="86" />
+                </state>
+            </provider>
+            <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/Patient.fxml">
+            <provider editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                    <caret line="99" column="86" lean-forward="true" selection-start-line="99" selection-start-column="86" selection-end-line="99" selection-end-column="86" />
+                </state>
+            </provider>
+            <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/views/Doctor.fxml">
+            <provider editor-type-id="text-editor">
+                <state relative-caret-position="1819">
+                    <caret line="107" column="86" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="107" selection-end-column="86" />
+                </state>
+            </provider>
+            <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                    <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                </state>
+            </provider>
+        </entry>
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-599">
-              <caret line="70" column="73" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-599">
+                    <caret line="70" column="73" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
+                    <folding>
+                        <element signature="imports" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="44">
+                    <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+                </state>
+            </provider>
         </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="FxmlFile" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>slf4j</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-
-
-        <option value="$PROJECT_DIR$/src/main/resources/views/AddDoctor.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddDoctorController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/patientListWithAddPatient.fxml" />
-
-        <option value="$PROJECT_DIR$/src/main/resources/views/AddPatient.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPatientController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/ReceptionistList.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/AddReceptionist.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddReceptionistController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/visitsReceptionistPanel.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/Bundle.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsReceptionistPanelController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/AddVisit.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddVisitController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/WizytaRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/visitsPatientPanel.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsPatientPanelController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/TreatmentHistoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Doctor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Patient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Presciption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Receptionist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Wizyta.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/presciptionPatientPanel.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Kartoteka.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/News.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/NewsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListWithAddPatientController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorsListController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PresciptionsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistListController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPresciptionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/ReceptionistRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/DoctorRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/Presciption.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/CreatePdf/CreatePdf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java" />
-
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/Login.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" />
-
-        <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" />
-
-      </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="przychodnia" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="przychodnia" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="przychodnia" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-
-
-      <pane id="Scope" />
-
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
-
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="krzysiuZespolowe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="krzysiuZespolowe" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PZ_2019_Lab2_Gr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-
-      <pane id="Scope" />
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558370140281" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../przychodnia" />
-
-    </panes>
-  </component>
-
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SOFT\krzysiuZespolowe" />
-      <recent name="D:\SOFT\krzysiuZespolowe\src\main\resources" />
-      <recent name="D:\SOFT\krzysiuZespolowe\src\main\java\com\przychodnia\przychodnia" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\SOFT\krzysiuZespolowe\src\main\resources\views" />
-      <recent name="D:\SOFT\krzysiuZespolowe\src\main\resources" />
-      <recent name="D:\SOFT\krzysiuZespolowe\src" />
-      <recent name="D:\SOFT\krzysiuZespolowe\src\main\java\com\przychodnia\przychodnia" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.przychodnia.przychodnia.Controllers" />
-      <recent name="com.przychodnia.przychodnia" />
-      <recent name="com.przychodnia.przychodnia.logging" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.przychodnia.przychodnia.config" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="PrzychodniaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="MAIN_CLASS_NAME" value="com.przychodnia.przychodnia.PrzychodniaApplication" />
-      <module name="krzysiuZespolowe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.przychodnia.przychodnia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="IntelliJ IDEA Community Edition IC-182.5107.16" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.PrzychodniaApplication" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="" />
-      <created>1558009116316</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1558009116316</updated>
-      <workItem from="1558292590340" duration="2814000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2814000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24164525" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24093817" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="DB Browser" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32839838" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32974428" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32974428" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32969153" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-    </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPatientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/AddVisit.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/treatmentHistory.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/userData.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="226" selection-start-line="9" selection-start-column="186" selection-end-line="9" selection-end-column="226" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/WizytaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddDoctorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/visitsPatientPanel.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/TreatmentHistoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Bundle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/presciptions.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" selection-start-line="9" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/presciptionPatientPanel.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Presciption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Receptionist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Wizyta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/VisitsPatientPanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="56" column="66" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="56" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Patient.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="86" selection-end-line="90" selection-end-column="86" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListWithAddPatientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientsListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/NewsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorsListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PresciptionsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2216#2217#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Doctor.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="107" column="86" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="107" selection-end-column="86" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="107" column="86" selection-start-line="107" selection-start-column="86" selection-end-line="107" selection-end-column="86" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-=======
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPresciptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/DoctorList.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201" />
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/PatientRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Registration.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddVisitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/DoctorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Repository/ReceptionistRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-961">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding>
-            <element signature="e#2986#2987#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/DoctorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="146" column="72" selection-start-line="146" selection-start-column="72" selection-end-line="146" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/ReceptionistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Presciption.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-<<<<<<< HEAD
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Presciption.fxml">
-=======
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/CreatePdf/CreatePdf.java">
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/CreatePdf/CreatePdf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="20" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PatientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="20" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Kartoteka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/SpringFXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/FxmlView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Login.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="107" column="86" selection-start-line="107" selection-start-column="86" selection-end-line="107" selection-end-column="86" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Patient.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="99" column="86" lean-forward="true" selection-start-line="99" selection-start-column="86" selection-end-line="99" selection-end-column="86" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/Doctor.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="86" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="107" selection-end-column="86" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-599">
-          <caret line="70" column="73" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-  </component>
+    </component>
 </project>
