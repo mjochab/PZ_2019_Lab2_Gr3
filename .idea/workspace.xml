@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07928239-7c43-4c41-8f80-62ecbd3ea493" name="Default Changelist" comment="">
-<<<<<<< HEAD
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" afterDir="false" />
@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/logging/ExceptionWriter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Login.fxml" afterDir="false" />
-=======
+
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/krzysiuZespolowe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" afterDir="false" />
@@ -43,7 +43,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" afterDir="false" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +61,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
+
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,7 +70,7 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-=======
+
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,7 +88,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
             </state>
           </provider>
         </entry>
@@ -111,12 +111,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
+
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-=======
+
         <entry file="file://$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Entity/Kartoteka.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -124,7 +124,7 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
             </state>
           </provider>
         </entry>
@@ -177,12 +177,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-=======
+
+
         <option value="$PROJECT_DIR$/src/main/resources/views/AddDoctor.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddDoctorController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/patientListWithAddPatient.fxml" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
         <option value="$PROJECT_DIR$/src/main/resources/views/AddPatient.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/AddPatientController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/ReceptionistList.fxml" />
@@ -227,18 +227,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/CreatePdf/CreatePdf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/Controllers/PresciptionsPatientPanelController.java" />
-<<<<<<< HEAD
+
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/StageManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/PrzychodniaApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/Login.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/config/AppJavaConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" />
-=======
+
         <option value="$PROJECT_DIR$/src/main/java/com/przychodnia/przychodnia/DatabaseLoader.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/Doctor.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/views/Patient.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/views/Receptionist.fxml" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
       </list>
     </option>
   </component>
@@ -281,10 +281,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
+
+
       <pane id="Scope" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,7 +334,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
+
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,9 +345,9 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="przychodnia" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-=======
+
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
+
             </path>
             <path>
               <item name="PZ_2019_Lab2_Gr3" type="b2602c69:ProjectViewProjectNode" />
@@ -378,24 +378,17 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-<<<<<<< HEAD
+
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558370140281" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../przychodnia" />
-=======
+
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558272923329" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
-  </component>
+
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SOFT\krzysiuZespolowe" />
