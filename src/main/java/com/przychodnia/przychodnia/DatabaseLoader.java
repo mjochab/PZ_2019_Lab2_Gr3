@@ -41,15 +41,17 @@ public class DatabaseLoader implements CommandLineRunner {
         List<Doctor> doctors = createDoctors();
         createReceptionist();
 
-        createPatientAndKartoteka("Pawel","Krzycz","12345", doctors.get(0));
-        createPatientAndKartoteka("Angela","Waleczna","5262346", doctors.get(0));
-        createPatientAndKartoteka("Kamil","Stoch","425262627", doctors.get(1));
+        createPatientAndKartoteka("Pawel","Krzycz","12345678910", doctors.get(0));
+        createPatientAndKartoteka("Angela","Waleczna","52623461454", doctors.get(0));
+        createPatientAndKartoteka("Kamil","Stoch","42526262789", doctors.get(1));
     }
 
     private void createNews() {
-        News news1 = new News("SENATORIUM","zwolnilo sie miejsce w senatorium");
-        News news2 = new News("APTEKA","w ciechanowie powstala nowa apteka");
-        News news3 = new News("DARMOWE BADANIE","a pariatur. Excepteur sint occaecat cupidatat non pr");
+        News news1 = new News("Badania","Badania dla uczniow szkol srednich\n" +
+                "W celu wykonania badan dla uczniow szkol srednich w Przychodniach Medycyny Pracy CM MEDYK obowiazuje wczesniejsza rejestracja elektroniczna z co najmniej 5-dniowym wyprzedzeniem.");
+        News news2 = new News("Zamkniecie placowki","informujemy, ze z dniem 1 kwietnia placowka Centrum Medycznego Medyk, znajdujaca sie przy ul. Baczynskiego 20A w Jasle zostaje zamknieta. Przepraszamy za wszelkie utrudnienia");
+        News news3 = new News("Labolatorium","W tym tygodniu skrocone godziny pracy Laboratorium\n" +
+                "Uprzejmie informujemy, ze laboratorium Centrum Medycznego Medyk przy ul. Szopena 1 w tym tygodniu czynne bedzie do godziny 16:00 ");
         ArrayList<News> news= new ArrayList<News>() {{
             add(news1);
             add(news2);
@@ -151,24 +153,24 @@ public class DatabaseLoader implements CommandLineRunner {
 
         doctor.setFirstName("Dariusz");
         doctor.setLastName("Dzieciol");
-        doctor.setPesel("1234");
+        doctor.setPesel("83021807693");
 
         doctor2.setFirstName("Krzysztof");
         doctor2.setLastName("Krztusiec");
-        doctor2.setPesel("6789");
+        doctor2.setPesel("83021807693");
 
         doctor.setFirstName("Krzysztof");
         doctor.setLastName("Pieta");
-        doctor.setPesel("1234");
+        doctor.setPesel("83021807693");
 
 
         doctor2.setFirstName("Andrzej");
-        doctor2.setLastName("MAlinowski");
+        doctor2.setLastName("Malinowski");
         doctor2.setPesel("83021807693");
 
-        doctor2.setFirstName("Nie ma");
-        doctor2.setLastName("klienta");
-        doctor2.setPesel("6789");
+        doctor2.setFirstName("Adrian");
+        doctor2.setLastName("Walet");
+        doctor2.setPesel("83021807693");
 
         doctorRepository.save(doctor);
         doctorRepository.save(doctor2);
