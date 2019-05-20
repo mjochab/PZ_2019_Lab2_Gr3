@@ -40,9 +40,15 @@ public class DatabaseLoader implements CommandLineRunner {
         createNews();
         List<Doctor> doctors = createDoctors();
         createReceptionist();
+<<<<<<< HEAD
         createPatientAndKartoteka("Pawel","Krzycz","12345", doctors.get(0));
         createPatientAndKartoteka("Angela","Waleczna","5262346", doctors.get(0));
         createPatientAndKartoteka("Kamil","Stoch","425262627", doctors.get(1));
+=======
+        createPatientAndKartoteka("jkowalski32", doctors.get(0));
+        createPatientAndKartoteka("anowak", doctors.get(0));
+        createPatientAndKartoteka("kkrol", doctors.get(1));
+>>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
     }
 
     private void createNews() {
@@ -73,8 +79,13 @@ public class DatabaseLoader implements CommandLineRunner {
         Presciption presciption = new Presciption(LocalDateTime.now(),doctor);
         Presciption presciption1 = new Presciption(LocalDateTime.now().plusDays(1),doctor);
 
+<<<<<<< HEAD
         presciption.setDescription("rak odbytu");
         presciption1.setDescription("Zażywać witaminę C");
+=======
+        presciption.setDescription("zapalenie płuc");
+        presciption1.setDescription("grypa");
+>>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
 
         ArrayList<Wizyta> wizytaArrayList= new ArrayList<Wizyta>() {{
             add(wizyta1);
@@ -115,6 +126,7 @@ public class DatabaseLoader implements CommandLineRunner {
     }
 
     private void createReceptionist() {
+<<<<<<< HEAD
         Receptionist receptionist = new Receptionist("Adam","Malysz");
         receptionist.setFirstName("Adam");
         receptionist.setLastName("Malysz");
@@ -125,6 +137,12 @@ public class DatabaseLoader implements CommandLineRunner {
         receptionist2.setLastName("Papuszka");
         receptionist2.setPesel("1456713124");
 
+=======
+        Receptionist receptionist = new Receptionist("receptionist","receptionist");
+        receptionist.setFirstName("Krystyna");
+        receptionist.setLastName("Czubówna");
+        receptionist.setPesel("97123012345");
+>>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
         receptionistRepository.save(receptionist);
         receptionistRepository.save(receptionist2);
     }
@@ -136,6 +154,7 @@ public class DatabaseLoader implements CommandLineRunner {
         Doctor doctor = new Doctor("Dariusz","Dzieciol");
         Doctor doctor2 = new Doctor("Krzysztof","Krztusiec");
 
+<<<<<<< HEAD
         doctor.setFirstName("Dariusz");
         doctor.setLastName("Dzieciol");
         doctor.setPesel("1234");
@@ -143,6 +162,15 @@ public class DatabaseLoader implements CommandLineRunner {
         doctor2.setFirstName("Krzysztof");
         doctor2.setLastName("Krztusiec");
         doctor2.setPesel("6789");
+=======
+        doctor.setFirstName("Krzysztof");
+        doctor.setLastName("Zimek");
+        doctor.setPesel("88021807693");
+
+        doctor2.setFirstName("Andrzej");
+        doctor2.setLastName("MAlinowski");
+        doctor2.setPesel("83021807693");
+>>>>>>> 3402f6a6234c20c4184c8605986fa99b728879c6
 
         doctorRepository.save(doctor);
         doctorRepository.save(doctor2);
