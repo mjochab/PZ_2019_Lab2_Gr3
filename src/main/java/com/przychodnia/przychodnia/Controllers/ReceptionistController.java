@@ -172,4 +172,9 @@ public class ReceptionistController implements Initializable {
             this.description2News.setText(newsList.get(1).getContent());
         }
     }
+
+    @FXML
+    public void dodajAktualnosc(){
+        stageManager.switchScene(FxmlView.DODAJ_AKTUALNOSC);
+    }
 }

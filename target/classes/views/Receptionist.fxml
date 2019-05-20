@@ -74,11 +74,12 @@
                                     </Label>
                                  </children>
                               </Pane>
-                              <Label layoutX="138.0" layoutY="14.0" text="AKTUALNOŚCI">
+                              <Label layoutX="197.0" layoutY="13.0" text="AKTUALNOŚCI">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
+                              <Button layoutX="17.0" layoutY="18.0" mnemonicParsing="false" onAction="#dodajAktualnosc" prefHeight="25.0" prefWidth="123.0" text="Dodaj aktualność" />
                     </children>
                   </AnchorPane>
                 </content>

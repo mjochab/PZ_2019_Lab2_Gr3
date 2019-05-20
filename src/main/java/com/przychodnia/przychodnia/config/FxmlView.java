@@ -235,6 +235,17 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/Registration.fxml";
         }
+    },
+    DODAJ_AKTUALNOSC {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("receptionist.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/AddNews.fxml";
+        }
     }
     ;
 

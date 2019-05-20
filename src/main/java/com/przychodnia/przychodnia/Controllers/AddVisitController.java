@@ -64,6 +64,8 @@ public class AddVisitController implements Initializable {
         this.loadSpinnersValues();
     }
 
+
+
     private void loadSpinnersValues() {
 
         this.dataDatePicker.setValue(LocalDate.now());
