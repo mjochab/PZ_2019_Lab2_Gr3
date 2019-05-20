@@ -1,18 +1,18 @@
 package com.przychodnia.przychodnia.config;
 
-import javafx.application.Platform;
+
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-//import org.slf4j.Logger;
+
 
 import java.util.Objects;
 
-//import static org.slf4j.LoggerFactory.getLogger;
+
 
 public class StageManager {
 
-//    private static final Logger LOG = getLogger(StageManager.class);
+
     private final Stage primaryStage;
     private final SpringFXMLLoader springFXMLLoader;
 
@@ -39,7 +39,7 @@ public class StageManager {
         try {
             primaryStage.show();
         } catch (Exception exception) {
-            logAndExit ("Unable to show scene for title" + title,  exception);
+
         }
     }
 
@@ -65,16 +65,13 @@ public class StageManager {
             rootNode = springFXMLLoader.load(fxmlFilePath);
             Objects.requireNonNull(rootNode, "A Root FXML node must not be null");
         } catch (Exception exception) {
-            logAndExit("Unable to load FXML view" + fxmlFilePath, exception);
+
         }
         return rootNode;
     }
 
 
-    private void logAndExit(String errorMsg, Exception exception) {
-//        LOG.error(errorMsg, exception, exception.getCause());
-        Platform.exit();
-    }
+
 
 
 }

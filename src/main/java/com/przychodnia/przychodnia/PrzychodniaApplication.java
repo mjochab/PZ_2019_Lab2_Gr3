@@ -46,9 +46,7 @@ public class PrzychodniaApplication extends Application {
 	 * window.
 	 */
 	protected void displayInitialScene() {
-		System.out.println("zmiana seny na "+FxmlView.LOGIN.getFxmlFile());
 		stageManager.switchScene(FxmlView.LOGIN);
-
 	}
 
 
