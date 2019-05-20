@@ -12,10 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
@@ -48,6 +45,9 @@ public class AddVisitController implements Initializable {
     @FXML
     Spinner<Integer> minutaSpinner;
 
+    @FXML
+    Label labelInfo;
+
     @Autowired
     PatientRepository patientRepository;
 
@@ -70,7 +70,7 @@ public class AddVisitController implements Initializable {
 
         // Value factory.
         SpinnerValueFactory<Integer> valueFactory = //
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(8, 16, 8);
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(8, 15, 8);
 
         godzinaSpinner.setValueFactory(valueFactory);
 
@@ -98,6 +98,9 @@ public class AddVisitController implements Initializable {
 
     @FXML
     public void dodajWizyte(){
+
+
+
         Patient selectedPatient = pacjentComboBox.getSelectionModel().getSelectedItem();
         Doctor selectedDoctor = lekarzComboBox.getSelectionModel().getSelectedItem();
         LocalDate localDate = dataDatePicker.getValue();
@@ -106,13 +109,27 @@ public class AddVisitController implements Initializable {
 
         LocalDateTime localDateTime = localDate.atTime(godzina,minuta);
 
-        Wizyta wizyta = new Wizyta();
-        wizyta.setDoctor(selectedDoctor);
-        wizyta.setLocalDateTime(localDateTime);
-        wizyta.setKartoteka(selectedPatient.getKartoteka());
+        if(this.isNotSunday(localDateTime)) {
+            Wizyta wizyta = new Wizyta();
+            wizyta.setDoctor(selectedDoctor);
+            wizyta.setLocalDateTime(localDateTime);
+            wizyta.setKartoteka(selectedPatient.getKartoteka());
 
-        wizytaRepository.save(wizyta);
-        stageManager.switchScene(FxmlView.LISTA_WIZYT_PANEL_RECEPSJONISTY);
+            wizytaRepository.save(wizyta);
+            stageManager.switchScene(FxmlView.LISTA_WIZYT_PANEL_RECEPSJONISTY);
+        }
+        else{
+            labelInfo.setText("Przychodznia nieczynna w niedzielę");
+        }
+    }
+
+    private boolean isNotSunday(LocalDateTime localDateTime) {
+        if(localDateTime.getDayOfWeek().getValue()==7){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
     @FXML

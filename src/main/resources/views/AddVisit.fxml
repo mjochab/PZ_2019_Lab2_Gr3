@@ -29,6 +29,7 @@
             <Spinner fx:id="godzinaSpinner" layoutX="154.0" layoutY="135.0" prefHeight="25.0" prefWidth="69.0" />
             <Label layoutX="90.0" layoutY="139.0" text="Godzina:" />
             <Spinner fx:id="minutaSpinner" layoutX="232.0" layoutY="135.0" prefHeight="25.0" prefWidth="69.0" />
+            <Label fx:id="labelInfo" layoutX="80.0" layoutY="181.0" prefHeight="17.0" prefWidth="277.0" textFill="RED" />
             </children>
         </Pane>
     </children>
