@@ -75,36 +75,38 @@ public class AddVisitController implements Initializable {
     }
 
     private void refreshCalendar(Doctor doctor) {
-        this.dataDatePicker.setDayCellFactory(picker -> new DateCell() {
-                    public void updateItem(LocalDate date, boolean empty) {
-                        super.updateItem(date, empty);
-                        LocalDate today = LocalDate.now();
+        this.dataDatePicker.setDayCellFactory(picker -> {
+            return new DateCell() {
+                public void updateItem(LocalDate date, boolean empty) {
+                    super.updateItem(date, empty);
+                    LocalDate today = LocalDate.now();
 
-                        setDisable(empty || date.compareTo(today) < 0);
+                    setDisable(empty || date.compareTo(today) < 0);
 
-                        int mondayValue = 10, tuesdayValue = 10, wednesdayValue=10, thursdayValue=10,fridayValue=10,saturdayValue=10;
+                    int mondayValue = 10, tuesdayValue = 10, wednesdayValue = 10, thursdayValue = 10, fridayValue = 10, saturdayValue = 10;
 
-                        boolean monday = doctor.getMonday();
-                        boolean tuesday = doctor.getTuesday();
-                        boolean wednesday = doctor.getWednesday();
-                        boolean thursday = doctor.getThursday();
-                        boolean friday = doctor.getFriday();
-                        boolean saturday = doctor.getSaturday();
-                        if (!monday) mondayValue = 1;
-                        if (!tuesday) tuesdayValue = 2;
-                        if (!wednesday) wednesdayValue = 3;
-                        if (!thursday) thursdayValue = 4;
-                        if (!friday) fridayValue = 5;
-                        if (!saturday) saturdayValue = 6;
+                    boolean monday = doctor.getMonday();
+                    boolean tuesday = doctor.getTuesday();
+                    boolean wednesday = doctor.getWednesday();
+                    boolean thursday = doctor.getThursday();
+                    boolean friday = doctor.getFriday();
+                    boolean saturday = doctor.getSaturday();
+                    if (!monday) mondayValue = 1;
+                    if (!tuesday) tuesdayValue = 2;
+                    if (!wednesday) wednesdayValue = 3;
+                    if (!thursday) thursdayValue = 4;
+                    if (!friday) fridayValue = 5;
+                    if (!saturday) saturdayValue = 6;
 
-                        setDisable(empty || date.getDayOfWeek().getValue() == mondayValue
-                                || date.getDayOfWeek().getValue() == tuesdayValue
-                                || date.getDayOfWeek().getValue() == wednesdayValue
-                                || date.getDayOfWeek().getValue() == thursdayValue
-                                || date.getDayOfWeek().getValue() == fridayValue
-                                || date.getDayOfWeek().getValue() == saturdayValue
-                                || date.getDayOfWeek().getValue() == 7);
-            }
+                    setDisable(empty || date.getDayOfWeek().getValue() == mondayValue
+                            || date.getDayOfWeek().getValue() == tuesdayValue
+                            || date.getDayOfWeek().getValue() == wednesdayValue
+                            || date.getDayOfWeek().getValue() == thursdayValue
+                            || date.getDayOfWeek().getValue() == fridayValue
+                            || date.getDayOfWeek().getValue() == saturdayValue
+                            || date.getDayOfWeek().getValue() == 7);
+                }
+            };
         });
     }
 

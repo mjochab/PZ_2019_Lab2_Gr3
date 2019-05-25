@@ -59,8 +59,10 @@
             </Label>
             <TextField fx:id="peselField" layoutX="131.0" layoutY="233.0" prefHeight="26.0" prefWidth="202.0" />
             <Label layoutX="12.0" layoutY="269.0" text="Rola:" />
-            <ComboBox fx:id="comboBoxRola" layoutX="131.0" layoutY="265.0" prefHeight="25.0" prefWidth="202.0" />
+            <ComboBox fx:id="comboBoxRola" layoutX="131.0" layoutY="265.0" onAction="#refreshDoctorComboBox" prefHeight="25.0" prefWidth="202.0" />
             <Label fx:id="labelInfo" layoutX="19.0" layoutY="305.0" prefHeight="17.0" prefWidth="302.0" textFill="RED" />
+            <Label layoutX="12.0" layoutY="305.0" text="Lekarz" />
+            <ComboBox fx:id="doctorComboBox" layoutX="131.0" layoutY="301.0" prefHeight="25.0" prefWidth="202.0" />
          </children>
       </Pane>
    </children>

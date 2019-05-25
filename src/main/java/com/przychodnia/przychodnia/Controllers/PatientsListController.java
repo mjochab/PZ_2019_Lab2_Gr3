@@ -2,6 +2,7 @@ package com.przychodnia.przychodnia.Controllers;
 
 import com.przychodnia.przychodnia.Entity.Patient;
 import com.przychodnia.przychodnia.Repository.PatientRepository;
+import com.przychodnia.przychodnia.config.ActUser;
 import com.przychodnia.przychodnia.config.FxmlView;
 import com.przychodnia.przychodnia.config.StageManager;
 import javafx.collections.FXCollections;
@@ -65,7 +66,7 @@ public class PatientsListController implements Initializable {
     }
 
     private void loadPatientsToTable() {
-        List<Patient> patients = patientRepository.findAll();
+        List<Patient> patients = patientRepository.findByDoctor(ActUser.getDoctor());
         this.refreshTable(patients);
     }
 

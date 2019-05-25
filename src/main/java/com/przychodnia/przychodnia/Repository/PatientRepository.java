@@ -1,5 +1,6 @@
 package com.przychodnia.przychodnia.Repository;
 
+import com.przychodnia.przychodnia.Entity.Doctor;
 import com.przychodnia.przychodnia.Entity.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -17,4 +18,6 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
     List<Patient> findByFirstNameLastNamePesel(String firstName, String lastName, String pesel);
 
     List<Patient> findByLogin(String login);
+
+    List<Patient> findByDoctor(Doctor doctor);
 }

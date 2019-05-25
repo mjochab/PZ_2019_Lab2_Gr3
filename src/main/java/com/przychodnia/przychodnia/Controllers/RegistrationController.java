@@ -50,6 +50,9 @@ public class RegistrationController implements Initializable {
     ComboBox<String> comboBoxRola;
 
     @FXML
+    ComboBox<Doctor> doctorComboBox;
+
+    @FXML
     Label labelInfo;
 
     @Lazy
@@ -69,6 +72,26 @@ public class RegistrationController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         this.loadRolesToComboBox();
+        this.loadDoctorsToComboBox();
+    }
+
+    private void loadDoctorsToComboBox() {
+        List<Doctor> doctorList= doctorRepository.findAll();
+        ObservableList<Doctor> taskObservableList = FXCollections.observableArrayList();
+        taskObservableList.addAll(doctorList);
+        this.doctorComboBox.setItems(taskObservableList);
+
+        this.doctorComboBox.getSelectionModel().select(0);
+    }
+
+    public void refreshDoctorComboBox(){
+        String rola = comboBoxRola.getSelectionModel().getSelectedItem();
+        if(!rola.equals("pacjent")){
+            this.doctorComboBox.setDisable(true);
+        }
+        else{
+            this.doctorComboBox.setDisable(false);
+        }
     }
 
     @FXML
@@ -111,6 +134,8 @@ public class RegistrationController implements Initializable {
         patient.setLogin(this.loginField.getText());
         patient.setPassword(this.passwordField.getText());
         patient.setEmail(this.emailField.getText());
+
+        patient.setDoctor(this.doctorComboBox.getSelectionModel().getSelectedItem());
 
         patientRepository.save(patient);
     }
@@ -165,6 +190,8 @@ public class RegistrationController implements Initializable {
         observableList.addAll(rolesList);
 
         this.comboBoxRola.setItems(observableList);
-//        this.comboBoxRola.getSelectionModel().selectLast();
+        this.comboBoxRola.getSelectionModel().selectLast();
+
+        this.refreshDoctorComboBox();
     }
 }
