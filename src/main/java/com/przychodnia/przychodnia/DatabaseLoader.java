@@ -78,7 +78,7 @@ public class DatabaseLoader implements CommandLineRunner {
 
 
 
-        presciption.setDescription("zapalenie płuc");
+        presciption.setDescription("zapalenie pluc");
         presciption1.setDescription("grypa");
 
 

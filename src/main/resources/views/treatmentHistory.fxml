@@ -14,12 +14,18 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="tableHistoria" layoutX="40.0" layoutY="55.0" prefHeight="385.0" prefWidth="346.0">
+      <TableView fx:id="tableHistoria" layoutX="40.0" layoutY="55.0" prefHeight="358.0" prefWidth="346.0">
         <columns>
           <TableColumn fx:id="columnData" prefWidth="174.0" text="Data" />
           <TableColumn fx:id="columnLekarz" minWidth="0.0" prefWidth="171.0" text="Lekarz" />
         </columns>
       </TableView>
       <Button layoutX="40.0" layoutY="450.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="29.0" prefWidth="101.0" text="Wstecz" />
+      <Button layoutX="285.0" layoutY="450.0" mnemonicParsing="false" onAction="#drukuj" prefHeight="29.0" prefWidth="101.0" text="Drukuj" />
+      <Label fx:id="infoLabel" layoutX="40.0" layoutY="422.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
