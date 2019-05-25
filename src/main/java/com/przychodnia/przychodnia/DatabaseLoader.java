@@ -62,7 +62,7 @@ public class DatabaseLoader implements CommandLineRunner {
     }
 
     private void createPatientAndKartoteka(String firstName,String lastName, String pesel, Doctor doctor) {
-        Patient patient = new Patient(firstName,lastName);
+        Patient patient = new Patient(firstName,lastName, doctor);
         patient.setFirstName(firstName);
         patient.setLastName(lastName);
         patient.setPesel(pesel);
@@ -154,6 +154,7 @@ public class DatabaseLoader implements CommandLineRunner {
         doctor.setFirstName("Dariusz");
         doctor.setLastName("Dzieciol");
         doctor.setPesel("83021807693");
+        doctor.setSaturday(false);
 
         doctor2.setFirstName("Krzysztof");
         doctor2.setLastName("Krztusiec");

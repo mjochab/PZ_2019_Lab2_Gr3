@@ -246,6 +246,17 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/views/AddNews.fxml";
         }
+    },
+    HARMONOGRAM {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("doctor.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/Harmonogram.fxml";
+        }
     }
     ;
 

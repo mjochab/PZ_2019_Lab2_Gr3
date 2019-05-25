@@ -38,6 +38,7 @@
                               <Button mnemonicParsing="false" onAction="#loadVisits" prefHeight="32.0" prefWidth="205.0" text="WIZYTY" />
                               <Button mnemonicParsing="false" onAction="#loadPrescriptions" prefHeight="32.0" prefWidth="205.0" text="RECEPTY" />
                               <Button mnemonicParsing="false" onAction="#loadNews" prefHeight="32.0" prefWidth="205.0" text="AKTUALNOŚCI" />
+                              <Button mnemonicParsing="false" onAction="#loadHarmonogram" prefHeight="32.0" prefWidth="205.0" text="HARMONOGRAM" />
 
                                <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#wyloguj" prefHeight="9.0" prefWidth="196.0" text="Wyloguj" />
                            </children>

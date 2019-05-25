@@ -33,8 +33,11 @@ public class AddVisitController implements Initializable {
     @FXML
     ComboBox<Patient> pacjentComboBox;
 
+//    @FXML
+//    ComboBox<Doctor> lekarzComboBox;
+
     @FXML
-    ComboBox<Doctor> lekarzComboBox;
+    Label doctorLabel;
 
     @FXML
     DatePicker dataDatePicker;
@@ -60,11 +63,50 @@ public class AddVisitController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         this.loadPacjentComboBox();
-        this.loadLekarzComboBox();
+//        this.loadLekarzComboBox();
         this.loadSpinnersValues();
     }
 
+    public void refreshLekarz(){
+        Doctor doctor = pacjentComboBox.getSelectionModel().getSelectedItem().getDoctor();
+        doctorLabel.setText(doctor.toString());
 
+        this.refreshCalendar(doctor);
+    }
+
+    private void refreshCalendar(Doctor doctor) {
+        this.dataDatePicker.setDayCellFactory(picker -> new DateCell() {
+                    public void updateItem(LocalDate date, boolean empty) {
+                        super.updateItem(date, empty);
+                        LocalDate today = LocalDate.now();
+
+                        setDisable(empty || date.compareTo(today) < 0);
+
+                        int mondayValue = 10, tuesdayValue = 10, wednesdayValue=10, thursdayValue=10,fridayValue=10,saturdayValue=10;
+
+                        boolean monday = doctor.getMonday();
+                        boolean tuesday = doctor.getTuesday();
+                        boolean wednesday = doctor.getWednesday();
+                        boolean thursday = doctor.getThursday();
+                        boolean friday = doctor.getFriday();
+                        boolean saturday = doctor.getSaturday();
+                        if (!monday) mondayValue = 1;
+                        if (!tuesday) tuesdayValue = 2;
+                        if (!wednesday) wednesdayValue = 3;
+                        if (!thursday) thursdayValue = 4;
+                        if (!friday) fridayValue = 5;
+                        if (!saturday) saturdayValue = 6;
+
+                        setDisable(empty || date.getDayOfWeek().getValue() == mondayValue
+                                || date.getDayOfWeek().getValue() == tuesdayValue
+                                || date.getDayOfWeek().getValue() == wednesdayValue
+                                || date.getDayOfWeek().getValue() == thursdayValue
+                                || date.getDayOfWeek().getValue() == fridayValue
+                                || date.getDayOfWeek().getValue() == saturdayValue
+                                || date.getDayOfWeek().getValue() == 7);
+            }
+        });
+    }
 
     private void loadSpinnersValues() {
 
@@ -87,24 +129,27 @@ public class AddVisitController implements Initializable {
         ObservableList<Patient> taskObservableList = FXCollections.observableArrayList();
         taskObservableList.addAll(userList);
         this.pacjentComboBox.setItems(taskObservableList);
+
+        this.pacjentComboBox.getSelectionModel().select(0);
+        this.refreshLekarz();
     }
 
 
-    private void loadLekarzComboBox() {
-        List<Doctor> doctorList= doctorRepository.findAll();
-        ObservableList<Doctor> taskObservableList = FXCollections.observableArrayList();
-        taskObservableList.addAll(doctorList);
-        this.lekarzComboBox.setItems(taskObservableList);
-    }
+//    private void loadLekarzComboBox() {
+//        List<Doctor> doctorList= doctorRepository.findAll();
+//        ObservableList<Doctor> taskObservableList = FXCollections.observableArrayList();
+//        taskObservableList.addAll(doctorList);
+//        this.lekarzComboBox.setItems(taskObservableList);
+//    }
 
 
     @FXML
     public void dodajWizyte(){
 
-
-
         Patient selectedPatient = pacjentComboBox.getSelectionModel().getSelectedItem();
-        Doctor selectedDoctor = lekarzComboBox.getSelectionModel().getSelectedItem();
+//        Doctor selectedDoctor = lekarzComboBox.getSelectionModel().getSelectedItem();
+        Doctor selectedDoctor = selectedPatient.getDoctor();
+
         LocalDate localDate = dataDatePicker.getValue();
         int godzina = godzinaSpinner.getValue();
         int minuta = minutaSpinner.getValue();

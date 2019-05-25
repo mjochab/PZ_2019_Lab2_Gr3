@@ -22,7 +22,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
 
-import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -132,19 +131,19 @@ public class DoctorController implements Initializable {
         }
     }
 
-    public void loadUserData(ActionEvent event) throws IOException{
+    public void loadUserData(ActionEvent event){
          stageManager.switchScene(FxmlView.USER_DATA);
     }
     
-    public void loadPatients(ActionEvent event) throws IOException{
+    public void loadPatients(ActionEvent event){
         stageManager.switchScene(FxmlView.PATIENT_LIST);
     }
     
-    public void loadVisits(ActionEvent event) throws IOException{
+    public void loadVisits(ActionEvent event){
         stageManager.switchScene(FxmlView.WIZYTY);
     }
     
-    public void loadPrescriptions(ActionEvent event) throws IOException{
+    public void loadPrescriptions(ActionEvent event){
         stageManager.switchScene(FxmlView.RECEPTY);
     }
     
@@ -159,6 +158,10 @@ public class DoctorController implements Initializable {
             this.label2News.setText(newsList.get(1).getTitle());
             this.description2News.setText(newsList.get(1).getContent());
         }
+    }
+
+    public void loadHarmonogram(){
+        stageManager.switchScene(FxmlView.HARMONOGRAM);
     }
 
     @FXML

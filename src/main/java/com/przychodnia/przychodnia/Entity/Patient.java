@@ -28,18 +28,23 @@ public class Patient {
 
     private String postcode;
 
+    @ManyToOne
+    private Doctor doctor;
+
     @OneToOne
     private Kartoteka kartoteka;
 
     public Patient() {
     }
 
-    public Patient(String login, String password) {
+    public Patient(String login, String password, Doctor doctor) {
         this.login = login;
         this.password = password;
+        this.doctor = doctor;
     }
 
-    public Patient(String login, String password, String email, String firstName, String lastName, String pesel, String tel_number, String address, Kartoteka kartoteka) {
+    public Patient(String login, String password, String email, String firstName, String lastName, String pesel,
+                   String tel_number, String address, Kartoteka kartoteka, Doctor doctor) {
         this.login = login;
         this.password = password;
         this.email = email;
@@ -49,6 +54,15 @@ public class Patient {
         this.phone = tel_number;
         this.address = address;
         this.kartoteka = kartoteka;
+        this.doctor = doctor;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
     }
 
     public String getPostcode() {

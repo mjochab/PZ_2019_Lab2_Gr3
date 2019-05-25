@@ -24,12 +24,12 @@
                 <Label layoutX="94.0" layoutY="45.0" text="Lekarz:" />
                 <Label layoutX="94.0" layoutY="93.0" text="Data:" />
             <DatePicker fx:id="dataDatePicker" layoutX="154.0" layoutY="89.0" />
-            <ComboBox fx:id="pacjentComboBox" layoutX="154.0" layoutY="10.0" prefHeight="25.0" prefWidth="174.0" />
-            <ComboBox fx:id="lekarzComboBox" layoutX="154.0" layoutY="41.0" prefHeight="25.0" prefWidth="174.0" />
+            <ComboBox fx:id="pacjentComboBox" layoutX="154.0" layoutY="10.0" onAction="#refreshLekarz" prefHeight="25.0" prefWidth="174.0" />
             <Spinner fx:id="godzinaSpinner" layoutX="154.0" layoutY="135.0" prefHeight="25.0" prefWidth="69.0" />
             <Label layoutX="90.0" layoutY="139.0" text="Godzina:" />
             <Spinner fx:id="minutaSpinner" layoutX="232.0" layoutY="135.0" prefHeight="25.0" prefWidth="69.0" />
             <Label fx:id="labelInfo" layoutX="80.0" layoutY="181.0" prefHeight="17.0" prefWidth="277.0" textFill="RED" />
+            <Label fx:id="doctorLabel" layoutX="154.0" layoutY="45.0" />
             </children>
         </Pane>
     </children>

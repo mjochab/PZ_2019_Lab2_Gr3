@@ -103,6 +103,7 @@ public class RegistrationController implements Initializable {
     }
 
     private void registerNewPacjent() {
+
         Patient patient = new Patient();
         patient.setFirstName(this.nameField.getText());
         patient.setLastName(this.surnameField.getText());
