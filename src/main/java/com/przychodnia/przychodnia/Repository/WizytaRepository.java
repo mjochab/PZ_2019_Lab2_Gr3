@@ -15,4 +15,6 @@ public interface WizytaRepository extends JpaRepository<Wizyta, Long> {
     List<Wizyta> findByDoctor(Doctor doctor);
 
     List<Wizyta> findByKartoteka(Kartoteka kartoteka);
+
+
 }

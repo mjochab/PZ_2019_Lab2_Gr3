@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -38,8 +39,32 @@ public class VisitsPatientPanelController implements Initializable {
     @FXML
     TableColumn<Wizyta,String> columnLekarz;
 
+    @FXML
+    TextField szukajTextField;
+
     @Autowired
     WizytaRepository wizytaRepository;
+
+    @FXML
+    public void szukaj(){
+        String filter = this.szukajTextField.getText();
+
+        List<Wizyta> wizyta = wizytaRepository.findByKartoteka(ActUser.getPatient().getKartoteka());
+        List<Wizyta> wizytaAfter = wizyta.stream()
+                .filter(wizyta1 -> wizyta1.getLocalDateTime()
+                        .isAfter(LocalDateTime.now()))
+                .collect(Collectors.toList());
+
+        if(filter.equals("")){
+            this.refreshTable(wizytaAfter);
+        }
+        else {
+            List<Wizyta> filteredWizyta = wizytaAfter.stream().filter(p -> p.getDoctor().getFirstName().equals(filter) ||
+                    p.getDoctor().getLastName().equals(filter)).collect(Collectors.toList());
+
+            this.refreshTable(filteredWizyta);
+        }
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -48,13 +73,19 @@ public class VisitsPatientPanelController implements Initializable {
 
     private void loadHistoria() {
 
-        this.tableWizyty.getColumns().clear();
-
         List<Wizyta> wizyta = wizytaRepository.findByKartoteka(ActUser.getPatient().getKartoteka());
         List<Wizyta> wizytaAfter = wizyta.stream()
-                                    .filter(wizyta1 -> wizyta1.getLocalDateTime()
-                                            .isAfter(LocalDateTime.now()))
-                                    .collect(Collectors.toList());
+                .filter(wizyta1 -> wizyta1.getLocalDateTime()
+                        .isAfter(LocalDateTime.now()))
+                .collect(Collectors.toList());
+
+        this.refreshTable(wizytaAfter);
+    }
+
+    private void refreshTable(List<Wizyta> wizytaAfter){
+
+        this.tableWizyty.getColumns().clear();
+
         final ObservableList<Wizyta> data = FXCollections.observableArrayList();
         data.addAll(wizytaAfter);
 
@@ -69,7 +100,6 @@ public class VisitsPatientPanelController implements Initializable {
 
         this.tableWizyty.getColumns().addAll(columnData, columnLekarz);
     }
-
     @FXML
     public void wstecz(){
         stageManager.switchScene(FxmlView.PATIENT);

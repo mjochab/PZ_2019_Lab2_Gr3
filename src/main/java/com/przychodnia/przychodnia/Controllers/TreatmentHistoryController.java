@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -48,6 +49,9 @@ public class TreatmentHistoryController implements Initializable {
     @FXML
     Label infoLabel;
 
+    @FXML
+    TextField szukajTextField;
+
     @Autowired
     private PresciptionsRepository presciptionRepository;
 
@@ -69,15 +73,41 @@ public class TreatmentHistoryController implements Initializable {
         }
     }
 
-    private void loadHistoria() {
-
-        this.tableHistoria.getColumns().clear();
+    @FXML
+    public void szukaj(){
+        String filter = this.szukajTextField.getText();
 
         List<Wizyta> wizyta = wizytaRepository.findByKartoteka(ActUser.getPatient().getKartoteka());
         List<Wizyta> wizytaBefore = wizyta.stream()
                 .filter(wizyta1 -> wizyta1.getLocalDateTime()
                         .isBefore(LocalDateTime.now()))
                 .collect(Collectors.toList());
+
+        if(filter.equals("")){
+            this.refreshTable(wizytaBefore);
+        }
+        else {
+            List<Wizyta> filteredWizyta = wizytaBefore.stream().filter(p -> p.getDoctor().getFirstName().equals(filter) ||
+                    p.getDoctor().getLastName().equals(filter)).collect(Collectors.toList());
+
+            this.refreshTable(filteredWizyta);
+        }
+    }
+
+    private void loadHistoria() {
+        List<Wizyta> wizyta = wizytaRepository.findByKartoteka(ActUser.getPatient().getKartoteka());
+        List<Wizyta> wizytaBefore = wizyta.stream()
+                .filter(wizyta1 -> wizyta1.getLocalDateTime()
+                        .isBefore(LocalDateTime.now()))
+                .collect(Collectors.toList());
+
+        this.refreshTable(wizytaBefore);
+    }
+
+    private void refreshTable(List<Wizyta> wizytaBefore){
+
+        this.tableHistoria.getColumns().clear();
+
         final ObservableList<Wizyta> data = FXCollections.observableArrayList();
         data.addAll(wizytaBefore);
 

@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -22,6 +23,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 @Controller
 public class PresciptionsController implements Initializable {
@@ -42,6 +44,9 @@ public class PresciptionsController implements Initializable {
     @FXML
     TableColumn<Presciption,String> columnPacjent;
 
+    @FXML
+    TextField szukajTextField;
+
     @Autowired
     PresciptionsRepository presciptionsRepository;
 
@@ -50,10 +55,30 @@ public class PresciptionsController implements Initializable {
         this.loadRecepty();
     }
 
+    @FXML
+    public void szukaj(){
+        String filter = this.szukajTextField.getText();
+        List<Presciption> presciptions = presciptionsRepository.findByDoctor(ActUser.getDoctor());
+
+        if(filter.equals("")){
+            this.refreshTable(presciptions);
+        }
+        else {
+            List<Presciption> filteredPresciption = presciptions.stream().filter(p -> p.getKartoteka().getPatient().getFirstName().equals(filter) ||
+                    p.getKartoteka().getPatient().getLastName().equals(filter)).collect(Collectors.toList());
+
+            this.refreshTable(filteredPresciption);
+        }
+    }
+
     private void loadRecepty() {
+        List<Presciption> patients = presciptionsRepository.findByDoctor(ActUser.getDoctor());
+        this.refreshTable(patients);
+    }
+
+    private void refreshTable( List<Presciption> patients){
         this.tableRecepty.getColumns().clear();
 
-        List<Presciption> patients = presciptionsRepository.findByDoctor(ActUser.getDoctor());
         final ObservableList<Presciption> data = FXCollections.observableArrayList();
         data.addAll(patients);
 

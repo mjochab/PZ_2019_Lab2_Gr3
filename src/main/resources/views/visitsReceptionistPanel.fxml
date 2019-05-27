@@ -4,24 +4,27 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="Content" fx:id="contentPane" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.VisitsReceptionistPanelController">
+<AnchorPane id="Content" fx:id="contentPane" minHeight="-1.0" minWidth="-1.0" prefHeight="541.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.przychodnia.przychodnia.Controllers.VisitsReceptionistPanelController">
    <children>
       <Label layoutX="105.0" layoutY="14.0" text="Zaplanowane wizyty">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="tableWizyty" layoutX="20.0" layoutY="55.0" prefHeight="385.0" prefWidth="392.0">
+      <TableView fx:id="tableWizyty" layoutX="16.0" layoutY="96.0" prefHeight="385.0" prefWidth="392.0">
         <columns>
           <TableColumn fx:id="columnData" prefWidth="123.0" text="Data" />
           <TableColumn fx:id="columnPacjent" minWidth="0.0" prefWidth="138.0" text="Pacjent" />
             <TableColumn fx:id="columnLekarz" minWidth="0.0" prefWidth="130.0" text="Lekarz" />
         </columns>
       </TableView>
-      <Button layoutX="20.0" layoutY="461.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="89.0" text="wstecz" />
-      <Button layoutX="323.0" layoutY="461.0" mnemonicParsing="false" onAction="#dodajWizyte" prefHeight="25.0" prefWidth="89.0" text="Dodaj wizytę" />
+      <Button layoutX="16.0" layoutY="502.0" mnemonicParsing="false" onAction="#wstecz" prefHeight="25.0" prefWidth="89.0" text="wstecz" />
+      <Button layoutX="319.0" layoutY="502.0" mnemonicParsing="false" onAction="#dodajWizyte" prefHeight="25.0" prefWidth="89.0" text="Dodaj wizytę" />
+      <Button layoutX="312.0" layoutY="60.0" mnemonicParsing="false" onAction="#szukaj" prefHeight="25.0" prefWidth="96.0" text="Szukaj" />
+      <TextField fx:id="szukajTextField" layoutX="14.0" layoutY="60.0" prefHeight="25.0" prefWidth="278.0" />
    </children>
 </AnchorPane>

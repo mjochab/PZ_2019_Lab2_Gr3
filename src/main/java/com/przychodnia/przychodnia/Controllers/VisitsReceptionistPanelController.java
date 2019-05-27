@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -19,6 +20,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 @Controller
 public class VisitsReceptionistPanelController implements Initializable {
@@ -39,6 +41,11 @@ public class VisitsReceptionistPanelController implements Initializable {
     @FXML
     TableColumn<Wizyta,String> columnLekarz;
 
+    @FXML
+    TextField szukajTextField;
+
+    
+
     @Autowired
     WizytaRepository wizytyRepository;
 
@@ -47,11 +54,34 @@ public class VisitsReceptionistPanelController implements Initializable {
         this.loadWizyty();
     }
 
-    private void loadWizyty() {
+    @FXML
+    public void szukaj(){
+        String filter = this.szukajTextField.getText();
+        List<Wizyta> wizytaList = wizytyRepository.findAll();
 
+        if(filter.equals("")){
+            this.refreshTable(wizytaList);
+        }
+        else {
+            List<Wizyta> filteredWizyta = wizytaList.stream()
+                    .filter(p -> p.getKartoteka().getPatient().getFirstName().equals(filter) ||
+                    p.getKartoteka().getPatient().getLastName().equals(filter) ||
+                    p.getDoctor().getFirstName().equals(filter) ||
+                    p.getDoctor().getLastName().equals(filter))
+                    .collect(Collectors.toList());
+
+            this.refreshTable(filteredWizyta);
+        }
+    }
+
+    private void loadWizyty() {
+        List<Wizyta> wizyty = wizytyRepository.findAll();
+        refreshTable(wizyty);
+    }
+
+    public void refreshTable(List<Wizyta> wizyty){
         this.tableWizyty.getColumns().clear();
 
-        List<Wizyta> wizyty = wizytyRepository.findAll();
         final ObservableList<Wizyta> data = FXCollections.observableArrayList();
         data.addAll(wizyty);
 
@@ -64,7 +94,6 @@ public class VisitsReceptionistPanelController implements Initializable {
         columnLekarz.setCellValueFactory(
                 new PropertyValueFactory<>("doctor")
         );
-
 
         this.tableWizyty.setItems(data);
 
