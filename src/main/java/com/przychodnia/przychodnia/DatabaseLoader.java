@@ -43,7 +43,42 @@ public class DatabaseLoader implements CommandLineRunner {
 
         createPatientAndKartoteka("Pawel","Krzycz","12345678910", doctors.get(0));
         createPatientAndKartoteka("Angela","Waleczna","52623461454", doctors.get(0));
-        createPatientAndKartoteka("Kamil","Stoch","42526262789", doctors.get(1));
+        createPatientAndKartoteka("Kamil","Stoch","42526262789", doctors.get(0));
+        createPatientAndKartoteka("Wiktoria","Lukasik","12345678910", doctors.get(0));
+        createPatientAndKartoteka("Aleksandra ","Maciejewska","52623461454", doctors.get(0));
+        createPatientAndKartoteka("Weronika","Piotrowska","42526262789", doctors.get(0));
+        createPatientAndKartoteka("Sebastian","Lesniak","12345678910", doctors.get(0));
+        createPatientAndKartoteka("Bartek","Leszczynski","52623461454", doctors.get(0));
+        createPatientAndKartoteka("Amelia","Nowakowska","42526262789", doctors.get(0));
+        createPatientAndKartoteka("Ewa","Nowakowska","12345678910", doctors.get(0));
+        createPatientAndKartoteka("Szymon","Sikora","52623461454", doctors.get(0));
+        createPatientAndKartoteka("Malgorzata","Marcinkowska","42526262789", doctors.get(0));
+
+        createPatientAndKartoteka("Helena","Wojciechowska","12345678910", doctors.get(1));
+        createPatientAndKartoteka("Karol","Gajda","52623461454", doctors.get(1));
+        createPatientAndKartoteka("Alicja","Sawicka","42526262789", doctors.get(1));
+        createPatientAndKartoteka("Bartek","Nowicki","12345678910", doctors.get(1));
+        createPatientAndKartoteka("Pawel","Lisowski","52623461454", doctors.get(1));
+        createPatientAndKartoteka("Jakub","Janik","42526262789", doctors.get(1));
+
+        createPatientAndKartoteka("Mateusz","Stankiewicz","12345678910", doctors.get(2));
+        createPatientAndKartoteka("Mateusz","Owczarek","52623461454", doctors.get(2));
+        createPatientAndKartoteka("Kamil","Bednarek","42526262789", doctors.get(2));
+
+        createPatientAndKartoteka("Helena","Zawadzka","12345678910", doctors.get(3));
+        createPatientAndKartoteka("Michal","Stefaniak","52623461454", doctors.get(3));
+        createPatientAndKartoteka("Maciej","Rybak","42526262789", doctors.get(3));
+
+        createPatientAndKartoteka("Piotr","Konieczny","12345678910", doctors.get(4));
+        createPatientAndKartoteka("Martyna","Sikora","52623461454", doctors.get(4));
+        createPatientAndKartoteka("Pawel","Krawczyk","42526262789", doctors.get(4));
+
+        createPatientAndKartoteka("Cecylia","Wieczorek","12345678910", doctors.get(5));
+        createPatientAndKartoteka("Oliwier","Grzelak","52623461454", doctors.get(5));
+        createPatientAndKartoteka("Wiktor","Kalinowski","42526262789", doctors.get(5));
+
+
+
     }
 
     private void createNews() {
@@ -133,14 +168,44 @@ public class DatabaseLoader implements CommandLineRunner {
         receptionist2.setPesel("1456713124");
 
         Receptionist receptionist3 = new Receptionist("receptionist","receptionist");
-
         receptionist3.setFirstName("Krystyna");
         receptionist3.setLastName("Czubówna");
         receptionist3.setPesel("97123012345");
 
+        Receptionist receptionist4 = new Receptionist("receptionist","receptionist");
+        receptionist4.setFirstName("Kacper");
+        receptionist4.setLastName("Nowak");
+        receptionist4.setPesel("97123573145");
+
+        Receptionist receptionist5 = new Receptionist("receptionist","receptionist");
+        receptionist5.setFirstName("Maja");
+        receptionist5.setLastName("Krajewska");
+        receptionist5.setPesel("14252012345");
+
+        Receptionist receptionist6 = new Receptionist("receptionist","receptionist");
+        receptionist6.setFirstName("Katarzyna");
+        receptionist6.setLastName("Marciniak");
+        receptionist6.setPesel("97123015835");
+
+        Receptionist receptionist7 = new Receptionist("receptionist","receptionist");
+        receptionist7.setFirstName("Maciej");
+        receptionist7.setLastName("Wilk");
+        receptionist7.setPesel("91368422345");
+
+        Receptionist receptionist8 = new Receptionist("receptionist","receptionist");
+        receptionist8.setFirstName("Ignacy");
+        receptionist8.setLastName("Piasecki");
+        receptionist8.setPesel("97123035731");
+
 
         receptionistRepository.save(receptionist);
         receptionistRepository.save(receptionist2);
+        receptionistRepository.save(receptionist3);
+        receptionistRepository.save(receptionist4);
+        receptionistRepository.save(receptionist5);
+        receptionistRepository.save(receptionist6);
+        receptionistRepository.save(receptionist7);
+        receptionistRepository.save(receptionist8);
     }
 
     private List<Doctor> createDoctors() {
@@ -149,7 +214,10 @@ public class DatabaseLoader implements CommandLineRunner {
 
         Doctor doctor = new Doctor("Dariusz","Dzieciol");
         Doctor doctor2 = new Doctor("Krzysztof","Krztusiec");
-
+        Doctor doctor3 = new Doctor("Wiktoria","Mazur");
+        Doctor doctor4 = new Doctor("Zofia","Makowska");
+        Doctor doctor5 = new Doctor("Patrycka","Nowak");
+        Doctor doctor6 = new Doctor("Andrzej","Nowak");
 
         doctor.setFirstName("Dariusz");
         doctor.setLastName("Dzieciol");
@@ -160,24 +228,35 @@ public class DatabaseLoader implements CommandLineRunner {
         doctor2.setLastName("Krztusiec");
         doctor2.setPesel("83021807693");
 
-        doctor.setFirstName("Krzysztof");
-        doctor.setLastName("Pieta");
-        doctor.setPesel("83021807693");
+        doctor3.setFirstName("Wiktoria");
+        doctor3.setLastName("Mazur");
+        doctor3.setPesel("83021807693");
 
+        doctor4.setFirstName("Zofia");
+        doctor4.setLastName("Makowska");
+        doctor4.setPesel("83021807693");
 
-        doctor2.setFirstName("Andrzej");
-        doctor2.setLastName("Malinowski");
-        doctor2.setPesel("83021807693");
+        doctor5.setFirstName("Patrycka");
+        doctor5.setLastName("Nowak");
+        doctor5.setPesel("83021807693");
 
-        doctor2.setFirstName("Adrian");
-        doctor2.setLastName("Walet");
-        doctor2.setPesel("83021807693");
+        doctor6.setFirstName("Andrzej");
+        doctor6.setLastName("Nowak");
+        doctor6.setPesel("83021807693");
 
         doctorRepository.save(doctor);
         doctorRepository.save(doctor2);
+        doctorRepository.save(doctor3);
+        doctorRepository.save(doctor4);
+        doctorRepository.save(doctor5);
+        doctorRepository.save(doctor6);
 
         doctors.add(doctor);
         doctors.add(doctor2);
+        doctors.add(doctor3);
+        doctors.add(doctor4);
+        doctors.add(doctor5);
+        doctors.add(doctor6);
         return doctors;
     }
 }

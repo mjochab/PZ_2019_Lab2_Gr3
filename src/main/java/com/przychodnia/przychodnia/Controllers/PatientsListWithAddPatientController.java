@@ -54,8 +54,13 @@ public class PatientsListWithAddPatientController implements Initializable {
     @FXML
     public void filter(){
         String filter = this.filterTextField.getText();
-        List<Patient> patients = this.patientRepository.findByFirstNameLastNamePesel(filter,filter,filter);
-        this.refreshTable(patients);
+        if(filter.equals("")){
+            this.loadPatientsToTable();
+        }
+        else {
+            List<Patient> patients = this.patientRepository.findByFirstNameLastNamePesel(filter, filter, filter);
+            this.refreshTable(patients);
+        }
     }
 
     private void loadPatientsToTable() {
