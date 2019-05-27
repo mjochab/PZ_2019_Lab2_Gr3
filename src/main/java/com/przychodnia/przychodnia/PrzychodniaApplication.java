@@ -9,12 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan("com.przychodnia.przychodnia.config.AppJavaConfig")
 @ComponentScan("com.przychodnia.przychodnia.config.StageManager")
 @ComponentScan("com.przychodnia.przychodnia.config.SpringFXMLLoader")
+@EnableJpaRepositories
 public class PrzychodniaApplication extends Application {
 
 	protected ConfigurableApplicationContext springContext;
